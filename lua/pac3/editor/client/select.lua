@@ -256,19 +256,21 @@ local function select_something(tblin, check, getpos, getfriendly, callback, sel
 				local rad = math.min(#selected * 30, 400)
 
 				for k, v in ipairs(selected) do
-					local sx = math.sin((k / #selected) * math.pi * 2) * rad
-					local sy = math.cos((k / #selected) * math.pi * 2) * rad
-
-					v.pos = selectControl.VecToScreen(getpos(v.key, v.value))
-
-					if holding and pace.util.FastDistance2D(v.pos.x + sx, v.pos.y + sy, x, y) < area then
-						pace.DrawSelectionSelected(v.pos)
-						pace.DrawHUDText(v.pos.x, v.pos.y, L(v.friendly), sx, sy, v.pos.x, v.pos.y, true)
-						found = v
-						if selectCallback then selectCallback(v.key, v.value) end
-					else
-						pace.DrawSelectionHovered(v.pos)
-						pace.DrawHUDText(v.pos.x, v.pos.y, L(v.friendly), sx, sy, v.pos.x, v.pos.y, false, Color(255, 255, 255, 128))
+					if IsValid(v) then
+						local sx = math.sin((k / #selected) * math.pi * 2) * rad
+						local sy = math.cos((k / #selected) * math.pi * 2) * rad
+	
+						v.pos = selectControl.VecToScreen(getpos(v.key, v.value))
+	
+						if holding and pace.util.FastDistance2D(v.pos.x + sx, v.pos.y + sy, x, y) < area then
+							pace.DrawSelectionSelected(v.pos)
+							pace.DrawHUDText(v.pos.x, v.pos.y, L(v.friendly), sx, sy, v.pos.x, v.pos.y, true)
+							found = v
+							if selectCallback then selectCallback(v.key, v.value) end
+						else
+							pace.DrawSelectionHovered(v.pos)
+							pace.DrawHUDText(v.pos.x, v.pos.y, L(v.friendly), sx, sy, v.pos.x, v.pos.y, false, Color(255, 255, 255, 128))
+						end
 					end
 				end
 
