@@ -392,6 +392,7 @@ do -- bone manipulation for boneanimlib
 	local ManipulateBoneJiggle = entmeta.ManipulateBoneJiggle
 
 	function pac.ResetBones(ent)
+		if not IsValid(ent) then return end
 		ent.pac_bones_once = true
 
 		local pac_boneanim = ent.pac_boneanim
