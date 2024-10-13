@@ -68,7 +68,7 @@ end)
 concommand.Add("pac_proxy", function(ply, _, args)
 	net.Start("pac_proxy", true)
 		net.WriteEntity(ply)
-		net.WriteString(args[1])
+		net.WriteString(args[1] or "")
 
 		net.WriteFloat(tonumber(args[2]) or 0)
 		net.WriteFloat(tonumber(args[3]) or 0)
