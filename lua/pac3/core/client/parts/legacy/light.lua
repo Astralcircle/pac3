@@ -21,8 +21,19 @@ end
 local DynamicLight = DynamicLight
 
 function PART:OnDraw()
+	local light = self.light
+
+	if not light then
+		local id = self.UniqueID
+
+		if not id then
+			return
+		else
+			light = DynamicLight(tonumber(id))
+		end
+	end
+
 	local pos = self:GetDrawPosition()
-	local light = self.light or DynamicLight(tonumber(self.UniqueID))
 
 	light.Pos = pos
 
