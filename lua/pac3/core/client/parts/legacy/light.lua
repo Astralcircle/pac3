@@ -24,12 +24,12 @@ function PART:OnDraw()
 	local light = self.light
 
 	if not light then
-		local id = self.UniqueID
+		local id = tonumber(self.UniqueID)
 
 		if not id then
 			return
 		else
-			light = DynamicLight(tonumber(id))
+			light = DynamicLight(id)
 		end
 	end
 
