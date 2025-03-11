@@ -32,7 +32,7 @@ function pac.RecordRenderTime(ent, type, start)
 	local took = SysTime() - start
 
 	local max_render_time = pac_max_render_time:GetFloat()
-	if max_render_time <= 0 then return end
+	if max_render_time <= 0 then max_render_time = 100 end
 
 	local entTbl = ent:GetTable()
 	if not entTbl.pac_rendertimes then
