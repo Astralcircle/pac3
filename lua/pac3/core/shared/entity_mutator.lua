@@ -52,7 +52,8 @@ do
 end
 
 local function on_error(msg)
-	ErrorNoHaltWithStack(msg)
+	print(debug.traceback(msg))
+	ErrorNoHalt(msg)
 end
 
 local suppress_send_to_server = false
