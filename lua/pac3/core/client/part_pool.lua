@@ -120,7 +120,7 @@ do
 	end
 
 	local function on_error(msg)
-		ErrorNoHalt(debug.traceback(msg))
+		ErrorNoHaltWithStack(msg)
 	end
 
 	function pac.RenderOverride(ent, type)
