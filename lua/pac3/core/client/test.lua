@@ -247,21 +247,3 @@ concommand.Add("pac_test", function(ply, _, args)
 		end)
 	end
 end)
-
-local lua_server_run_callbacks = {}
-
-function run_lua_on_server(code, cb)
-	local id = pac.Hash(code .. tostring(cb))
-	lua_server_run_callbacks[id] = cb
-	net.Start("pac3_test_suite_backdoor")
-		net.WriteString(id)
-		net.WriteString(code)
-	net.SendToServer()
-end
-
-net.Receive("pac3_test_suite_backdoor_receive_results", function()
-	local id = net.ReadString()
-	local results = net.ReadTable()
-	lua_server_run_callbacks[id](unpack(results))
-	lua_server_run_callbacks[id] = nil
-end)
