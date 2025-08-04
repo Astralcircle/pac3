@@ -59,8 +59,6 @@ function _G.pac_ReloadParts()
 end
 
 function _G.pac_Restart()
-	PAC_MDL_SALT = PAC_MDL_SALT + 1
-
 	local editor_was_open
 	local prev_parts = {}
 	local pacLocal = _G.pac
