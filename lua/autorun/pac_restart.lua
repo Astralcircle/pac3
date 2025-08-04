@@ -100,7 +100,7 @@ function _G.pac_Restart()
 			pace.Panic()
 		end
 
-		for _, ent in pairs(ents.GetAll()) do
+		for _, ent in ents.Iterator() do
 			for k in pairs(ent:GetTable()) do
 				if k:sub(0, 4) == "pac_" then
 					ent[k] = nil

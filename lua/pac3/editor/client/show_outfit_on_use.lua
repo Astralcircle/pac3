@@ -78,7 +78,7 @@ end
 cvars.AddChangeCallback("pac_onuse_only", pace.OnUseOnlyUpdates, "PAC3")
 
 concommand.Add("pac_onuse_reset", function()
-	for i, ent in ipairs(ents.GetAll()) do
+	for i, ent in ents.Iterator() do
 		if ent.pac_onuse_only then
 			ent.pac_onuse_only_check = true
 

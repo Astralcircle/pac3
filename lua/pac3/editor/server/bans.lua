@@ -71,7 +71,7 @@ function pace.Unban(ply)
 end
 
 local function GetPlayer(target)
-	for key, ply in pairs(player.GetAll()) do
+	for key, ply in player.Iterator() do
 		if ply:SteamID() == target or ply:UniqueID() == target or ply:Nick():lower():find(target:lower()) then
 			return ply
 		end
