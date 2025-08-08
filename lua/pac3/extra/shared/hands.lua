@@ -25,6 +25,7 @@ SWEP.Secondary.Ammo = "none"
 
 function SWEP:DrawWorldModel() end
 function SWEP:DrawWorldModelTranslucent() end
+function SWEP:PrimaryAttack() end
 function SWEP:Reload() return end
 
 function SWEP:Initialize()
@@ -37,7 +38,7 @@ function SWEP:DrawWeaponSelection(x, y, width, tall, alpha)
 end
 
 function SWEP:SecondaryAttack()
-	if SERVER then return end
+	if SERVER or not IsFirstTimePredicted() then return end
 	self.DrawCrosshair = not self.DrawCrosshair
 end
 
