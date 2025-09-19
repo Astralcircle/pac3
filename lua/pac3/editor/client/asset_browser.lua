@@ -150,10 +150,6 @@ local function create_texture_icon(path, pathid)
 	return icon
 end
 
-surface.CreateFont("pace_asset_browser_fixed_width", {
-	font = "dejavu sans mono",
-})
-
 local bad_materials = {}
 
 local function create_material_icon(path, grid_panel)
@@ -313,8 +309,6 @@ local function create_material_icon(path, grid_panel)
 
 			local text = vgui.Create("DTextEntry", scroll)
 			text:SetMultiline(true)
-			text:SetFont("pace_asset_browser_fixed_width")
-
 			text:SetText(str)
 
 			surface.SetFont(text:GetFont())
