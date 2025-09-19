@@ -1,6 +1,8 @@
 local SWEP = {Primary = {}, Secondary = {}}
+
 SWEP.PrintName = "Hands"
 SWEP.Instructions = "Right-Click to toggle crosshair"
+
 SWEP.DrawAmmo = false
 SWEP.DrawCrosshair = true
 
@@ -42,8 +44,8 @@ function SWEP:SecondaryAttack()
 	self.DrawCrosshair = not self.DrawCrosshair
 end
 
-function SWEP:OnDrop()
-	if SERVER then
+if SERVER then
+	function SWEP:OnDrop()
 		self:Remove()
 	end
 end
