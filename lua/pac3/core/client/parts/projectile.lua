@@ -145,8 +145,6 @@ function PART:AttachToEntity(ent)
 	return true
 end
 
-local enable = CreateClientConVar("pac_sv_projectiles", 0, true)
-
 function PART:Shoot(pos, ang)
 	local physics = self.Physical
 
