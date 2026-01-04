@@ -1,0 +1,203 @@
+[1] = {
+	["children"] = {
+		[2] = {
+			["children"] = {
+			},
+			["self"] = {
+				["ParentUID"] = "3223648273",
+				["ClassName"] = "bone",
+				["UniqueID"] = "3791464752",
+				["Angles"] = Angle(0, 123.3125, 0),
+				["Bone"] = "right calf",
+				["Name"] = "",
+				["ParentName"] = "group 6",
+			},
+		},
+		[5] = {
+			["children"] = {
+			},
+			["self"] = {
+				["ParentUID"] = "3223648273",
+				["ClassName"] = "bone",
+				["UniqueID"] = "2126583953",
+				["EditorExpand"] = true,
+				["Angles"] = Angle(0, 9.6875, 0),
+				["Bone"] = "spine 4",
+				["Name"] = "",
+				["ParentName"] = "group 6",
+			},
+		},
+		[12] = {
+			["children"] = {
+			},
+			["self"] = {
+				["ParentName"] = "group 6",
+				["ClassName"] = "event",
+				["UniqueID"] = "93830991",
+				["ParentUID"] = "3223648273",
+				["Event"] = "is_on_ground",
+				["Arguments"] = "1",
+				["Name"] = "",
+				["EditorExpand"] = true,
+			},
+		},
+		[11] = {
+			["children"] = {
+			},
+			["self"] = {
+				["ParentUID"] = "3223648273",
+				["ClassName"] = "bone",
+				["UniqueID"] = "931655091",
+				["Angles"] = Angle(0, 105.625, 0),
+				["Bone"] = "left calf",
+				["Name"] = "",
+				["ParentName"] = "group 6",
+			},
+		},
+		[4] = {
+			["children"] = {
+			},
+			["self"] = {
+				["ParentUID"] = "3223648273",
+				["ClassName"] = "bone",
+				["UniqueID"] = "348837590",
+				["Angles"] = Angle(-7.7517943382263, -135.00001525879, -4.3082385673188e-05),
+				["Bone"] = "right thigh",
+				["Name"] = "",
+				["ParentName"] = "group 6",
+			},
+		},
+		[10] = {
+			["children"] = {
+				[2] = {
+					["children"] = {
+					},
+					["self"] = {
+						["ParentName"] = "pelvis",
+						["UniqueID"] = "216986434",
+						["Name"] = "",
+						["VariableName"] = "Angles",
+						["ClassName"] = "proxy",
+						["Additive"] = true,
+						["ParentUID"] = "1278359509",
+						["ZeroEyePitch"] = true,
+						["Expression"] = "nil,nil,owner_velocity_forward()*-2",
+					},
+				},
+				[1] = {
+					["children"] = {
+					},
+					["self"] = {
+						["ParentName"] = "pelvis",
+						["UniqueID"] = "1547969926",
+						["Name"] = "",
+						["VariableName"] = "Angles",
+						["ClassName"] = "proxy",
+						["Additive"] = true,
+						["ParentUID"] = "1278359509",
+						["EditorExpand"] = true,
+						["ZeroEyePitch"] = true,
+						["Expression"] = "nil,owner_velocity_right()*-2",
+					},
+				},
+			},
+			["self"] = {
+				["ParentUID"] = "3223648273",
+				["UniqueID"] = "1278359509",
+				["Name"] = "",
+				["ClassName"] = "bone",
+				["Angles"] = Angle(0, 2.5128486156464, 1100.025390625),
+				["ParentName"] = "group 6",
+				["Bone"] = "pelvis",
+				["EditorExpand"] = true,
+				["Position"] = Vector(10.199999809265, 0, 5.5999999046326),
+			},
+		},
+		[9] = {
+			["children"] = {
+			},
+			["self"] = {
+				["ParentUID"] = "3223648273",
+				["ClassName"] = "bone",
+				["UniqueID"] = "154039705",
+				["Angles"] = Angle(0, 11.28125, 0),
+				["Bone"] = "spine 1",
+				["Name"] = "",
+				["ParentName"] = "group 6",
+			},
+		},
+		[8] = {
+			["children"] = {
+			},
+			["self"] = {
+				["ParentUID"] = "3223648273",
+				["ClassName"] = "bone",
+				["UniqueID"] = "2683329050",
+				["Angles"] = Angle(0, 15.9375, 0),
+				["Bone"] = "spine 2",
+				["Name"] = "",
+				["ParentName"] = "group 6",
+			},
+		},
+		[3] = {
+			["children"] = {
+			},
+			["self"] = {
+				["ParentUID"] = "3223648273",
+				["ClassName"] = "bone",
+				["UniqueID"] = "2661382123",
+				["Angles"] = Angle(10.183678627014, -106.71871948242, 1.9083663573838e-05),
+				["Bone"] = "left thigh",
+				["Name"] = "",
+				["ParentName"] = "group 6",
+			},
+		},
+		[7] = {
+			["children"] = {
+			},
+			["self"] = {
+				["ParentUID"] = "3223648273",
+				["ClassName"] = "bone",
+				["UniqueID"] = "560353957",
+				["Angles"] = Angle(0, -27.78125, 0),
+				["Name"] = "",
+				["ParentName"] = "group 6",
+			},
+		},
+		[1] = {
+			["children"] = {
+			},
+			["self"] = {
+				["ParentUID"] = "3223648273",
+				["ClassName"] = "bone",
+				["UniqueID"] = "2768596880",
+				["Angles"] = Angle(0, 22.5, 0),
+				["Bone"] = "left calf",
+				["Name"] = "",
+				["ParentName"] = "group 6",
+			},
+		},
+		[6] = {
+			["children"] = {
+			},
+			["self"] = {
+				["ParentName"] = "group 6",
+				["UniqueID"] = "2164632886",
+				["SequenceName"] = "jump_dual",
+				["Name"] = "",
+				["ClassName"] = "animation",
+				["Rate"] = 0,
+				["EditorExpand"] = true,
+				["ParentUID"] = "3223648273",
+				["Offset"] = 1,
+			},
+		},
+	},
+	["self"] = {
+		["ParentName"] = "group 5",
+		["ClassName"] = "group",
+		["UniqueID"] = "3223648273",
+		["Name"] = "acrobatic",
+		["EditorExpand"] = true,
+	},
+},

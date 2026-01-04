@@ -1,0 +1,107 @@
+[1] = {
+	["children"] = {
+		[2] = {
+			["children"] = {
+				[1] = {
+					["children"] = {
+						[1] = {
+							["children"] = {
+							},
+							["self"] = {
+								["ParentName"] = "is in world",
+								["ClassName"] = "sound",
+								["UniqueID"] = "1659234766",
+								["EditorExpand"] = true,
+								["Pitch"] = 0.625,
+								["ParentUID"] = "3181550699",
+								["Name"] = "dog footstep[1,4]",
+								["Sound"] = "npc/dog/dog_footstep[1,4].wav",
+							},
+						},
+					},
+					["self"] = {
+						["AffectChildrenOnly"] = true,
+						["Invert"] = true,
+						["Name"] = "is ranger below 5?",
+						["RootOwner"] = false,
+						["ParentUID"] = "3681250577",
+						["EditorExpand"] = true,
+						["UniqueID"] = "3181550699",
+						["Arguments"] = "5@@10",
+						["ParentName"] = "hoverball",
+						["Operator"] = "below",
+						["ClassName"] = "event",
+						["Event"] = "ranger",
+					},
+				},
+			},
+			["self"] = {
+				["ParentName"] = "my outfit",
+				["Position"] = Vector(-30, 0, 0),
+				["TintColor"] = Vector(0.63942295312881, 0.63942295312881, 0.63942295312881),
+				["Name"] = "left foot",
+				["ClassName"] = "model",
+				["ParentUID"] = "2980027574",
+				["Angles"] = Angle(0, 90, 0),
+				["Bone"] = "left toe",
+				["EditorExpand"] = true,
+				["UniqueID"] = "3681250577",
+			},
+		},
+		[1] = {
+			["children"] = {
+				[1] = {
+					["children"] = {
+						[1] = {
+							["children"] = {
+							},
+							["self"] = {
+								["ParentName"] = "is in world",
+								["ClassName"] = "sound",
+								["UniqueID"] = "905788888",
+								["EditorExpand"] = true,
+								["Pitch"] = 0.625,
+								["ParentUID"] = "213354147",
+								["Name"] = "dog footstep[1,4]",
+								["Sound"] = "npc/dog/dog_footstep[1,4].wav",
+							},
+						},
+					},
+					["self"] = {
+						["AffectChildrenOnly"] = true,
+						["Invert"] = true,
+						["Name"] = "is ranger below 5?",
+						["RootOwner"] = false,
+						["ParentUID"] = "103201093",
+						["EditorExpand"] = true,
+						["UniqueID"] = "213354147",
+						["Arguments"] = "5@@10",
+						["ParentName"] = "hoverball",
+						["Operator"] = "below",
+						["ClassName"] = "event",
+						["Event"] = "ranger",
+					},
+				},
+			},
+			["self"] = {
+				["ParentName"] = "my outfit",
+				["Position"] = Vector(-30, 0, 0),
+				["TintColor"] = Vector(0.63942295312881, 0.63942295312881, 0.63942295312881),
+				["Name"] = "right foot",
+				["ClassName"] = "model",
+				["ParentUID"] = "2980027574",
+				["Angles"] = Angle(0, 90, 0),
+				["Bone"] = "right toe",
+				["EditorExpand"] = true,
+				["UniqueID"] = "103201093",
+			},
+		},
+	},
+	["self"] = {
+		["ClassName"] = "group",
+		["UniqueID"] = "2980027574",
+		["EditorExpand"] = true,
+		["Name"] = "realistic footsteps",
+		["Description"] = "add parts to me!",
+	},
+},

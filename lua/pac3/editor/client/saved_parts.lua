@@ -455,18 +455,19 @@ function pace.AddSavedPartsToMenu(menu, clear, override_part)
 		)
 	end):SetImage(pace.MiscIcons.paste)
 
-	if not override_part and pace.example_outfits then
+	if not override_part then
 		local examples, pnl = menu:AddSubMenu(L"examples")
 		pnl:SetImage(pace.MiscIcons.help)
 		examples.GetDeleteSelf = function() return false end
 
-		local sorted = {}
-		for k,v in pairs(pace.example_outfits) do sorted[#sorted + 1] = {k = k, v = v} end
-		table.sort(sorted, function(a, b) return a.k < b.k end)
+		for _, filename in ipairs(file.Find("data_static/pac3_examples/*.txt", "GAME")) do
+			examples:AddOption(string.sub(filename, 1, -5), function()
+				local data, err = pace.luadata.Decode(file.Read("data_static/pac3_examples/" .. filename, "GAME"))
 
-		for _, data in pairs(sorted) do
-			examples:AddOption(data.k, function() pace.LoadPartsFromTable(data.v) end)
-			:SetImage(pace.MiscIcons.outfit)
+				if data then
+					pace.LoadPartsFromTable(data, clear, override_part)
+				end
+			end):SetImage(pace.MiscIcons.outfit)
 		end
 	end
 

@@ -1,0 +1,199 @@
+[1] = {
+	["children"] = {
+		[4] = {
+			["children"] = {
+				[1] = {
+					["children"] = {
+						[1] = {
+							["children"] = {
+							},
+							["self"] = {
+								["ParentName"] = "has weapon equal \"weapon crowbar\"",
+								["UniqueID"] = "2261979630",
+								["Name"] = "",
+								["ClassName"] = "event",
+								["Arguments"] = "weapon_crowbar",
+								["ParentUID"] = "566028478",
+								["Operator"] = "equal",
+								["Event"] = "weapon_class",
+								["EditorExpand"] = true,
+							},
+						},
+					},
+					["self"] = {
+						["ParentName"] = "w crowbar",
+						["Invert"] = true,
+						["Name"] = "",
+						["ClassName"] = "event",
+						["EditorExpand"] = true,
+						["Event"] = "has_weapon",
+						["UniqueID"] = "566028478",
+						["Operator"] = "equal",
+						["ParentUID"] = "24878752",
+						["Arguments"] = "weapon_crowbar",
+					},
+				},
+			},
+			["self"] = {
+				["ParentName"] = "group",
+				["Position"] = Vector(-2.3724746704102, -4.6481323242188, 0.36083984375),
+				["Name"] = "",
+				["ClassName"] = "model",
+				["EditorExpand"] = true,
+				["ParentUID"] = "3227451436",
+				["Angles"] = Angle(-33.875, -11.25, 98.03125),
+				["Bone"] = "spine",
+				["Model"] = "models/Weapons/w_crowbar.mdl",
+				["UniqueID"] = "24878752",
+			},
+		},
+		[1] = {
+			["children"] = {
+				[1] = {
+					["children"] = {
+						[1] = {
+							["children"] = {
+							},
+							["self"] = {
+								["ParentName"] = "has weapon equal \"weapon pistol\"",
+								["UniqueID"] = "1106157978",
+								["Name"] = "",
+								["ClassName"] = "event",
+								["Arguments"] = "weapon_pistol",
+								["ParentUID"] = "3886076484",
+								["Operator"] = "equal",
+								["Event"] = "weapon_class",
+								["EditorExpand"] = true,
+							},
+						},
+					},
+					["self"] = {
+						["ParentName"] = "w pistol",
+						["Invert"] = true,
+						["Name"] = "",
+						["ClassName"] = "event",
+						["EditorExpand"] = true,
+						["Event"] = "has_weapon",
+						["UniqueID"] = "3886076484",
+						["Operator"] = "equal",
+						["ParentUID"] = "314111413",
+						["Arguments"] = "weapon_pistol",
+					},
+				},
+			},
+			["self"] = {
+				["ParentName"] = "group",
+				["Skin"] = 1,
+				["Position"] = Vector(-6.560302734375, 1.0362396240234, 1.2730102539063),
+				["Name"] = "",
+				["EditorExpand"] = true,
+				["ParentUID"] = "3227451436",
+				["ClassName"] = "model",
+				["Angles"] = Angle(14.65625, 81.9375, 13.28125),
+				["Bone"] = "pelvis",
+				["Model"] = "models/weapons/w_pistol.mdl",
+				["UniqueID"] = "314111413",
+			},
+		},
+		[2] = {
+			["children"] = {
+				[1] = {
+					["children"] = {
+						[1] = {
+							["children"] = {
+							},
+							["self"] = {
+								["ParentName"] = "has weapon equal \"weapon physgun\"",
+								["UniqueID"] = "1106157978",
+								["Name"] = "",
+								["ClassName"] = "event",
+								["Arguments"] = "weapon_physgun",
+								["ParentUID"] = "1223387592",
+								["Operator"] = "equal",
+								["Event"] = "weapon_class",
+								["EditorExpand"] = true,
+							},
+						},
+					},
+					["self"] = {
+						["ParentName"] = "w physics",
+						["Invert"] = true,
+						["Name"] = "",
+						["ClassName"] = "event",
+						["EditorExpand"] = true,
+						["Event"] = "has_weapon",
+						["UniqueID"] = "1223387592",
+						["Operator"] = "equal",
+						["ParentUID"] = "3263695821",
+						["Arguments"] = "weapon_physgun",
+					},
+				},
+			},
+			["self"] = {
+				["ParentName"] = "group",
+				["Skin"] = 1,
+				["Position"] = Vector(-3.3938903808594, -4.792236328125, -2.058349609375),
+				["Name"] = "",
+				["EditorExpand"] = true,
+				["ParentUID"] = "3227451436",
+				["ClassName"] = "model",
+				["Angles"] = Angle(8.03125, 4.3125, 134.9375),
+				["Bone"] = "spine",
+				["Model"] = "models/Weapons/w_physics.mdl",
+				["UniqueID"] = "3263695821",
+			},
+		},
+		[3] = {
+			["children"] = {
+				[1] = {
+					["children"] = {
+						[1] = {
+							["children"] = {
+							},
+							["self"] = {
+								["ParentName"] = "has weapon equal \"weapon physcannon\"",
+								["ClassName"] = "event",
+								["UniqueID"] = "1106157978",
+								["ParentUID"] = "1428301906",
+								["Event"] = "weapon_class",
+								["Operator"] = "equal",
+								["Name"] = "",
+								["Arguments"] = "weapon_physcannon",
+							},
+						},
+					},
+					["self"] = {
+						["ParentName"] = "w physics",
+						["Invert"] = true,
+						["Name"] = "",
+						["ClassName"] = "event",
+						["EditorExpand"] = true,
+						["Event"] = "has_weapon",
+						["UniqueID"] = "1428301906",
+						["Operator"] = "equal",
+						["ParentUID"] = "3263695821",
+						["Arguments"] = "weapon_physcannon",
+					},
+				},
+			},
+			["self"] = {
+				["ParentName"] = "group",
+				["Position"] = Vector(-3.3938903808594, -4.792236328125, -2.058349609375),
+				["Name"] = "",
+				["ClassName"] = "model",
+				["EditorExpand"] = true,
+				["ParentUID"] = "3227451436",
+				["Angles"] = Angle(-24.9375, -9.875, 97.34375),
+				["Bone"] = "spine",
+				["Model"] = "models/Weapons/w_physics.mdl",
+				["UniqueID"] = "3263695821",
+			},
+		},
+	},
+	["self"] = {
+		["EditorExpand"] = true,
+		["ClassName"] = "group",
+		["Name"] = "weapons on back",
+		["UniqueID"] = "3227451436",
+	},
+},
