@@ -101,8 +101,10 @@ function pace.OpenEditor()
 
 	pace.SetLanguage()
 
+	local editorWidth = 280
+
 	local editor = pace.CreatePanel("editor")
-		editor:SetSize(240, ScrH())
+		editor:SetSize(editorWidth, ScrH())
 		editor:MakePopup()
 		--editor:SetPos(0, 0)
 		editor.Close = function()
@@ -116,7 +118,7 @@ function pace.OpenEditor()
 	if remember:GetBool() then
 		local x = cookie.GetNumber("pac_editor_x", 0)
 
-		if x < 0 or x + 240 > ScrW() then
+		if x < 0 or x + editorWidth > ScrW() then
 			x = 0
 		end
 
@@ -126,9 +128,9 @@ function pace.OpenEditor()
 		local mode = positionMode:GetInt()
 
 		if mode == 1 then
-			editor:SetPos(ScrW() / 2 - 120, 0)
+			editor:SetPos(ScrW() / 2 - editorWidth / 2, 0)
 		elseif mode == 2 then
-			editor:SetPos(ScrW() - 240, 0)
+			editor:SetPos(ScrW() - editorWidth, 0)
 		else
 			editor:SetPos(0, 0)
 		end
