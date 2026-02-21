@@ -879,7 +879,7 @@ do -- serializing
 	end
 
 	local function on_error(msg)
-		ErrorNoHaltWithStack(msg)
+
 	end
 
 	do

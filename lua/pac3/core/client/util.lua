@@ -118,7 +118,7 @@ do --dev util
 				for part in next, ent.pac_animation_sequences do
 					if part:IsValid() then
 						_part = part
-						ProtectedCall(nuke_part)
+						pcall(nuke_part)
 					end
 				end
 
@@ -129,7 +129,7 @@ do --dev util
 				for part in next, ent.pac_bone_parts do
 					if part:IsValid() then
 						_part = part
-						ProtectedCall(nuke_part)
+						pcall(nuke_part)
 					end
 				end
 
