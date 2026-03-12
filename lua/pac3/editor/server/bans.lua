@@ -49,7 +49,7 @@ concommand.Add("pac_unban", function(ply, cmd, args)
 	end
 end)
 
-hook.Add("PlayerInitialSpawn", "pac_RemoveTimedBan", function(ply)
+hook.Add("PlayerInitialSpawn", "pace_RemoveTimedBan", function(ply)
 	local ban = ply:GetPData("PAC_Banned", false)
 	if not ban or not tonumber(ban) then return end
 
