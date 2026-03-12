@@ -1,5 +1,5 @@
 function pace.Ban(ply, time)
-	ply:SetPData("PAC_Banned", time or true)
+	ply:SetPData("PAC_Banned", time and time + os.time() or true)
 	ply:ConCommand("pac_clear_parts")
 
 	net.Start("pac_submit_acknowledged")
