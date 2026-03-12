@@ -53,7 +53,7 @@ hook.Add("PlayerInitialSpawn", "pace_RemoveTimedBan", function(ply)
 	local ban = ply:GetPData("PAC_Banned", false)
 	if not ban or not tonumber(ban) then return end
 
-	if ban <= os.time() then
+	if tonumber(ban) <= os.time() then
 		pace.Unban(ply)
 	end
 end)
