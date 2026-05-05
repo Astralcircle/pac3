@@ -1,0 +1,131 @@
+[1] = {
+	["children"] = {
+		[2] = {
+			["children"] = {
+				[1] = {
+					["children"] = {
+						[1] = {
+							["children"] = {
+								[2] = {
+									["children"] = {
+									},
+									["self"] = {
+										["UniqueID"] = "3223733502",
+										["ClassName"] = "effect",
+										["Effect"] = "manmelter_impact_flare",
+										["Rate"] = 0.1,
+									},
+								},
+								[1] = {
+									["children"] = {
+									},
+									["self"] = {
+										["Arguments"] = "attack primary",
+										["UniqueID"] = "3899494357",
+										["Invert"] = true,
+										["Event"] = "animation_event",
+										["ClassName"] = "event",
+									},
+								},
+							},
+							["self"] = {
+								["Alpha"] = 0,
+								["ClassName"] = "model",
+								["UniqueID"] = "1169353982",
+								["EditorExpand"] = true,
+								["Model"] = "models/pac/default.mdl",
+								["Name"] = "The effects",
+							},
+						},
+					},
+					["self"] = {
+						["UniqueID"] = "24880209",
+						["Name"] = "The model. The head aims at this.",
+						["Alpha"] = 0.725,
+						["ClassName"] = "model",
+						["Size"] = 0.2,
+						["Color"] = Vector(255, 0, 0),
+						["Bone"] = "hitpos",
+						["Model"] = "models/pac/default.mdl",
+						["EditorExpand"] = true,
+					},
+				},
+			},
+			["self"] = {
+				["EditorExpand"] = true,
+				["ClassName"] = "group",
+				["Name"] = "The hitpos. This is always where you aim.",
+				["UniqueID"] = "3768347404",
+			},
+		},
+		[1] = {
+			["children"] = {
+				[1] = {
+					["children"] = {
+						[1] = {
+							["children"] = {
+								[1] = {
+									["children"] = {
+										[1] = {
+											["children"] = {
+											},
+											["self"] = {
+												["EndPointName"] = "Rope for effect",
+												["ClassName"] = "beam",
+												["Frequency"] = 4.1,
+												["Position"] = Vector(0.00634765625, -0.000732421875, -20.6767578125),
+												["EndPointUID"] = "2358293445",
+												["Bend"] = -1.1,
+												["WidthBend"] = 0.1,
+												["UniqueID"] = "1053510544",
+											},
+										},
+									},
+									["self"] = {
+										["Alpha"] = 0,
+										["ClassName"] = "model",
+										["Position"] = Vector(0.00048828125, -0.0013427734375, 0.46875),
+										["UniqueID"] = "2358293445",
+										["Name"] = "Rope for effect",
+										["Model"] = "models/pac/default.mdl",
+										["EditorExpand"] = true,
+									},
+								},
+							},
+							["self"] = {
+								["ClassName"] = "model",
+								["UniqueID"] = "3252937828",
+								["AimPartUID"] = "24880209",
+								["AimPartName"] = "The model. The head aims at this.",
+								["Name"] = "This aims at the hitpos model.",
+								["Model"] = "models/maxofs2d/balloon_gman.mdl",
+								["EditorExpand"] = true,
+							},
+						},
+					},
+					["self"] = {
+						["ClassName"] = "jiggle",
+						["UniqueID"] = "2245707605",
+						["Position"] = Vector(-0.001953125, -25.370361328125, 56.828125),
+						["Bone"] = "invalidbone",
+						["Name"] = "Makes the head float behind.",
+						["EditorExpand"] = true,
+					},
+				},
+			},
+			["self"] = {
+				["EditorExpand"] = true,
+				["ClassName"] = "group",
+				["Name"] = "The Head",
+				["UniqueID"] = "2053457589",
+			},
+		},
+	},
+	["self"] = {
+		["EditorExpand"] = true,
+		["UniqueID"] = "860513635",
+		["ClassName"] = "group",
+		["Name"] = "Second Head & Hitpos effects",
+		["Description"] = "add parts to me!",
+	},
+},

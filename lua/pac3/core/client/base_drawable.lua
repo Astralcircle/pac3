@@ -1,7 +1,7 @@
 local render_OverrideAlphaWriteEnable = render.OverrideAlphaWriteEnable
 local render_OverrideColorWriteEnable = render.OverrideColorWriteEnable
 local render_OverrideBlendFunc = render.OverrideBlendFunc
-local ProtectedCall = ProtectedCall
+local pcall = pcall
 local cam_IgnoreZ = cam.IgnoreZ
 local pac = pac
 local ipairs = ipairs
@@ -188,7 +188,7 @@ function PART:Draw(draw_type)
 
 		_self = self
 
-		ProtectedCall(call_draw)
+		pcall(call_draw)
 
 		if self.NoTextureFiltering then
 			render_PopFilterMin()

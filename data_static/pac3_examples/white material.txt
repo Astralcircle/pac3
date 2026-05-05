@@ -1,0 +1,188 @@
+[1] = {
+	["children"] = {
+		[2] = {
+			["children"] = {
+				[4] = {
+					["children"] = {
+					},
+					["self"] = {
+						["ParentName"] = "hoverball",
+						["Outline"] = 1.1,
+						["UniqueID"] = "2512445182",
+						["Name"] = "",
+						["ClassName"] = "text",
+						["Size"] = 0.25,
+						["ParentUID"] = "2310852168",
+						["Angles"] = Angle(90, -90, 0),
+						["OutlineColor"] = Vector(0, 0, 0),
+						["Position"] = Vector(8, 0, 0),
+						["Text"] = "models/debug/debugwhite",
+					},
+				},
+				[1] = {
+					["children"] = {
+					},
+					["self"] = {
+						["ParentName"] = "hoverball",
+						["Position"] = Vector(-1, 0, 11),
+						["Name"] = "",
+						["ClassName"] = "model",
+						["EditorExpand"] = true,
+						["Color"] = Vector(0, 255, 63),
+						["UniqueID"] = "1976803975",
+						["Material"] = "models/debug/debugwhite",
+						["ParentUID"] = "2310852168",
+					},
+				},
+				[2] = {
+					["children"] = {
+					},
+					["self"] = {
+						["ParentName"] = "hoverball",
+						["Position"] = Vector(-1, 0, -9),
+						["AlternativeScaling"] = true,
+						["Name"] = "",
+						["Angles"] = Angle(0, -90, -90),
+						["ClassName"] = "model",
+						["Size"] = 0.35,
+						["ParentUID"] = "2310852168",
+						["Color"] = Vector(127, 255, 255),
+						["Material"] = "models/debug/debugwhite",
+						["Model"] = "models/Combine_Scanner.mdl",
+						["UniqueID"] = "2229102787",
+					},
+				},
+				[3] = {
+					["children"] = {
+					},
+					["self"] = {
+						["ParentName"] = "hoverball",
+						["UniqueID"] = "153198253",
+						["Name"] = "",
+						["ClassName"] = "model",
+						["Size"] = 0.7,
+						["Color"] = Vector(255, 191, 0),
+						["ParentUID"] = "2310852168",
+						["Model"] = "models/hunter/blocks/cube025x025x025.mdl",
+						["Material"] = "models/debug/debugwhite",
+					},
+				},
+			},
+			["self"] = {
+				["ParentName"] = "material test",
+				["ClassName"] = "model",
+				["Position"] = Vector(30, 0, 0),
+				["ParentUID"] = "4055337243",
+				["Size"] = 0,
+				["EditorExpand"] = true,
+				["Name"] = "",
+				["UniqueID"] = "2310852168",
+			},
+		},
+		[1] = {
+			["children"] = {
+				[2] = {
+					["children"] = {
+					},
+					["self"] = {
+						["ParentUID"] = "3918691596",
+						["UniqueID"] = "1024988007",
+						["ClassName"] = "material",
+						["Name"] = "white_material",
+						["RimlightExponent"] = 34.700000762939,
+						["Rimlight"] = true,
+						["BaseTexture"] = "models/debug/debugwhite",
+						["EditorExpand"] = true,
+						["OwnerName"] = "",
+						["PhongBoost"] = 0.10000000149012,
+						["BumpMap"] = "dev/bump_normal",
+						["ParentName"] = "hoverball",
+						["PhongFresnelRanges"] = Vector(1.09375, 1.09375, 1.09375),
+						["Phong"] = true,
+					},
+				},
+				[5] = {
+					["children"] = {
+					},
+					["self"] = {
+						["ParentName"] = "hoverball",
+						["Outline"] = 1.1,
+						["UniqueID"] = "315091138",
+						["Name"] = "",
+						["ClassName"] = "text",
+						["Size"] = 0.25,
+						["ParentUID"] = "3918691596",
+						["Angles"] = Angle(90, -90, 0),
+						["OutlineColor"] = Vector(0, 0, 0),
+						["Position"] = Vector(8, 0, 0),
+						["Text"] = "custom white material",
+					},
+				},
+				[3] = {
+					["children"] = {
+					},
+					["self"] = {
+						["ParentName"] = "hoverball",
+						["Position"] = Vector(-1, 0, -9),
+						["AlternativeScaling"] = true,
+						["Name"] = "",
+						["Angles"] = Angle(0, -90, -90),
+						["ClassName"] = "model",
+						["Size"] = 0.35,
+						["ParentUID"] = "3918691596",
+						["Color"] = Vector(127, 255, 255),
+						["Material"] = "white_material",
+						["Model"] = "models/Combine_Scanner.mdl",
+						["UniqueID"] = "452643146",
+					},
+				},
+				[1] = {
+					["children"] = {
+					},
+					["self"] = {
+						["ParentName"] = "hoverball",
+						["Position"] = Vector(-1, 0, 11),
+						["Name"] = "",
+						["ClassName"] = "model",
+						["EditorExpand"] = true,
+						["Color"] = Vector(33, 255, 0),
+						["UniqueID"] = "288937067",
+						["Material"] = "white_material",
+						["ParentUID"] = "3918691596",
+					},
+				},
+				[4] = {
+					["children"] = {
+					},
+					["self"] = {
+						["ParentName"] = "hoverball",
+						["UniqueID"] = "163925285",
+						["Name"] = "",
+						["ClassName"] = "model",
+						["Size"] = 0.7,
+						["Color"] = Vector(255, 191, 0),
+						["ParentUID"] = "3918691596",
+						["Model"] = "models/hunter/blocks/cube025x025x025.mdl",
+						["Material"] = "white_material",
+					},
+				},
+			},
+			["self"] = {
+				["ParentName"] = "material test",
+				["ClassName"] = "model",
+				["Position"] = Vector(13, 0, 0),
+				["ParentUID"] = "4055337243",
+				["Size"] = 0,
+				["EditorExpand"] = true,
+				["Name"] = "",
+				["UniqueID"] = "3918691596",
+			},
+		},
+	},
+	["self"] = {
+		["EditorExpand"] = true,
+		["ClassName"] = "group",
+		["Name"] = "material test",
+		["UniqueID"] = "4055337243",
+	},
+},

@@ -4,7 +4,7 @@ local CLIENT = CLIENT
 local SERVER = SERVER
 
 if pac.emut then
-	for _, ent in ipairs(ents.GetAll()) do
+	for _, ent in ents.Iterator() do
 		if ent.pac_mutations then
 			for _, mutator in pairs(ent.pac_mutations) do
 				xpcall(pac.emut.RestoreMutations, function() end, mutator.Owner, mutator.ClassName, mutator.Entity)
@@ -52,8 +52,7 @@ do
 end
 
 local function on_error(msg)
-	print(debug.traceback(msg))
-	ErrorNoHalt(msg)
+
 end
 
 local suppress_send_to_server = false
@@ -173,7 +172,7 @@ end
 function emut.Register(meta)
 
 	if Entity(1):IsValid() then
-		for _, ent in ipairs(ents.GetAll()) do
+		for _, ent in ents.Iterator() do
 			if ent.pac_mutations then
 				for class_name, mutator in pairs(ent.pac_mutations) do
 					if class_name == meta.ClassName then

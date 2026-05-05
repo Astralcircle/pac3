@@ -4,7 +4,7 @@ local istable = istable
 local IsValid = IsValid
 local tostring = tostring
 local isfunction = isfunction
-local ProtectedCall = ProtectedCall
+local pcall = pcall
 
 pace.StreamQueue = pace.StreamQueue or {}
 
@@ -21,7 +21,7 @@ timer.Create("pac_check_stream_queue", 0.1, 0, function()
 		allowed, reason = pace.SubmitPartNow(data, filter)
 	end
 
-	local success = ProtectedCall(submitPart)
+	local success = pcall(submitPart)
 
 	if not isfunction(callback) then return end
 
@@ -30,7 +30,7 @@ timer.Create("pac_check_stream_queue", 0.1, 0, function()
 		reason = "Unexpected Error"
 	end
 
-	ProtectedCall(function()
+	pcall(function()
 		callback(allowed, reason)
 	end)
 end)

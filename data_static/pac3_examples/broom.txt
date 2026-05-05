@@ -1,0 +1,155 @@
+[1] = {
+	["children"] = {
+		[2] = {
+			["children"] = {
+			},
+			["self"] = {
+				["ParentUID"] = "3097251620",
+				["ClassName"] = "bone",
+				["UniqueID"] = "2786303479",
+				["Angles"] = Angle(-24.864221572876, -30.300058364868, -73.212387084961),
+				["Bone"] = "right forearm",
+				["Name"] = "",
+				["ParentName"] = "group 4",
+			},
+		},
+		[5] = {
+			["children"] = {
+			},
+			["self"] = {
+				["ParentUID"] = "3097251620",
+				["ClassName"] = "bone",
+				["UniqueID"] = "1807477957",
+				["Angles"] = Angle(11.853768348694, 16.613912582397, 55.454776763916),
+				["Bone"] = "right hand",
+				["Name"] = "",
+				["ParentName"] = "group",
+			},
+		},
+		[3] = {
+			["children"] = {
+				[1] = {
+					["children"] = {
+						[2] = {
+							["children"] = {
+								[1] = {
+									["children"] = {
+									},
+									["self"] = {
+										["ParentName"] = "trail 1",
+										["ClassName"] = "event",
+										["UniqueID"] = "3132388009",
+										["ParentUID"] = "2082072250",
+										["Event"] = "speed",
+										["Operator"] = "equal",
+										["Name"] = "",
+										["Arguments"] = "0",
+									},
+								},
+							},
+							["self"] = {
+								["ParentUID"] = "3559883105",
+								["UniqueID"] = "2082072250",
+								["Length"] = 1000,
+								["Name"] = "",
+								["EndSize"] = 25,
+								["ClassName"] = "trail",
+								["ParentName"] = "model 28",
+								["Stretch"] = true,
+								["StartAlpha"] = 0.4,
+								["EndAlpha"] = 0,
+								["StartSize"] = 25,
+								["TrailPath"] = "particle/smokesprites_0006",
+							},
+						},
+						[1] = {
+							["children"] = {
+								[1] = {
+									["children"] = {
+									},
+									["self"] = {
+										["ParentName"] = "signpole",
+										["ClassName"] = "model",
+										["Size"] = 3,
+										["ParentUID"] = "3089574101",
+										["Name"] = "",
+										["UniqueID"] = "2089200739",
+									},
+								},
+							},
+							["self"] = {
+								["ParentName"] = "model 28",
+								["UniqueID"] = "3089574101",
+								["Name"] = "",
+								["Scale"] = Vector(1, 1, 0.89999997615814),
+								["ClassName"] = "model",
+								["EditorExpand"] = true,
+								["ParentUID"] = "3559883105",
+								["Model"] = "models/props_c17/signpole001.mdl",
+								["Angles"] = Angle(90, 0, 0),
+							},
+						},
+					},
+					["self"] = {
+						["ParentName"] = "model 27",
+						["UniqueID"] = "3559883105",
+						["AimPartUID"] = "917658153",
+						["Name"] = "",
+						["ClassName"] = "model",
+						["Size"] = 0,
+						["AimPartName"] = "model 27",
+						["Bone"] = "hitpos",
+						["EditorExpand"] = true,
+						["ParentUID"] = "917658153",
+					},
+				},
+			},
+			["self"] = {
+				["ParentName"] = "group 4",
+				["Position"] = Vector(3.0804443359375, -1.2985992431641, -0.92620849609375),
+				["Name"] = "",
+				["ClassName"] = "model",
+				["Size"] = 0,
+				["EditorExpand"] = true,
+				["Angles"] = Angle(-78.240921020508, -126.14680480957, -46.212745666504),
+				["Bone"] = "right hand",
+				["ParentUID"] = "3097251620",
+				["UniqueID"] = "917658153",
+			},
+		},
+		[1] = {
+			["children"] = {
+			},
+			["self"] = {
+				["ParentUID"] = "3097251620",
+				["ClassName"] = "bone",
+				["UniqueID"] = "2450199460",
+				["Angles"] = Angle(-35.826240539551, 33.586395263672, -93.891380310059),
+				["Bone"] = "right upperarm",
+				["Name"] = "",
+				["ParentName"] = "group 4",
+			},
+		},
+		[4] = {
+			["children"] = {
+			},
+			["self"] = {
+				["ParentName"] = "group 4",
+				["Invert"] = true,
+				["Name"] = "",
+				["ClassName"] = "event",
+				["Arguments"] = "weapon_crowbar@@1",
+				["UniqueID"] = "3101905678",
+				["Operator"] = "equal",
+				["ParentUID"] = "3097251620",
+				["Event"] = "weapon_class",
+			},
+		},
+	},
+	["self"] = {
+		["EditorExpand"] = true,
+		["ClassName"] = "group",
+		["Name"] = "broom",
+		["UniqueID"] = "3097251620",
+	},
+},
