@@ -1,5 +1,3 @@
-local L = pace.LanguageString
-
 local languageID = CreateClientConVar("pac_editor_languageid", 1, true, false, "Whether we should show the language indicator inside of editable text entries.")
 
 function pace.ShowSpecial(pnl, parent, size)
@@ -42,7 +40,7 @@ function pace.CreateSearchList(property, key, name, add_columns, get_list, get_c
 	pace.SafeRemoveSpecialPanel()
 
 	local frame = vgui.Create("DFrame")
-	frame:SetTitle(L(name))
+	frame:SetTitle(name)
 	frame:SetSize(300, 300)
 	frame:Center()
 	frame:SetSizable(true)
@@ -364,7 +362,7 @@ do -- list
 
 			surface.SetFont(pace.CurrentFont)
 
-			local txt = L(name)
+			local txt = name
 			local _, _h = surface.GetTextSize(txt)
 			local middle = h/2 - _h/2
 
@@ -399,7 +397,7 @@ do -- list
 					key = key:sub(1, -4)
 				end
 
-				btn:SetValue(L((udata and udata.editor_friendly or key):gsub("%u", " %1"):lower()):Trim())
+				btn:SetValue(((udata and udata.editor_friendly or key):gsub("%u", " %1"):lower()):Trim())
 			end
 
 			if obj then
@@ -532,7 +530,7 @@ do -- list
 				end
 
 				if prop.udata and prop.udata.description then
-					pnl:SetTooltip(L(prop.udata.description))
+					pnl:SetTooltip(prop.udata.description)
 				end
 
 				local part = pace.current_part
@@ -546,7 +544,7 @@ do -- list
 						pace.CreateSearchList(
 							self,
 							self.CurrentKey,
-							L(prop.key),
+							prop.key,
 
 							function(list)
 								list:AddColumn("enum")
@@ -691,29 +689,6 @@ do -- non editable string
 			lbl.pac_tooltip_hack = true
 			self.lbl = lbl
 		self:SetContent(lbl)
-
-		if self.part_name and self.key_name then
-			lbl.OnCursorEntered = function()
-
-				if lbl.wiki_info then
-					lbl:SetTooltip(lbl.wiki_info)
-					return
-				end
-
-				if not lbl.fetching_wiki then
-					lbl:SetCursor("waitarrow")
-					pace.GetPropertyDescription(self.part_name, self.key_name, function(str)
-						if lbl:IsValid() then
-							lbl:SetTooltip(str)
-							ChangeTooltip(lbl)
-							lbl.wiki_info = str
-							lbl:SetCursor("arrow")
-						end
-					end)
-					lbl.fetching_wiki = true
-				end
-			end
-		end
 	end
 
 	function PANEL:GetValue()
@@ -825,10 +800,10 @@ do -- base editable
 	end
 
 	function PANEL:PopulateContextMenu(menu)
-		menu:AddOption(L"copy", function()
+		menu:AddOption("copy", function()
 			pace.clipboard = pac.CopyValue(self:GetValue())
 		end):SetImage(pace.MiscIcons.copy)
-		menu:AddOption(L"paste", function()
+		menu:AddOption("paste", function()
 			self:SetValue(pac.CopyValue(pace.clipboard))
 			self.OnValueChanged(self:GetValue())
 		end):SetImage(pace.MiscIcons.paste)
@@ -836,7 +811,7 @@ do -- base editable
 		--left right swap available on strings (and parts)
 		if type(self:GetValue()) == 'string' then
 			menu:AddSpacer()
-			menu:AddOption(L"change sides", function()
+			menu:AddOption("change sides", function()
 				local var
 				local part
 				if self.udata and self.udata.editor_panel == "part" then
@@ -866,7 +841,7 @@ do -- base editable
 		--numeric sign flip available on numbers
 		elseif type(self:GetValue()) == 'number' then
 			menu:AddSpacer()
-			menu:AddOption(L"flip sign (+/-)", function()
+			menu:AddOption("flip sign (+/-)", function()
 				local val = self:GetValue()
 				self:SetValue(-val)
 				self.OnValueChanged(self:GetValue())
@@ -874,7 +849,7 @@ do -- base editable
 		end
 
 		menu:AddSpacer()
-		menu:AddOption(L"reset", function()
+		menu:AddOption("reset", function()
 			if pace.current_part and pace.current_part.DefaultVars[self.CurrentKey] then
 				local val = pac.CopyValue(pace.current_part.DefaultVars[self.CurrentKey])
 				self:SetValue(val)
@@ -1165,10 +1140,10 @@ do -- vector
 		end
 
 		function PANEL:PopulateContextMenu(menu)
-			menu:AddOption(L"copy", function()
+			menu:AddOption("copy", function()
 				pace.clipboard = pac.CopyValue(self.vector)
 			end):SetImage(pace.MiscIcons.copy)
-			menu:AddOption(L"paste", function()
+			menu:AddOption("paste", function()
 				local val = pac.CopyValue(pace.clipboard)
 				if isnumber(val) then
 					val = ctor(val, val, val)
@@ -1185,7 +1160,7 @@ do -- vector
 				end
 			end):SetImage(pace.MiscIcons.paste)
 			menu:AddSpacer()
-			menu:AddOption(L"reset", function()
+			menu:AddOption("reset", function()
 				if pace.current_part and pace.current_part.DefaultVars[self.CurrentKey] then
 					local val = pac.CopyValue(pace.current_part.DefaultVars[self.CurrentKey])
 					self:SetValue(val)
@@ -1526,7 +1501,7 @@ do -- boolean
 			if self.during_change then return end
 			local b = chck:GetChecked()
 			self.OnValueChanged(b)
-			self.lbl:SetText(L(tostring(b)))
+			self.lbl:SetText(tostring(b))
 		end
 		self.chck = chck
 
@@ -1543,7 +1518,7 @@ do -- boolean
 		self.chck:SetChecked(b)
 		self.chck:Toggle()
 		self.chck:Toggle()
-		self.lbl:SetText(L(tostring(b)))
+		self.lbl:SetText(tostring(b))
 		self.during_change = false
 	end
 

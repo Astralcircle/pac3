@@ -1,6 +1,4 @@
 
-local L = pace.LanguageString
-
 function pace.IsPartSendable(part)
 
 	if part:HasParent() then return false end
@@ -39,7 +37,7 @@ function pace.ClearParts()
 		if not pace.Editor:IsValid() then return end
 
 		if table.Count(pac.GetLocalParts()) == 0 then
-			pace.Call("CreatePart", "group", L"my outfit")
+			pace.Call("CreatePart", "group", "my outfit")
 		end
 
 		pace.TrySelectPart()
@@ -260,12 +258,12 @@ do
 		else
 			local autoload_file = "autoload"
 			local autoload_result = hook.Run("PAC3Autoload", autoload_file)
-			
+
 			if autoload_result ~= false then
 				if isstring(autoload_result) then
 					autoload_file = autoload_result
 				end
-			
+
 				pac.Message("Wearing " .. autoload_file .. "...")
 				pace.LoadParts(autoload_file)
 				pace.WearParts()
