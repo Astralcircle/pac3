@@ -1,0 +1,225 @@
+[1] = {
+	["children"] = {
+		[1] = {
+			["children"] = {
+				[2] = {
+					["children"] = {
+						[1] = {
+							["children"] = {
+								[2] = {
+									["children"] = {
+									},
+									["self"] = {
+										["Outline"] = 1,
+										["UniqueID"] = "1103917759",
+										["Angles"] = Angle(0, 90, 90),
+										["Name"] = "Pet-Name",
+										["Position"] = Vector(0, 0, 38.876953125),
+										["OutlineColor"] = Vector(0, 0, 0),
+										["ClassName"] = "text",
+										["Size"] = 0.1,
+										["Font"] = "DermaDefault",
+										["Color"] = Vector(98, 212, 202),
+										["Bone"] = "",
+										["AimPartName"] = "LOCALEYES",
+										["Text"] = "Name",
+									},
+								},
+								[5] = {
+									["children"] = {
+										[1] = {
+											["children"] = {
+											},
+											["self"] = {
+												["ClassName"] = "proxy",
+												["UniqueID"] = "1585907437",
+												["VariableName"] = "Range",
+												["Name"] = "Pose-Range X",
+												["Expression"] = "-owner_velocity_forward()",
+											},
+										},
+									},
+									["self"] = {
+										["ClassName"] = "poseparameter",
+										["UniqueID"] = "695260429",
+										["PoseParameter"] = "move_x",
+										["Name"] = "Move_X",
+										["EditorExpand"] = true,
+									},
+								},
+								[3] = {
+									["children"] = {
+										[1] = {
+											["children"] = {
+											},
+											["self"] = {
+												["ClassName"] = "proxy",
+												["UniqueID"] = "1982702090",
+												["VariableName"] = "Range",
+												["Name"] = "Pose-Range Y",
+												["Expression"] = "-owner_velocity_right()",
+											},
+										},
+									},
+									["self"] = {
+										["ClassName"] = "poseparameter",
+										["UniqueID"] = "823754137",
+										["PoseParameter"] = "move_y",
+										["Name"] = "Move_Y",
+										["EditorExpand"] = true,
+									},
+								},
+								[1] = {
+									["children"] = {
+										[2] = {
+											["children"] = {
+											},
+											["self"] = {
+												["Event"] = "parent_velocity_length",
+												["Invert"] = true,
+												["Arguments"] = "0.1",
+												["UniqueID"] = "3806373689",
+												["Operator"] = "equal or below",
+												["Name"] = "Idleing",
+												["ClassName"] = "event",
+											},
+										},
+										[1] = {
+											["children"] = {
+											},
+											["self"] = {
+												["Pow"] = 1.1,
+												["UniqueID"] = "414998607",
+												["ClassName"] = "proxy",
+												["Name"] = "Speed",
+												["Function"] = "none",
+												["VariableName"] = "Offset",
+											},
+										},
+									},
+									["self"] = {
+										["EditorExpand"] = true,
+										["UniqueID"] = "2878575396",
+										["Rate"] = 2.07,
+										["ClassName"] = "animation",
+										["SequenceName"] = "zombie_run_fast",
+										["Name"] = "Idle-Animation",
+										["Offset"] = 3576.2130471265,
+									},
+								},
+								[4] = {
+									["children"] = {
+										[2] = {
+											["children"] = {
+											},
+											["self"] = {
+												["Pow"] = 1.1,
+												["UniqueID"] = "2163461662",
+												["ClassName"] = "proxy",
+												["Name"] = "Running speed",
+												["Function"] = "none",
+												["VariableName"] = "Offset",
+											},
+										},
+										[1] = {
+											["children"] = {
+											},
+											["self"] = {
+												["Event"] = "parent_velocity_length",
+												["Invert"] = true,
+												["Arguments"] = "0.1",
+												["UniqueID"] = "2039768100",
+												["Operator"] = "above",
+												["Name"] = "Running",
+												["ClassName"] = "event",
+											},
+										},
+									},
+									["self"] = {
+										["EditorExpand"] = true,
+										["UniqueID"] = "1941589296",
+										["Rate"] = 2,
+										["ClassName"] = "animation",
+										["SequenceName"] = "zombie_run_fast",
+										["Name"] = "Run-Animation",
+										["Offset"] = 3468.769872777,
+									},
+								},
+								[6] = {
+									["children"] = {
+										[1] = {
+											["children"] = {
+											},
+											["self"] = {
+												["Event"] = "sequence_name",
+												["Invert"] = true,
+												["Arguments"] = "jump",
+												["UniqueID"] = "3866365879",
+												["Name"] = "Owner Is Jumping",
+												["ClassName"] = "event",
+											},
+										},
+									},
+									["self"] = {
+										["Offset"] = 1,
+										["UniqueID"] = "1591214338",
+										["ClassName"] = "animation",
+										["SequenceName"] = "swimming_all",
+										["Name"] = "Jump-Animation",
+										["EditorExpand"] = true,
+									},
+								},
+							},
+							["self"] = {
+								["UniqueID"] = "2120397005",
+								["AimPartUID"] = "2249661024",
+								["AlternativeScaling"] = true,
+								["Name"] = "Pet-Model",
+								["ClassName"] = "model",
+								["Size"] = 0.525,
+								["AimPartName"] = "Minin",
+								["Bone"] = "",
+								["Model"] = "models/player/mossman_arctic.mdl",
+								["Position"] = Vector(-35.3525390625, -0.20556640625, 0),
+							},
+						},
+					},
+					["self"] = {
+						["UniqueID"] = "2249661024",
+						["ClassName"] = "jiggle",
+						["Position"] = Vector(-2.8173828125, -0.01153564453125, 0),
+						["Speed"] = 0.3,
+						["StopRadius"] = 1,
+						["Bone"] = "",
+						["Name"] = "Ease",
+						["ConstrainZ"] = true,
+					},
+				},
+				[1] = {
+					["children"] = {
+					},
+					["self"] = {
+						["Event"] = "sequence_name",
+						["UniqueID"] = "2841372084",
+						["Arguments"] = "sit",
+						["Name"] = "Is not sitting",
+						["ClassName"] = "event",
+					},
+				},
+			},
+			["self"] = {
+				["EditorExpand"] = true,
+				["UniqueID"] = "2629496463",
+				["Size"] = 0,
+				["Bone"] = "",
+				["Name"] = "Base",
+				["ClassName"] = "model",
+			},
+		},
+	},
+	["self"] = {
+		["ClassName"] = "group",
+		["UniqueID"] = "3638855604",
+		["Name"] = "Pet",
+	},
+},

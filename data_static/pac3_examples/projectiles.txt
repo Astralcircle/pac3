@@ -1,0 +1,74 @@
+[2] = {
+	["children"] = {
+		[1] = {
+			["children"] = {
+				[1] = {
+					["children"] = {
+					},
+					["self"] = {
+						["ParentName"] = "projectile",
+						["ClassName"] = "event",
+						["UniqueID"] = "4104894345",
+						["ParentUID"] = "4109349808",
+						["Event"] = "animation_event",
+						["Operator"] = "equal",
+						["Name"] = "",
+						["Arguments"] = "attack primary",
+					},
+				},
+			},
+			["self"] = {
+				["ParentUID"] = "2369892362",
+				["UniqueID"] = "4109349808",
+				["Name"] = "",
+				["ClassName"] = "projectile",
+				["ParentName"] = "projectile test",
+				["OutfitPartUID"] = "2945112489",
+				["OutfitPartName"] = "projectile outfit",
+				["EyeAngles"] = true,
+				["EditorExpand"] = true,
+			},
+		},
+	},
+	["self"] = {
+		["EditorExpand"] = true,
+		["ClassName"] = "group",
+		["Name"] = "projectile test (attack to activate)",
+		["UniqueID"] = "2369892362",
+	},
+},
+[1] = {
+	["children"] = {
+		[1] = {
+			["children"] = {
+				[1] = {
+					["children"] = {
+					},
+					["self"] = {
+						["ParentUID"] = "4290163041",
+						["ClassName"] = "trail",
+						["UniqueID"] = "134836612",
+						["ParentName"] = "hoverball",
+						["StartSize"] = 79,
+						["Name"] = "",
+					},
+				},
+			},
+			["self"] = {
+				["ParentName"] = "projectile outfit",
+				["ClassName"] = "model",
+				["UniqueID"] = "4290163041",
+				["ParentUID"] = "2945112489",
+				["Name"] = "",
+				["EditorExpand"] = true,
+			},
+		},
+	},
+	["self"] = {
+		["EditorExpand"] = true,
+		["UniqueID"] = "2945112489",
+		["Hide"] = true,
+		["Name"] = "projectile outfit",
+		["ClassName"] = "group",
+	},
+},

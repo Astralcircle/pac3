@@ -489,7 +489,7 @@ function PART:DrawModel(ent, pos, ang)
 
 		material_bound = self:BindMaterials(ent) or material_bound
 		ent.pac_drawing_model = true
-		ProtectedCall(protected_ent_draw_model)
+		pcall(protected_ent_draw_model)
 		ent.pac_drawing_model = false
 
 		render.PopFlashlightMode()
@@ -498,7 +498,7 @@ function PART:DrawModel(ent, pos, ang)
 	if self.NoCulling then
 		render_CullMode(MATERIAL_CULLMODE_CCW)
 		material_bound = self:BindMaterials(ent) or material_bound
-		ProtectedCall(protected_ent_draw_model)
+		pcall(protected_ent_draw_model)
 	elseif self.Invert then
 		render_CullMode(MATERIAL_CULLMODE_CCW)
 	end

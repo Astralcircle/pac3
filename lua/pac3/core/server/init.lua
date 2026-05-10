@@ -17,6 +17,5 @@ include("pac3/core/shared/init.lua")
 include("effects.lua")
 include("event.lua")
 include("net_messages.lua")
-include("in_skybox.lua")
 
 hook.Run("pac_Initialized")

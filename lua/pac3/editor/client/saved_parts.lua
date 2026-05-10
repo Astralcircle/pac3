@@ -209,12 +209,12 @@ function pace.LoadParts(name, clear, override_part)
 				data,err = pace.luadata.ReadFile("pac3/sessions/" .. name .. ".txt",nil,true)
 				if not data then
 					if err then
-						ErrorNoHalt(("Autoload failed: %s\n"):format(err))
+						notification.AddLegacy(("Autoload failed: %s"):format(err), NOTIFY_ERROR, 5)
 					end
 					return
 				end
 			elseif not data then
-				ErrorNoHalt(("Decoding %s failed: %s\n"):format(name,err))
+				notification.AddLegacy(("Decoding %s failed: %s"):format(name,err), NOTIFY_ERROR, 5)
 				return
 			end
 
@@ -453,18 +453,19 @@ function pace.AddSavedPartsToMenu(menu, clear, override_part)
 		)
 	end):SetImage(pace.MiscIcons.paste)
 
-	if not override_part and pace.example_outfits then
+	if not override_part then
 		local examples, pnl = menu:AddSubMenu("examples")
 		pnl:SetImage(pace.MiscIcons.help)
 		examples.GetDeleteSelf = function() return false end
 
-		local sorted = {}
-		for k,v in pairs(pace.example_outfits) do sorted[#sorted + 1] = {k = k, v = v} end
-		table.sort(sorted, function(a, b) return a.k < b.k end)
+		for _, filename in ipairs(file.Find("data_static/pac3_examples/*.txt", "GAME")) do
+			examples:AddOption(string.sub(filename, 1, -5), function()
+				local data, err = pace.luadata.Decode(file.Read("data_static/pac3_examples/" .. filename, "GAME"))
 
-		for _, data in pairs(sorted) do
-			examples:AddOption(data.k, function() pace.LoadPartsFromTable(data.v) end)
-			:SetImage(pace.MiscIcons.outfit)
+				if data then
+					pace.LoadPartsFromTable(data, clear, override_part)
+				end
+			end):SetImage(pace.MiscIcons.outfit)
 		end
 	end
 

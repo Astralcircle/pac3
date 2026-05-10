@@ -1,0 +1,848 @@
+[1] = {
+	["children"] = {
+		[1] = {
+			["children"] = {
+				[2] = {
+					["children"] = {
+					},
+					["self"] = {
+						["ClassName"] = "bone",
+						["EditorExpand"] = true,
+						["Size"] = 16,
+						["UniqueID"] = "339941070",
+					},
+				},
+				[5] = {
+					["children"] = {
+					},
+					["self"] = {
+						["ClassName"] = "bone",
+						["Size"] = 14,
+						["Bone"] = "left upperarm",
+						["UniqueID"] = "3892714567",
+						["ScaleChildren"] = true,
+					},
+				},
+				[3] = {
+					["children"] = {
+					},
+					["self"] = {
+						["ClassName"] = "bone",
+						["Bone"] = "hair 2",
+						["Size"] = 11,
+						["UniqueID"] = "991205961",
+					},
+				},
+				[1] = {
+					["children"] = {
+					},
+					["self"] = {
+						["ClassName"] = "bone",
+						["Bone"] = "neck",
+						["Size"] = 19,
+						["UniqueID"] = "2923654610",
+					},
+				},
+				[4] = {
+					["children"] = {
+					},
+					["self"] = {
+						["ClassName"] = "bone",
+						["Size"] = 14,
+						["Bone"] = "right upperarm",
+						["UniqueID"] = "849112520",
+						["ScaleChildren"] = true,
+					},
+				},
+				[6] = {
+					["children"] = {
+					},
+					["self"] = {
+						["Angles"] = Angle(0, -180, 0),
+						["Size"] = 18,
+						["Bone"] = "hair 1",
+						["ClassName"] = "bone",
+						["UniqueID"] = "974942078",
+					},
+				},
+			},
+			["self"] = {
+				["BoneMerge"] = true,
+				["ClassName"] = "model",
+				["Size"] = 0.065,
+				["EditorExpand"] = true,
+				["Model"] = "models/player/p2_chell.mdl",
+				["UniqueID"] = "75544955",
+			},
+		},
+		[2] = {
+			["children"] = {
+			},
+			["self"] = {
+				["Alpha"] = 0,
+				["ClassName"] = "entity",
+				["UniqueID"] = "1800887009",
+				["Model"] = "mossman",
+			},
+		},
+		[3] = {
+			["children"] = {
+				[14] = {
+					["children"] = {
+					},
+					["self"] = {
+						["Angles"] = Angle(0, 0, 90),
+						["Size"] = 0,
+						["ClassName"] = "model",
+						["Bone"] = "left calf",
+						["Name"] = "left calf",
+						["UniqueID"] = "2304756006",
+					},
+				},
+				[2] = {
+					["children"] = {
+					},
+					["self"] = {
+						["Angles"] = Angle(-90, 90, 0),
+						["Size"] = 0,
+						["ClassName"] = "model",
+						["Bone"] = "spine 2",
+						["Name"] = "spine 2",
+						["UniqueID"] = "3325314793",
+					},
+				},
+				[12] = {
+					["children"] = {
+					},
+					["self"] = {
+						["ClassName"] = "model",
+						["Position"] = Vector(-2, -1, 1),
+						["Size"] = 0,
+						["Bone"] = "right forearm",
+						["Name"] = "right forearm 2",
+						["UniqueID"] = "1836681915",
+					},
+				},
+				[11] = {
+					["children"] = {
+					},
+					["self"] = {
+						["ClassName"] = "model",
+						["Size"] = 0,
+						["Angles"] = Angle(0, 0, 90),
+						["UniqueID"] = "4007183121",
+						["Bone"] = "right thigh",
+						["Name"] = "right thigh",
+						["Position"] = Vector(0, 0, 1),
+					},
+				},
+				[27] = {
+					["children"] = {
+					},
+					["self"] = {
+						["Angles"] = Angle(0, -90, 0),
+						["Size"] = 0,
+						["ClassName"] = "model",
+						["Bone"] = "right clavicle",
+						["Name"] = "right clavicle",
+						["UniqueID"] = "2740657678",
+					},
+				},
+				[10] = {
+					["children"] = {
+					},
+					["self"] = {
+						["ClassName"] = "model",
+						["Size"] = 0,
+						["Bone"] = "spine",
+						["Name"] = "spine",
+						["UniqueID"] = "3323129991",
+					},
+				},
+				[9] = {
+					["children"] = {
+					},
+					["self"] = {
+						["ClassName"] = "model",
+						["Size"] = 0,
+						["Angles"] = Angle(45, 135, 45),
+						["UniqueID"] = "1768170218",
+						["Bone"] = "neck",
+						["Name"] = "eng neck",
+						["Position"] = Vector(1, 0, 0),
+					},
+				},
+				[23] = {
+					["children"] = {
+					},
+					["self"] = {
+						["Angles"] = Angle(0, -90, 0),
+						["Size"] = 0,
+						["ClassName"] = "model",
+						["Bone"] = "right hand",
+						["Name"] = "right hand",
+						["UniqueID"] = "1731261432",
+					},
+				},
+				[8] = {
+					["children"] = {
+					},
+					["self"] = {
+						["Angles"] = Angle(90, 90, 0),
+						["Size"] = 0,
+						["ClassName"] = "model",
+						["UniqueID"] = "307376686",
+						["Name"] = "eng head",
+						["Position"] = Vector(-1, 0, 0),
+					},
+				},
+				[19] = {
+					["children"] = {
+					},
+					["self"] = {
+						["ClassName"] = "model",
+						["Size"] = 0,
+						["Angles"] = Angle(0, 0, -45),
+						["UniqueID"] = "4070004939",
+						["Bone"] = "right upperarm",
+						["Name"] = "right upperarm",
+						["Position"] = Vector(0, -0.5, 1),
+					},
+				},
+				[7] = {
+					["children"] = {
+					},
+					["self"] = {
+						["ClassName"] = "model",
+						["Size"] = 0,
+						["Angles"] = Angle(-89.96875, -74.78125, 0),
+						["UniqueID"] = "2345204986",
+						["Bone"] = "right foot",
+						["Name"] = "right foot",
+						["Position"] = Vector(-1, -1, 0),
+					},
+				},
+				[1] = {
+					["children"] = {
+					},
+					["self"] = {
+						["ClassName"] = "model",
+						["Size"] = 0,
+						["Angles"] = Angle(125, 181, -180),
+						["UniqueID"] = "2495951518",
+						["Bone"] = "pelvis",
+						["Name"] = "pouch",
+						["Position"] = Vector(6, 0, 4),
+					},
+				},
+				[6] = {
+					["children"] = {
+					},
+					["self"] = {
+						["ClassName"] = "model",
+						["Size"] = 0,
+						["Angles"] = Angle(0, 0, 90),
+						["UniqueID"] = "1178597367",
+						["Bone"] = "left thigh",
+						["Name"] = "left thigh",
+						["Position"] = Vector(0, 0, -1),
+					},
+				},
+				[29] = {
+					["children"] = {
+						[14] = {
+							["children"] = {
+							},
+							["self"] = {
+								["UniqueID"] = "3601652359",
+								["FollowPartName"] = "right calf",
+								["Name"] = "bip knee right",
+								["Scale"] = Vector(1.5, 1, 1),
+								["ClassName"] = "bone",
+								["Size"] = 0.7,
+								["FollowPartUID"] = "2929592770",
+								["Bone"] = "bip knee right",
+								["Translucent"] = true,
+							},
+						},
+						[2] = {
+							["children"] = {
+							},
+							["self"] = {
+								["UniqueID"] = "446153236",
+								["FollowPartName"] = "left forearm 2",
+								["MoveChildrenToOrigin"] = true,
+								["Size"] = 0,
+								["AlternativeBones"] = true,
+								["FollowPartUID"] = "2884787364",
+								["Bone"] = "bip lowerarm left",
+								["ClassName"] = "bone",
+								["ScaleChildren"] = true,
+							},
+						},
+						[12] = {
+							["children"] = {
+							},
+							["self"] = {
+								["UniqueID"] = "2919943281",
+								["FollowPartName"] = "right forearm 2",
+								["MoveChildrenToOrigin"] = true,
+								["Size"] = 0,
+								["AlternativeBones"] = true,
+								["FollowPartUID"] = "1836681915",
+								["Bone"] = "bip lowerarm right",
+								["ClassName"] = "bone",
+								["ScaleChildren"] = true,
+							},
+						},
+						[11] = {
+							["children"] = {
+							},
+							["self"] = {
+								["ClassName"] = "bone",
+								["UniqueID"] = "1011541059",
+								["FollowPartUID"] = "1178597367",
+								["FollowPartName"] = "left thigh",
+								["Bone"] = "bip hip left",
+								["Translucent"] = true,
+								["Name"] = "bip hip left",
+							},
+						},
+						[10] = {
+							["children"] = {
+							},
+							["self"] = {
+								["UniqueID"] = "2792730236",
+								["ClassName"] = "bone",
+								["Size"] = 0,
+								["Name"] = "bip head",
+								["FollowPartUID"] = "3646956450",
+								["Bone"] = "bip head",
+								["Translucent"] = true,
+								["Position"] = Vector(0, 0, 2),
+							},
+						},
+						[9] = {
+							["children"] = {
+							},
+							["self"] = {
+								["FollowPartUID"] = "1681786408",
+								["Angles"] = Angle(0, 90, 90),
+								["UniqueID"] = "3817450885",
+								["Name"] = "bip toe left",
+								["FollowPartName"] = "left toe",
+								["Bone"] = "bip toe left",
+								["Translucent"] = true,
+								["ClassName"] = "bone",
+							},
+						},
+						[23] = {
+							["children"] = {
+							},
+							["self"] = {
+								["ClassName"] = "bone",
+								["UniqueID"] = "1461978598",
+								["FollowPartUID"] = "4070004939",
+								["FollowPartName"] = "right upperarm",
+								["Bone"] = "bip upperarm right",
+								["Translucent"] = true,
+								["Name"] = "bip upperarm right",
+							},
+						},
+						[8] = {
+							["children"] = {
+							},
+							["self"] = {
+								["ClassName"] = "bone",
+								["UniqueID"] = "644745846",
+								["FollowPartUID"] = "307376686",
+								["FollowPartName"] = "eng head",
+								["Bone"] = "bip head",
+								["Translucent"] = true,
+								["Name"] = "bip head 2",
+							},
+						},
+						[19] = {
+							["children"] = {
+							},
+							["self"] = {
+								["ClassName"] = "bone",
+								["UniqueID"] = "2345144303",
+								["FollowPartUID"] = "2345204986",
+								["FollowPartName"] = "right foot",
+								["Bone"] = "bip foot right",
+								["Translucent"] = true,
+								["Name"] = "bip foot right",
+							},
+						},
+						[7] = {
+							["children"] = {
+							},
+							["self"] = {
+								["UniqueID"] = "1739212823",
+								["FollowPartName"] = "left calf",
+								["Name"] = "bip knee left",
+								["Scale"] = Vector(1.3999999761581, 1, 1),
+								["ClassName"] = "bone",
+								["Size"] = 0.8,
+								["FollowPartUID"] = "2304756006",
+								["Bone"] = "bip knee left",
+								["Translucent"] = true,
+							},
+						},
+						[1] = {
+							["children"] = {
+							},
+							["self"] = {
+								["Bone"] = "bip spine",
+								["ClassName"] = "bone",
+								["Size"] = 0.6,
+								["Name"] = "bip spine",
+								["FollowPartUID"] = "3323129991",
+								["Hide"] = true,
+								["Translucent"] = true,
+								["UniqueID"] = "3287122655",
+							},
+						},
+						[6] = {
+							["children"] = {
+							},
+							["self"] = {
+								["UniqueID"] = "1526595101",
+								["FollowPartName"] = "spine 4",
+								["Name"] = "bip spine  2",
+								["Scale"] = Vector(0.62000000476837, 1, 1),
+								["ClassName"] = "bone",
+								["Size"] = 0.75,
+								["FollowPartUID"] = "822048986",
+								["Bone"] = "bip spine  2",
+								["Translucent"] = true,
+								["Position"] = Vector(0, 0, -2),
+							},
+						},
+						[5] = {
+							["children"] = {
+							},
+							["self"] = {
+								["FollowPartUID"] = "2960033445",
+								["ClassName"] = "bone",
+								["Size"] = 0.6,
+								["Name"] = "bip collar left",
+								["FollowPartName"] = "left clavicle",
+								["Bone"] = "bip collar left",
+								["Translucent"] = true,
+								["UniqueID"] = "2340277211",
+							},
+						},
+						[4] = {
+							["children"] = {
+							},
+							["self"] = {
+								["FollowPartUID"] = "822048986",
+								["ClassName"] = "bone",
+								["Size"] = 0.8,
+								["Name"] = "bip spine  3",
+								["FollowPartName"] = "spine 4",
+								["Bone"] = "bip spine  3",
+								["Translucent"] = true,
+								["UniqueID"] = "2722274794",
+							},
+						},
+						[21] = {
+							["children"] = {
+							},
+							["self"] = {
+								["FollowPartUID"] = "2740657678",
+								["ClassName"] = "bone",
+								["Size"] = 0.6,
+								["Name"] = "bip collar right",
+								["FollowPartName"] = "right clavicle",
+								["Bone"] = "bip collar right",
+								["Translucent"] = true,
+								["UniqueID"] = "1956028592",
+							},
+						},
+						[24] = {
+							["children"] = {
+								[4] = {
+									["children"] = {
+									},
+									["self"] = {
+										["ClassName"] = "bone",
+										["UniqueID"] = "1825103941",
+										["FollowPartUID"] = "2495951518",
+										["FollowPartName"] = "pouch",
+										["Bone"] = "prp legpouch",
+										["Translucent"] = true,
+										["Name"] = "prp legpouch",
+									},
+								},
+								[1] = {
+									["children"] = {
+									},
+									["self"] = {
+										["UniqueID"] = "1822660892",
+										["FollowPartName"] = "cable",
+										["Name"] = "prp cord",
+										["EditorExpand"] = true,
+										["ClassName"] = "bone",
+										["FollowPartUID"] = "2641027949",
+										["Bone"] = "prp cord",
+										["Translucent"] = true,
+										["Angles"] = Angle(0, 90, 0),
+									},
+								},
+								[2] = {
+									["children"] = {
+									},
+									["self"] = {
+										["FollowPartUID"] = "2679756814",
+										["EditorExpand"] = true,
+										["UniqueID"] = "3235248178",
+										["Name"] = "prp pouch",
+										["FollowPartName"] = "case",
+										["Bone"] = "prp pouch",
+										["Translucent"] = true,
+										["ClassName"] = "bone",
+									},
+								},
+								[3] = {
+									["children"] = {
+									},
+									["self"] = {
+										["ClassName"] = "bone",
+										["UniqueID"] = "2931251135",
+										["Size"] = 0,
+										["FollowPartUID"] = "876700782",
+										["Bone"] = "prp helmet",
+										["Translucent"] = true,
+										["Name"] = "prp helmet",
+									},
+								},
+							},
+							["self"] = {
+								["ClassName"] = "group",
+								["UniqueID"] = "59992070",
+								["EditorExpand"] = true,
+							},
+						},
+						[22] = {
+							["children"] = {
+							},
+							["self"] = {
+								["FollowPartUID"] = "328058315",
+								["ClassName"] = "bone",
+								["Size"] = 0.6,
+								["Name"] = "bip spine  0",
+								["FollowPartName"] = "spine 1",
+								["Bone"] = "bip spine  0",
+								["Translucent"] = true,
+								["UniqueID"] = "3895044508",
+							},
+						},
+						[18] = {
+							["children"] = {
+							},
+							["self"] = {
+								["FollowPartUID"] = "3325314793",
+								["ClassName"] = "bone",
+								["Size"] = 0.6,
+								["Name"] = "bip spine  1",
+								["FollowPartName"] = "spine 2",
+								["Bone"] = "bip spine  1",
+								["Translucent"] = true,
+								["UniqueID"] = "2974320077",
+							},
+						},
+						[20] = {
+							["children"] = {
+							},
+							["self"] = {
+								["ClassName"] = "bone",
+								["UniqueID"] = "3582762322",
+								["FollowPartUID"] = "1017765576",
+								["FollowPartName"] = "left upperarm",
+								["Bone"] = "bip upperarm left",
+								["Translucent"] = true,
+								["Name"] = "bip upperarm left",
+							},
+						},
+						[3] = {
+							["children"] = {
+							},
+							["self"] = {
+								["FollowPartUID"] = "1558353985",
+								["Angles"] = Angle(0, 90, -90),
+								["UniqueID"] = "743934821",
+								["Name"] = "bip toe right",
+								["FollowPartName"] = "right toe",
+								["Bone"] = "bip toe right",
+								["Translucent"] = true,
+								["ClassName"] = "bone",
+							},
+						},
+						[17] = {
+							["children"] = {
+							},
+							["self"] = {
+								["ClassName"] = "bone",
+								["UniqueID"] = "1716292165",
+								["FollowPartUID"] = "4007183121",
+								["FollowPartName"] = "right thigh",
+								["Bone"] = "bip hip right",
+								["Translucent"] = true,
+								["Name"] = "bip hip right",
+							},
+						},
+						[16] = {
+							["children"] = {
+							},
+							["self"] = {
+								["ClassName"] = "bone",
+								["UniqueID"] = "1339471438",
+								["FollowPartUID"] = "2984162826",
+								["FollowPartName"] = "left foot",
+								["Bone"] = "bip foot left",
+								["Translucent"] = true,
+								["Name"] = "bip foot left",
+							},
+						},
+						[15] = {
+							["children"] = {
+							},
+							["self"] = {
+								["FollowPartUID"] = "1678182360",
+								["ClassName"] = "bone",
+								["Size"] = 0.8,
+								["Name"] = "bip pelvis",
+								["FollowPartName"] = "pelvis aaa",
+								["Bone"] = "bip pelvis",
+								["Translucent"] = true,
+								["UniqueID"] = "716401665",
+							},
+						},
+						[13] = {
+							["children"] = {
+							},
+							["self"] = {
+								["FollowPartUID"] = "1768170218",
+								["ClassName"] = "bone",
+								["Size"] = 0.525,
+								["Name"] = "bip neck",
+								["FollowPartName"] = "eng neck",
+								["Bone"] = "bip neck",
+								["Translucent"] = true,
+								["UniqueID"] = "2531499474",
+							},
+						},
+					},
+					["self"] = {
+						["DrawOrder"] = 2,
+						["UniqueID"] = "3522381108",
+						["LegacyScale"] = true,
+						["Name"] = "tf2",
+						["ClassName"] = "model",
+						["Size"] = 0.88,
+						["Bone"] = "NONE",
+						["Model"] = "models/player/engineer.mdl",
+						["EditorExpand"] = true,
+					},
+				},
+				[25] = {
+					["children"] = {
+					},
+					["self"] = {
+						["ClassName"] = "model",
+						["Size"] = 0,
+						["Angles"] = Angle(-89.96875, 105.0625, 0),
+						["UniqueID"] = "2984162826",
+						["Bone"] = "left foot",
+						["Name"] = "left foot",
+						["Position"] = Vector(-1, -1, 0),
+					},
+				},
+				[5] = {
+					["children"] = {
+					},
+					["self"] = {
+						["ClassName"] = "model",
+						["Position"] = Vector(-5.8302612304688, -3.0517578125e-05, 0.0001220703125),
+						["Size"] = 0,
+						["Bone"] = "pelvis",
+						["Name"] = "cable",
+						["UniqueID"] = "2641027949",
+					},
+				},
+				[26] = {
+					["children"] = {
+					},
+					["self"] = {
+						["Angles"] = Angle(-90, 90, 0),
+						["Size"] = 0,
+						["ClassName"] = "model",
+						["Bone"] = "spine 1",
+						["Name"] = "spine 1",
+						["UniqueID"] = "328058315",
+					},
+				},
+				[28] = {
+					["children"] = {
+					},
+					["self"] = {
+						["ClassName"] = "model",
+						["Size"] = 0,
+						["Angles"] = Angle(0, 0, -135),
+						["UniqueID"] = "1017765576",
+						["Bone"] = "left upperarm",
+						["Name"] = "left upperarm",
+						["Position"] = Vector(0, -0.5, -1),
+					},
+				},
+				[4] = {
+					["children"] = {
+					},
+					["self"] = {
+						["ClassName"] = "model",
+						["Size"] = 0,
+						["Bone"] = "right toe",
+						["Name"] = "right toe",
+						["UniqueID"] = "1558353985",
+					},
+				},
+				[21] = {
+					["children"] = {
+					},
+					["self"] = {
+						["ClassName"] = "model",
+						["Position"] = Vector(-2, -1, 1),
+						["Size"] = 0,
+						["Bone"] = "left forearm",
+						["Name"] = "left forearm 2",
+						["UniqueID"] = "2884787364",
+					},
+				},
+				[24] = {
+					["children"] = {
+					},
+					["self"] = {
+						["Angles"] = Angle(-90, 90, 0),
+						["Size"] = 0,
+						["ClassName"] = "model",
+						["Bone"] = "spine 4",
+						["Name"] = "spine 4",
+						["UniqueID"] = "822048986",
+					},
+				},
+				[22] = {
+					["children"] = {
+					},
+					["self"] = {
+						["ClassName"] = "model",
+						["Size"] = 0,
+						["Bone"] = "left toe",
+						["Name"] = "left toe",
+						["UniqueID"] = "1681786408",
+					},
+				},
+				[18] = {
+					["children"] = {
+					},
+					["self"] = {
+						["ClassName"] = "model",
+						["Size"] = 0,
+						["Angles"] = Angle(0, 0, 180),
+						["UniqueID"] = "1678182360",
+						["Bone"] = "pelvis",
+						["Name"] = "pelvis aaa",
+						["Position"] = Vector(0, 0, -1),
+					},
+				},
+				[20] = {
+					["children"] = {
+					},
+					["self"] = {
+						["Angles"] = Angle(0, 0, 90),
+						["Size"] = 0,
+						["ClassName"] = "model",
+						["Bone"] = "right calf",
+						["Name"] = "right calf",
+						["UniqueID"] = "2929592770",
+					},
+				},
+				[3] = {
+					["children"] = {
+					},
+					["self"] = {
+						["Angles"] = Angle(0, 0, 90),
+						["Size"] = 0,
+						["ClassName"] = "model",
+						["Bone"] = "left forearm",
+						["Name"] = "left forearm",
+						["UniqueID"] = "1743724022",
+					},
+				},
+				[17] = {
+					["children"] = {
+					},
+					["self"] = {
+						["Angles"] = Angle(0, 90, 0),
+						["Size"] = 0,
+						["ClassName"] = "model",
+						["Bone"] = "left hand",
+						["Name"] = "left hand",
+						["UniqueID"] = "4103624534",
+					},
+				},
+				[16] = {
+					["children"] = {
+					},
+					["self"] = {
+						["Angles"] = Angle(0, 90, 0),
+						["Size"] = 0,
+						["ClassName"] = "model",
+						["Bone"] = "left clavicle",
+						["Name"] = "left clavicle",
+						["UniqueID"] = "2960033445",
+					},
+				},
+				[15] = {
+					["children"] = {
+					},
+					["self"] = {
+						["ClassName"] = "model",
+						["Size"] = 0,
+						["Angles"] = Angle(-50.6875, 0, 0),
+						["UniqueID"] = "2679756814",
+						["Bone"] = "pelvis",
+						["Name"] = "case",
+						["Position"] = Vector(-4.2017974853516, 0.26244354248047, 4.8128662109375),
+					},
+				},
+				[13] = {
+					["children"] = {
+					},
+					["self"] = {
+						["ClassName"] = "model",
+						["Size"] = 0,
+						["Bone"] = "right forearm",
+						["Name"] = "right forearm",
+						["UniqueID"] = "3027505941",
+					},
+				},
+			},
+			["self"] = {
+				["EditorExpand"] = true,
+				["UniqueID"] = "2495494298",
+				["DrawOrder"] = 9,
+				["Name"] = "tf2 bones",
+				["ClassName"] = "group",
+			},
+		},
+	},
+	["self"] = {
+		["EditorExpand"] = true,
+		["ClassName"] = "group",
+		["Name"] = "chell engineer",
+		["UniqueID"] = "3325156525",
+	},
+},

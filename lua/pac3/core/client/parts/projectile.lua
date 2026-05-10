@@ -145,25 +145,10 @@ function PART:AttachToEntity(ent)
 	return true
 end
 
-local enable = CreateClientConVar("pac_sv_projectiles", 0, true)
-
 function PART:Shoot(pos, ang)
 	local physics = self.Physical
 
-	if physics then
-		if pac.LocalPlayer ~= self:GetPlayerOwner() then return end
-
-		local tbl = {}
-		for key in pairs(self:GetStorableVars()) do
-			tbl[key] = self[key]
-		end
-
-		net.Start("pac_projectile")
-			net.WriteVector(pos)
-			net.WriteAngle(ang)
-			net.WriteTable(tbl)
-		net.SendToServer()
-	else
+	if not physics then
 		self.projectiles = self.projectiles or {}
 
 		local count = 0
@@ -307,38 +292,5 @@ function PART:OnHide()
 	end
 end
 ]]
-do -- physical
-	local Entity = Entity
-	local projectiles = {}
-	pac.AddHook("Think", "pac_projectile", function()
-		for key, data in pairs(projectiles) do
-			if not data.ply:IsValid() then
-				projectiles[key] = nil
-				goto CONTINUE
-			end
-
-			local ent = Entity(data.ent_id)
-
-			if ent:IsValid() and ent:GetClass() == "pac_projectile" then
-				local part = pac.GetPartFromUniqueID(pac.Hash(data.ply), data.partuid)
-				if part:IsValid() and part:GetPlayerOwner() == data.ply then
-					part:AttachToEntity(ent)
-				end
-				projectiles[key] = nil
-			end
-			::CONTINUE::
-		end
-	end)
-
-	net.Receive("pac_projectile_attach", function()
-		local ply = net.ReadEntity()
-		local ent_id = net.ReadInt(16)
-		local partuid = net.ReadString()
-
-		if ply:IsValid() then
-			table.insert(projectiles, {ply = ply, ent_id = ent_id, partuid = partuid})
-		end
-	end)
-end
 
 BUILDER:Register()

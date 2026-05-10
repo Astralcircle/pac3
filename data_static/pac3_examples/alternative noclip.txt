@@ -1,0 +1,38 @@
+[1] = {
+	["children"] = {
+		[2] = {
+			["children"] = {
+			},
+			["self"] = {
+				["ParentName"] = "group",
+				["ClassName"] = "event",
+				["Invert"] = true,
+				["ParentUID"] = "2962288236",
+				["Event"] = "is_in_noclip",
+				["Operator"] = "",
+				["Name"] = "",
+				["UniqueID"] = "3792369850",
+			},
+		},
+		[1] = {
+			["children"] = {
+			},
+			["self"] = {
+				["ParentName"] = "group",
+				["ClassName"] = "animation",
+				["UniqueID"] = "2927189943",
+				["Rate"] = 0,
+				["ParentUID"] = "2962288236",
+				["SequenceName"] = "swimming_all",
+				["Name"] = "",
+				["Offset"] = 0.35,
+			},
+		},
+	},
+	["self"] = {
+		["EditorExpand"] = true,
+		["ClassName"] = "group",
+		["Name"] = "alternative noclip",
+		["UniqueID"] = "2962288236",
+	},
+},

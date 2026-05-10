@@ -1,0 +1,171 @@
+[1] = {
+	["children"] = {
+		[1] = {
+			["children"] = {
+			},
+			["self"] = {
+				["StartColor"] = Vector(29, 0, 255),
+				["UniqueID"] = "428214384",
+				["Length"] = 1000,
+				["Name"] = "IDK",
+				["EndSize"] = 1,
+				["ClassName"] = "trail",
+				["ParentName"] = "point 1",
+				["ParentUID"] = "2384404661",
+				["Bone"] = "hitpos",
+				["EndColor"] = Vector(255, 0, 0),
+				["StartSize"] = 1,
+				["TrailPath"] = "sprites/strider_blackball",
+			},
+		},
+		[2] = {
+			["children"] = {
+				[1] = {
+					["children"] = {
+						[2] = {
+							["children"] = {
+							},
+							["self"] = {
+								["ParentName"] = "beam 1",
+								["ClassName"] = "model",
+								["Position"] = Vector(71, 0, 0),
+								["ParentUID"] = "3474379373",
+								["Size"] = 0.25,
+								["Name"] = "point 2",
+								["UniqueID"] = "2613673133",
+							},
+						},
+						[1] = {
+							["children"] = {
+							},
+							["self"] = {
+								["ParentName"] = "beam 1",
+								["ClassName"] = "clip",
+								["UniqueID"] = "3914029148",
+								["Position"] = Vector(-1.0465393066406, -0.000732421875, 0.000244140625),
+								["Name"] = "",
+								["ParentUID"] = "3474379373",
+							},
+						},
+					},
+					["self"] = {
+						["ParentName"] = "point 1",
+						["UniqueID"] = "3474379373",
+						["AimPartUID"] = "88457808",
+						["Name"] = "beam 1",
+						["Scale"] = Vector(4, 1, 1),
+						["ClassName"] = "model",
+						["Size"] = 0.25,
+						["AimPartName"] = "point 3",
+						["Angles"] = Angle(-1, 0, 0),
+						["EditorExpand"] = true,
+						["Model"] = "models/Mechanics/robotics/a4.mdl",
+						["ParentUID"] = "2384404661",
+					},
+				},
+			},
+			["self"] = {
+				["ParentName"] = "pencil",
+				["UniqueID"] = "2384404661",
+				["Name"] = "point 1",
+				["ClassName"] = "model",
+				["Size"] = 0.25,
+				["EditorExpand"] = true,
+				["Bone"] = "right hand",
+				["EyeAngles"] = true,
+				["ParentUID"] = "2657213663",
+			},
+		},
+		[3] = {
+			["children"] = {
+				[1] = {
+					["children"] = {
+						[1] = {
+							["children"] = {
+								[1] = {
+									["children"] = {
+										[2] = {
+											["children"] = {
+											},
+											["self"] = {
+												["ParentName"] = "beam 2",
+												["ClassName"] = "model",
+												["Position"] = Vector(61, 0, 0),
+												["ParentUID"] = "1330312944",
+												["Size"] = 0.25,
+												["Name"] = "point 3",
+												["UniqueID"] = "88457808",
+											},
+										},
+										[1] = {
+											["children"] = {
+											},
+											["self"] = {
+												["ParentName"] = "beam 2",
+												["ClassName"] = "clip",
+												["UniqueID"] = "4026204007",
+												["Name"] = "",
+												["ParentUID"] = "1330312944",
+											},
+										},
+									},
+									["self"] = {
+										["ParentName"] = "point 4",
+										["UniqueID"] = "1330312944",
+										["AimPartUID"] = "2613673133",
+										["Name"] = "beam 2",
+										["Scale"] = Vector(3.4000000953674, 1, 1),
+										["ClassName"] = "model",
+										["Size"] = 0.25,
+										["AimPartName"] = "point 2",
+										["EditorExpand"] = true,
+										["Model"] = "models/Mechanics/robotics/a4.mdl",
+										["ParentUID"] = "3329593912",
+									},
+								},
+							},
+							["self"] = {
+								["ParentName"] = "beam 3",
+								["ClassName"] = "model",
+								["Position"] = Vector(18, 0, 0),
+								["ParentUID"] = "1523060539",
+								["Size"] = 0.25,
+								["EditorExpand"] = true,
+								["Name"] = "point 4",
+								["UniqueID"] = "3329593912",
+							},
+						},
+					},
+					["self"] = {
+						["ParentName"] = "point 5",
+						["Position"] = Vector(18, 0, 0),
+						["Name"] = "beam 3",
+						["ClassName"] = "model",
+						["Size"] = 0.25,
+						["UniqueID"] = "1523060539",
+						["EditorExpand"] = true,
+						["Model"] = "models/Mechanics/robotics/a4.mdl",
+						["ParentUID"] = "1280732317",
+					},
+				},
+			},
+			["self"] = {
+				["ParentName"] = "pencil",
+				["ClassName"] = "model",
+				["Size"] = 0.25,
+				["ParentUID"] = "2657213663",
+				["EditorExpand"] = true,
+				["Bone"] = "hitpos",
+				["Name"] = "point 5",
+				["UniqueID"] = "1280732317",
+			},
+		},
+	},
+	["self"] = {
+		["EditorExpand"] = true,
+		["UniqueID"] = "2657213663",
+		["ClassName"] = "group",
+		["Name"] = "pencil",
+		["Description"] = "add parts to me!",
+	},
+},

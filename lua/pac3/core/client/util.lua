@@ -81,7 +81,7 @@ end
 
 do --dev util
 	function pac.RemoveAllPACEntities()
-		for _, ent in pairs(ents.GetAll()) do
+		for _, ent in ents.Iterator() do
 			pac.UnhookEntityRender(ent)
 
 			if ent.IsPACEntity then
@@ -100,7 +100,7 @@ do --dev util
 		pac.RemoveAllParts()
 		pac.RemoveAllPACEntities()
 
-		for i, ent in ipairs(ents.GetAll()) do
+		for i, ent in ents.Iterator() do
 			ent.pac_ignored = nil
 			ent.pac_ignored_data = nil
 			ent.pac_drawing = nil
@@ -118,7 +118,7 @@ do --dev util
 				for part in next, ent.pac_animation_sequences do
 					if part:IsValid() then
 						_part = part
-						ProtectedCall(nuke_part)
+						pcall(nuke_part)
 					end
 				end
 
@@ -129,7 +129,7 @@ do --dev util
 				for part in next, ent.pac_bone_parts do
 					if part:IsValid() then
 						_part = part
-						ProtectedCall(nuke_part)
+						pcall(nuke_part)
 					end
 				end
 
@@ -461,7 +461,7 @@ end
 
 local mat
 
-for _, ent in pairs(ents.GetAll()) do
+for _, ent in ents.Iterator() do
 	ent.pac_can_legacy_scale = nil
 end
 
