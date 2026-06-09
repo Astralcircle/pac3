@@ -63,7 +63,7 @@ function pace.IsBanned(ply)
 		return false
 	end
 
-	local time = ply:GetPData("PAC_Banned")
+	local time = tonumber(ply:GetPData("PAC_Banned"))
 
 	if not time then
 		return false
