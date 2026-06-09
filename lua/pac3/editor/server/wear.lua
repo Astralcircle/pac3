@@ -136,7 +136,8 @@ function pace.SubmitPartNow(data, filter)
 
 	local uid = data.uid
 	if uid ~= false and pace.IsBanned(owner) then
-		return false, "you are banned from using pac"
+		local time = pace.GetBanTime(owner)
+		return false, time == -1 and "you are permanently banned from using pac" or "you are banned from using pac until " .. os.date("%d/%m/%y %X", time)
 	end
 
 	if istable(part) then

@@ -1,5 +1,5 @@
 function pace.Ban(ply, time)
-	ply:SetPData("PAC_Banned", time and time + os.time() or true)
+	ply:SetPData("PAC_Banned", time and time + os.time() or -1)
 	ply:ConCommand("pac_clear_parts")
 
 	net.Start("pac_submit_acknowledged")
@@ -50,14 +50,37 @@ concommand.Add("pac_unban", function(ply, cmd, args)
 end)
 
 hook.Add("PlayerInitialSpawn", "pace_RemoveTimedBan", function(ply)
-	local ban = ply:GetPData("PAC_Banned", false)
-	if not ban or not tonumber(ban) then return end
+	local ban = tonumber(ply:GetPData("PAC_Banned"))
+	if not ban then return end
 
-	if tonumber(ban) <= os.time() then
+	if ban ~= -1 and ban <= os.time() then
 		pace.Unban(ply)
 	end
 end)
 
 function pace.IsBanned(ply)
-	return IsValid(ply) and ply:GetPData("PAC_Banned", false)
+	if not IsValid(ply) then
+		return false
+	end
+
+	local time = ply:GetPData("PAC_Banned")
+
+	if not time then
+		return false
+	end
+
+	if time == -1 then
+		return true
+	else
+		if time > os.time() then
+			return true
+		else
+			ply:RemovePData("PAC_Banned")
+			return false
+		end
+	end
+end
+
+function pace.GetBanTime(ply)
+	return ply:GetPData("PAC_Banned")
 end
