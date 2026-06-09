@@ -82,5 +82,5 @@ function pace.IsBanned(ply)
 end
 
 function pace.GetBanTime(ply)
-	return ply:GetPData("PAC_Banned")
+	return tonumber(ply:GetPData("PAC_Banned"))
 end
