@@ -278,8 +278,8 @@ function PANEL:PerformLayout()
 
 	if self.old_part ~= pace.current_part then
 		self.div:InvalidateLayout()
-		self.bottom:PerformLayout()
-		pace.properties:PerformLayout()
+		self.bottom:InvalidateLayout( true )
+		pace.properties:InvalidateLayout( true )
 		self.old_part = pace.current_part
 
 		local sz = auto_size:GetInt()

@@ -654,7 +654,7 @@ do -- non editable string
 					return;
 				end
 
-				self:PerformLayout()
+				self:InvalidateLayout( true )
 
 				local x, y      = input.GetCursorPos()
 				local w, h      = self:GetSize()

@@ -287,7 +287,7 @@ do
 		self.pnlCanvas:SetMouseInputEnabled( true )
 		self.pnlCanvas.PerformLayout = function( pnl )
 
-			self:PerformLayout()
+			self:PerformLayoutInternal()
 			self:InvalidateParent()
 
 		end
@@ -369,7 +369,7 @@ do
 
 	function PANEL:ScrollToChild( panel )
 
-		self:PerformLayout()
+		self:InvalidateLayout( true )
 
 		local x, y = self.pnlCanvas:GetChildPosition( panel )
 		local w, h = panel:GetSize()
@@ -382,6 +382,13 @@ do
 	end
 
 	function PANEL:PerformLayout()
+
+		self:PerformLayoutInternal()
+
+	end
+
+	-- Avoid an infinite loop
+	function PANEL:PerformLayoutInternal()
 
 		local Tall = self.pnlCanvas:GetWide()
 		local Wide = self:GetWide()
