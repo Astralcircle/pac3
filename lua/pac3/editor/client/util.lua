@@ -162,7 +162,7 @@ function pace.MessagePrompt( strText, strTitle, strButtonText )
 	Window:MakePopup()
 	Window:DoModal()
 
-	Window:PerformLayout()
+	Window:InvalidateLayout( true )
 
 	return Window
 end

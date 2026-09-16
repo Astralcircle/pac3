@@ -265,10 +265,10 @@ end
 
 local auto_size = CreateClientConVar("pac_auto_size_properties", 1, true)
 
-function PANEL:PerformLayout()
+function PANEL:PerformLayout( w, h )
 	if not self.okay then return end
 
-	DFrame.PerformLayout(self)
+	DFrame.PerformLayout( self, w, h )
 
 	for i, val in pairs(self.pac3_PanelsToRemove) do
 		if IsValid(self[val]) then
@@ -278,8 +278,8 @@ function PANEL:PerformLayout()
 
 	if self.old_part ~= pace.current_part then
 		self.div:InvalidateLayout()
-		self.bottom:PerformLayout()
-		pace.properties:PerformLayout()
+		self.bottom:InvalidateLayout( true )
+		pace.properties:InvalidateLayout( true )
 		self.old_part = pace.current_part
 
 		local sz = auto_size:GetInt()

@@ -217,6 +217,10 @@ function pace.LoadParts(name, clear, override_part)
 				notification.AddLegacy(("Decoding %s failed: %s"):format(name,err), NOTIFY_ERROR, 5)
 				return
 			end
+		elseif not data then
+			pace.MessagePrompt(("Decoding %s failed: %s"):format(name,err), "Load Failed", "OK")
+			return
+		end
 
 			pace.LoadPartsFromTable(data, clear, override_part)
 		end

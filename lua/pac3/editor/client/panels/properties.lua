@@ -286,8 +286,8 @@ do -- list
 
 		self.div = divider
 
-		function divider:PerformLayout()
-			DHorizontalDivider.PerformLayout(self)
+		function divider:PerformLayout( w, h )
+			DHorizontalDivider.PerformLayout( self, w, h )
 
 			if self.m_pLeft then
 				self.m_pLeft:SetWide( self.m_iLeftWidth + self.m_iDividerWidth )
@@ -654,7 +654,7 @@ do -- non editable string
 					return;
 				end
 
-				self:PerformLayout()
+				self:InvalidateLayout( true )
 
 				local x, y      = input.GetCursorPos()
 				local w, h      = self:GetSize()
@@ -1526,8 +1526,8 @@ do -- boolean
 
 	end
 
-	function PANEL:PerformLayout()
-		self.BaseClass.PerformLayout(self)
+	function PANEL:PerformLayout( w, h )
+		self.BaseClass.PerformLayout( self, w, h )
 
 		local s = 4
 

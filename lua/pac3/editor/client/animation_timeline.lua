@@ -488,7 +488,7 @@ do
 						end)
 					end
 
-					menu:PerformLayout()
+					menu:InvalidateLayout( true )
 
 					local x, y = bottom:LocalToScreen(0,0)
 					x = x + bottom:GetWide()
