@@ -23,7 +23,7 @@ end
 
 if CLIENT then
 	if pac and pac.Panic then
-		ProtectedCall(pac.Panic)
+		pcall(pac.Panic)
 	end
 
 	include("pac3/core/client/init.lua")

@@ -223,7 +223,7 @@ net.Receive("pac_submit", function()
 		local data = buffer:readTable()
 
 		if type(data.owner) ~= "Player" or not data.owner:IsValid() then
-			pac.Message("received message from server but owner is not valid!? typeof " .. type(data.owner) .. ' || ', data.owner)
+			pac.Message("received message from server but owner is not valid!? typeof " .. type(data.owner) .. ' || ', tostring(data.owner))
 			return
 		end
 

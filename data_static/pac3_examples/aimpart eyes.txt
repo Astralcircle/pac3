@@ -1,0 +1,50 @@
+[1] = {
+	["children"] = {
+		[1] = {
+			["children"] = {
+			},
+			["self"] = {
+				["ParentName"] = "group",
+				["ClassName"] = "model",
+				["Position"] = Vector(13, 0, 0),
+				["AimPartName"] = "LOCALEYES",
+				["ParentUID"] = "2728547329",
+				["Name"] = "I always look at you!",
+				["UniqueID"] = "2375757640",
+			},
+		},
+		[2] = {
+			["children"] = {
+			},
+			["self"] = {
+				["ParentName"] = "group",
+				["ClassName"] = "model",
+				["Position"] = Vector(13.317047119141, 1.9924926757813, -13.223754882813),
+				["AimPartName"] = "PLAYEREYES",
+				["ParentUID"] = "2728547329",
+				["Name"] = "I look at the person you're aiming at!",
+				["EyeAngles"] = true,
+				["UniqueID"] = "4254836979",
+			},
+		},
+		[3] = {
+			["children"] = {
+			},
+			["self"] = {
+				["ParentName"] = "group",
+				["ClassName"] = "model",
+				["Position"] = Vector(13.778839111328, 0.87811279296875, 12.80078125),
+				["AimPartName"] = "LOCALEYES",
+				["ParentUID"] = "2728547329",
+				["Name"] = "I will follow at your eye angles!",
+				["UniqueID"] = "4254836979",
+			},
+		},
+	},
+	["self"] = {
+		["EditorExpand"] = true,
+		["ClassName"] = "group",
+		["Name"] = "eye test",
+		["UniqueID"] = "2728547329",
+	},
+},

@@ -458,7 +458,7 @@ do
 		end
 
 		for _ = 1, passCount do
-			local status = ProtectedCall(protected_real_draw_model)
+			local status = pcall(protected_real_draw_model)
 
 			if not status then
 				_return_status = false
@@ -468,7 +468,7 @@ do
 
 		render_PushFlashlightMode(true)
 
-		ProtectedCall(protected_real_draw_model)
+		pcall(protected_real_draw_model)
 
 		render_PopFlashlightMode()
 
@@ -494,7 +494,7 @@ do
 
 		_self, _ent, _pos, _ang = self, ent, pos, ang
 
-		ProtectedCall(protected_inner_draw_model)
+		pcall(protected_inner_draw_model)
 
 		if filter_updated then
 			render_PopFilterMag()

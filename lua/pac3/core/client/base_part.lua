@@ -2,7 +2,6 @@ local string_format = string.format
 local tostring = tostring
 local pace = pace
 local assert = assert
-local debug_traceback = debug.traceback
 local math_random = math.random
 local xpcall = xpcall
 local pac = pac
@@ -886,7 +885,7 @@ do -- serializing
 	end
 
 	local function on_error(msg)
-		ErrorNoHalt(debug_traceback(msg))
+
 	end
 
 	do

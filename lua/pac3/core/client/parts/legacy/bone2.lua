@@ -1,7 +1,7 @@
 local NULL = NULL
 local pairs = pairs
 
-for _, v in pairs(ents.GetAll()) do
+for _, v in ents.Iterator() do
 	v.pac_bone_setup_data = nil
 end
 

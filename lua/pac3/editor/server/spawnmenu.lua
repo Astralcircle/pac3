@@ -1,11 +1,11 @@
 concommand.Add("pac_in_editor", function(ply, _, args)
-	ply:SetNWBool("in pac3 editor", tonumber(args[1]) == 1)
+	ply.InPAC3Editor = tonumber(args[1]) == 1 and true or nil
 end)
 
 function pace.SpawnPart(ply, model)
 	if pace.suppress_prop_spawn then return end
 	if model then
-		if IsValid(ply) and ply:GetNWBool("in pac3 editor") then
+		if IsValid(ply) and ply.InPAC3Editor then
 			net.Start("pac_spawn_part")
 				net.WriteString(model)
 			net.Send(ply)

@@ -1,0 +1,131 @@
+[1] = {
+	["children"] = {
+		[2] = {
+			["children"] = {
+			},
+			["self"] = {
+				["ParentUID"] = "3979673445",
+				["ClassName"] = "bone",
+				["UniqueID"] = "2112230287",
+				["Angles"] = Angle(54.375, 179.96875, 179.96875),
+				["Bone"] = "left forearm",
+				["Name"] = "",
+				["ParentName"] = "group",
+			},
+		},
+		[5] = {
+			["children"] = {
+			},
+			["self"] = {
+				["ParentUID"] = "3979673445",
+				["ClassName"] = "bone",
+				["UniqueID"] = "4237647066",
+				["Angles"] = Angle(-19.125, -52.625, -2.03125),
+				["Bone"] = "left hand",
+				["Name"] = "",
+				["ParentName"] = "group",
+			},
+		},
+		[3] = {
+			["children"] = {
+				[1] = {
+					["children"] = {
+						[1] = {
+							["children"] = {
+							},
+							["self"] = {
+								["ParentName"] = "scout boombox 03",
+								["ClassName"] = "proxy",
+								["UniqueID"] = "2809877038",
+								["VariableName"] = "Pitch",
+								["ParentUID"] = "1282464796",
+								["Name"] = "",
+								["Expression"] = "0.25+rand()/100",
+							},
+						},
+					},
+					["self"] = {
+						["ParentName"] = "citizenradio",
+						["ClassName"] = "sound",
+						["UniqueID"] = "1282464796",
+						["ParentUID"] = "2608531680",
+						["Pitch"] = 0.25955017247606,
+						["EditorExpand"] = true,
+						["Name"] = "",
+						["Sound"] = "items/scout_boombox_03.wav",
+					},
+				},
+			},
+			["self"] = {
+				["ParentName"] = "group",
+				["Position"] = Vector(4.58447265625, -0.5157470703125, 2.2789611816406),
+				["Name"] = "",
+				["EditorExpand"] = true,
+				["Angles"] = Angle(0.1875, -7.0625, -90),
+				["Size"] = 0.45,
+				["UniqueID"] = "2608531680",
+				["ClassName"] = "model",
+				["Bone"] = "left clavicle",
+				["Model"] = "models/props_lab/citizenradio.mdl",
+				["ParentUID"] = "3979673445",
+			},
+		},
+		[1] = {
+			["children"] = {
+				[1] = {
+					["children"] = {
+					},
+					["self"] = {
+						["ParentName"] = "head",
+						["ClassName"] = "proxy",
+						["UniqueID"] = "1375860677",
+						["VariableName"] = "Position",
+						["ParentUID"] = "2962520020",
+						["Name"] = "",
+						["Expression"] = "nil, -abs(sin(0.25-time()*2.67))^10 * 2",
+					},
+				},
+			},
+			["self"] = {
+				["ParentUID"] = "3979673445",
+				["ClassName"] = "bone",
+				["UniqueID"] = "2962520020",
+				["EditorExpand"] = true,
+				["Position"] = Vector(0, -0.5782373547554, 0),
+				["Name"] = "",
+				["ParentName"] = "group",
+			},
+		},
+		[4] = {
+			["children"] = {
+			},
+			["self"] = {
+				["ParentUID"] = "3979673445",
+				["ClassName"] = "bone",
+				["UniqueID"] = "3011199636",
+				["Angles"] = Angle(-45.21875, -12.9375, 175.53125),
+				["Bone"] = "left upperarm",
+				["Name"] = "",
+				["ParentName"] = "group",
+			},
+		},
+		[6] = {
+			["children"] = {
+			},
+			["self"] = {
+				["ParentName"] = "group",
+				["ClassName"] = "animation",
+				["UniqueID"] = "2938406291",
+				["ParentUID"] = "3979673445",
+				["Name"] = "",
+				["WeaponHoldType"] = "normal",
+			},
+		},
+	},
+	["self"] = {
+		["EditorExpand"] = true,
+		["ClassName"] = "group",
+		["Name"] = "",
+		["UniqueID"] = "3979673445",
+	},
+},

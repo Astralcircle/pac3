@@ -22,7 +22,7 @@ local FrameNumber = FrameNumber
 local table_insert = table.insert
 local table_remove = table.remove
 
-local pac_max_render_time = CreateClientConVar("pac_max_render_time", 0)
+local pac_max_render_time = CreateClientConVar("pac_max_render_time", "25", true, false, "Sets the maximum render time of the PAC outfit. 0 = 100ms", 0, 100)
 
 function pac.IsRenderTimeExceeded(ent)
 	return ent.pac_render_time_exceeded
@@ -31,8 +31,8 @@ end
 function pac.RecordRenderTime(ent, type, start)
 	local took = SysTime() - start
 
-	local max_render_time = pac_max_render_time:GetFloat()
-	if max_render_time <= 0 then return end
+	local max_render_time = pac_max_render_time:GetInt()
+	if max_render_time <= 0 then max_render_time = 100 end
 
 	local entTbl = ent:GetTable()
 	if not entTbl.pac_rendertimes then

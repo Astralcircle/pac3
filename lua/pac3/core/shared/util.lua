@@ -137,9 +137,6 @@ end
 
 texture_keys["include"] = "include"
 
--- for pac_restart
-PAC_MDL_SALT = PAC_MDL_SALT or 0
-
 local cached_paths = {}
 
 function pac.DownloadMDL(url, callback, onfail, ply)

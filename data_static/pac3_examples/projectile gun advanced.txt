@@ -1,0 +1,228 @@
+[2] = {
+	["children"] = {
+		[1] = {
+			["children"] = {
+				[1] = {
+					["children"] = {
+						[2] = {
+							["children"] = {
+								[1] = {
+									["children"] = {
+										[2] = {
+											["children"] = {
+											},
+											["self"] = {
+												["ClassName"] = "sound",
+												["UniqueID"] = "1017367923",
+												["SoundLevel"] = 70,
+												["Pitch"] = 0.5,
+												["Sound"] = "weapons/air_burster_explode2.wav",
+											},
+										},
+										[1] = {
+											["children"] = {
+											},
+											["self"] = {
+												["EditorExpand"] = true,
+												["UniqueID"] = "1837104160",
+												["Rate"] = 0.5,
+												["Effect"] = "taunt_pyro_balloon_explosion",
+												["ClassName"] = "effect",
+											},
+										},
+									},
+									["self"] = {
+										["AffectChildrenOnly"] = true,
+										["Invert"] = true,
+										["Name"] = "is ranger below 5?",
+										["ClassName"] = "event",
+										["Event"] = "ranger",
+										["Arguments"] = "5@@10",
+										["UniqueID"] = "3181550699",
+										["Operator"] = "below",
+										["EditorExpand"] = true,
+										["RootOwner"] = false,
+									},
+								},
+							},
+							["self"] = {
+								["Alpha"] = 0,
+								["ClassName"] = "model",
+								["UniqueID"] = "1704152275",
+								["EditorExpand"] = true,
+								["Model"] = "models/pac/default.mdl",
+								["Name"] = "Projectiles can have events too",
+							},
+						},
+						[1] = {
+							["children"] = {
+							},
+							["self"] = {
+								["ClassName"] = "sound",
+								["UniqueID"] = "162303831",
+								["SoundLevel"] = 70,
+								["MinPitch"] = 90,
+								["MaxPitch"] = 110,
+								["Name"] = "They can include sounds",
+								["Sound"] = "weapons/diamond_back_01.wav",
+							},
+						},
+					},
+					["self"] = {
+						["EditorExpand"] = true,
+						["UniqueID"] = "1874802794",
+						["ClassName"] = "model",
+						["Name"] = "Projectile models can be anything you want.",
+						["Model"] = "models/Items/AR2_Grenade.mdl",
+					},
+				},
+			},
+			["self"] = {
+				["EditorExpand"] = true,
+				["ClassName"] = "group",
+				["Name"] = "Fire",
+				["UniqueID"] = "2361506147",
+			},
+		},
+	},
+	["self"] = {
+		["ClassName"] = "group",
+		["UniqueID"] = "448539766",
+		["Hide"] = true,
+		["Name"] = "The projectile itself. Must be in a group within a group",
+		["EditorExpand"] = true,
+	},
+},
+[1] = {
+	["children"] = {
+		[2] = {
+			["children"] = {
+				[1] = {
+					["children"] = {
+						[2] = {
+							["children"] = {
+								[1] = {
+									["children"] = {
+									},
+									["self"] = {
+										["UniqueID"] = "643206501",
+										["ClassName"] = "effect",
+										["Effect"] = "muzzle_minigun",
+										["Rate"] = 0.1,
+									},
+								},
+							},
+							["self"] = {
+								["Alpha"] = 0,
+								["ClassName"] = "model",
+								["Position"] = Vector(35.404052734375, -0.00048828125, 0),
+								["UniqueID"] = "2824542135",
+								["Name"] = "Muzzle effects",
+								["Model"] = "models/pac/default.mdl",
+								["EditorExpand"] = true,
+							},
+						},
+						[5] = {
+							["children"] = {
+							},
+							["self"] = {
+								["UniqueID"] = "1069681707",
+								["Physical"] = true,
+								["Name"] = "Delay adds a delay to the shot.",
+								["Sticky"] = true,
+								["EditorExpand"] = true,
+								["OutfitPartUID"] = "2361506147",
+								["OutfitPartName"] = "Fire",
+								["ClassName"] = "projectile",
+								["Gravity"] = false,
+							},
+						},
+						[3] = {
+							["children"] = {
+							},
+							["self"] = {
+								["Arguments"] = "attack primary",
+								["UniqueID"] = "68147785",
+								["Invert"] = true,
+								["Event"] = "animation_event",
+								["Name"] = "Projectiles are tirggered by events",
+								["ClassName"] = "event",
+							},
+						},
+						[1] = {
+							["children"] = {
+							},
+							["self"] = {
+								["UniqueID"] = "501117373",
+								["Delay"] = 0.3,
+								["Physical"] = true,
+								["Name"] = "Multiple projectiles can be shot at once",
+								["Sticky"] = true,
+								["ClassName"] = "projectile",
+								["Spread"] = 0.05,
+								["OutfitPartUID"] = "2361506147",
+								["OutfitPartName"] = "Fire",
+								["EditorExpand"] = true,
+								["Gravity"] = false,
+							},
+						},
+						[4] = {
+							["children"] = {
+							},
+							["self"] = {
+								["UniqueID"] = "2520114528",
+								["Delay"] = 0.2,
+								["Physical"] = true,
+								["Name"] = "Mass and speed controls damage",
+								["Sticky"] = true,
+								["ClassName"] = "projectile",
+								["Spread"] = 0.05,
+								["OutfitPartUID"] = "2361506147",
+								["OutfitPartName"] = "Fire",
+								["EditorExpand"] = true,
+								["Gravity"] = false,
+							},
+						},
+					},
+					["self"] = {
+						["Alpha"] = 0,
+						["ClassName"] = "model",
+						["UniqueID"] = "2557787785",
+						["EditorExpand"] = true,
+						["Model"] = "models/pac/default.mdl",
+						["Name"] = "Physical tickbox makes them kill",
+					},
+				},
+			},
+			["self"] = {
+				["EyeAngles"] = true,
+				["EditorExpand"] = true,
+				["Position"] = Vector(18.18505859375, 31.786865234375, 45.897933959961),
+				["Name"] = "This gun aims with eye angles",
+				["UniqueID"] = "2818191603",
+				["Bone"] = "None",
+				["Model"] = "models/airboatgun.mdl",
+				["ClassName"] = "model",
+			},
+		},
+		[1] = {
+			["children"] = {
+			},
+			["self"] = {
+				["ClassName"] = "model",
+				["Position"] = Vector(21.794189453125, -0.0023193359375, 31.116744995117),
+				["UniqueID"] = "3327276730",
+				["Bone"] = "None",
+				["Model"] = "models/props_combine/combine_barricade_short01a.mdl",
+				["Name"] = "Stand",
+			},
+		},
+	},
+	["self"] = {
+		["EditorExpand"] = true,
+		["UniqueID"] = "2370197831",
+		["ClassName"] = "group",
+		["Name"] = "The gun",
+		["Description"] = "add parts to me!",
+	},
+},

@@ -1,0 +1,367 @@
+[1] = {
+	["children"] = {
+		[4] = {
+			["children"] = {
+				[1] = {
+					["children"] = {
+						[1] = {
+							["children"] = {
+							},
+							["self"] = {
+								["EditorExpand"] = true,
+								["ClassName"] = "model",
+								["Size"] = 0,
+								["Model"] = "models/pac/default.mdl",
+								["UniqueID"] = "1010921696",
+								["Bone"] = "",
+								["Name"] = "aimpoint offset",
+								["Position"] = Vector(38, 0, 0),
+							},
+						},
+					},
+					["self"] = {
+						["ClassName"] = "model",
+						["Size"] = 0,
+						["Name"] = "aim point",
+						["EditorExpand"] = true,
+						["Bone"] = "hitpos_ent_ang_zero_pitch",
+						["Model"] = "models/pac/default.mdl",
+						["UniqueID"] = "2554496253",
+					},
+				},
+				[2] = {
+					["children"] = {
+						[1] = {
+							["children"] = {
+							},
+							["self"] = {
+								["Angles"] = Angle(0, 90, -90),
+								["Size"] = 0,
+								["ClassName"] = "model",
+								["Name"] = "head follow",
+								["Model"] = "models/pac/default.mdl",
+								["UniqueID"] = "351823559",
+							},
+						},
+					},
+					["self"] = {
+						["Position"] = Vector(0, -4, 0),
+						["AimPartUID"] = "1010921696",
+						["Name"] = "head origin",
+						["Scale"] = Vector(1.7000000476837, 1, 1),
+						["ClassName"] = "model",
+						["Material"] = "models/weapons/v_crowbar/head_uvw",
+						["Size"] = 0,
+						["AimPartName"] = "aimpoint offset",
+						["UniqueID"] = "3330122862",
+						["Bone"] = "bip neck",
+						["Model"] = "models/pac/default.mdl",
+						["EditorExpand"] = true,
+					},
+				},
+				[3] = {
+					["children"] = {
+					},
+					["self"] = {
+						["FollowAnglesOnly"] = true,
+						["ClassName"] = "bone",
+						["UniqueID"] = "68316071",
+						["FollowPartName"] = "w",
+						["Bone"] = "bip head",
+						["FollowPartUID"] = "351823559",
+					},
+				},
+			},
+			["self"] = {
+				["ClassName"] = "group",
+				["EditorExpand"] = true,
+				["UniqueID"] = "3248913488",
+				["Name"] = "head aim",
+			},
+		},
+		[1] = {
+			["children"] = {
+			},
+			["self"] = {
+				["EditorExpand"] = true,
+				["UniqueID"] = "3794698230",
+				["Bone"] = "none",
+				["Model"] = "models/player/hwm/scout.mdl",
+				["ClassName"] = "entity",
+			},
+		},
+		[2] = {
+			["children"] = {
+				[2] = {
+					["children"] = {
+						[1] = {
+							["children"] = {
+							},
+							["self"] = {
+								["ClassName"] = "proxy",
+								["UniqueID"] = "2768103191",
+								["VariableName"] = "Angles",
+								["EditorExpand"] = true,
+								["Input"] = "owner_eye_angle_pitch",
+								["Expression"] = "nil, nil, owner_eye_angle_pitch()*-50 + 25",
+							},
+						},
+					},
+					["self"] = {
+						["ClassName"] = "bone",
+						["UniqueID"] = "3883955167",
+						["Bone"] = "bip spine  1",
+						["Angles"] = Angle(0, 0, 2.3859710693359),
+						["EditorExpand"] = true,
+					},
+				},
+				[1] = {
+					["children"] = {
+						[1] = {
+							["children"] = {
+							},
+							["self"] = {
+								["ClassName"] = "proxy",
+								["UniqueID"] = "3916476839",
+								["VariableName"] = "Angles",
+								["Input"] = "owner_eye_angle_pitch",
+								["Expression"] = "nil, nil, owner_eye_angle_pitch()*-50 + 25",
+							},
+						},
+					},
+					["self"] = {
+						["ClassName"] = "bone",
+						["UniqueID"] = "3706039830",
+						["Bone"] = "bip spine  0",
+						["Angles"] = Angle(0, 0, 2.3859710693359),
+						["EditorExpand"] = true,
+					},
+				},
+			},
+			["self"] = {
+				["ClassName"] = "group",
+				["EditorExpand"] = true,
+				["UniqueID"] = "3391528412",
+				["Name"] = "body pitch",
+			},
+		},
+		[3] = {
+			["children"] = {
+				[4] = {
+					["children"] = {
+						[2] = {
+							["children"] = {
+							},
+							["self"] = {
+								["UniqueID"] = "1633433427",
+								["Jump"] = "Jump_Start_primary",
+								["AttackStandPrimaryfire"] = "AttackStand_PRIMARY",
+								["Run"] = "Run_PRIMARY",
+								["CrouchIdle"] = "Crouch_PRIMARY",
+								["StandIdle"] = "Stand_PRIMARY",
+								["Fallback"] = "Run_PRIMARY",
+								["ActRangeAttack1"] = "AttackStand_PRIMARY",
+								["Noclip"] = "Airwalk_PRIMARY",
+								["SwimIdle"] = "Swim_PRIMARY",
+								["ClassName"] = "holdtype",
+								["AttackCrouchPrimaryfire"] = "AttackCrouch_PRIMARY",
+								["EditorExpand"] = true,
+								["Swim"] = "Swim_PRIMARY",
+								["Air"] = "Jump_Float_PRIMARY",
+								["CrouchWalk"] = "Crouch_Walk_PRIMARY",
+								["ReloadStand"] = "ReloadStand_PRIMARY",
+								["ReloadCrouch"] = "ReloadCrouch_PRIMARY",
+								["ActLand"] = "jumpLand_PRIMARY",
+							},
+						},
+						[1] = {
+							["children"] = {
+							},
+							["self"] = {
+								["EditorExpand"] = true,
+								["UniqueID"] = "4046565299",
+								["Invert"] = true,
+								["Arguments"] = "physgun;smg;shotgun;crossbow;rpg",
+								["Operator"] = "equal",
+								["Event"] = "holdtype",
+								["ClassName"] = "event",
+							},
+						},
+					},
+					["self"] = {
+						["Position"] = Vector(1.79345703125, 2.2670288085938, -3.9368896484375),
+						["EditorExpand"] = true,
+						["UniqueID"] = "1885440714",
+						["ClassName"] = "entity",
+						["Angles"] = Angle(-90, 0, -90),
+						["Bone"] = "weapon_bone_ 2",
+						["Name"] = "primary",
+						["Weapon"] = true,
+					},
+				},
+				[1] = {
+					["children"] = {
+						[2] = {
+							["children"] = {
+							},
+							["self"] = {
+								["Fallback"] = "Run_MELEE",
+								["UniqueID"] = "126820848",
+								["AttackCrouchPrimaryfire"] = "MELEE_crouch_swing",
+								["Jump"] = "Jump_Start_melee",
+								["AttackStandPrimaryfire"] = "MELEE_swing",
+								["ClassName"] = "holdtype",
+								["CrouchIdle"] = "Crouch_MELEE",
+								["Run"] = "Run_MELEE",
+								["EditorExpand"] = true,
+								["Swim"] = "Swim_MELEE",
+								["ActLand"] = "jumpLand_melee",
+								["CrouchWalk"] = "Crouch_Walk_MELEE",
+								["Air"] = "Jump_Float_melee",
+								["StandIdle"] = "Stand_MELEE",
+								["Noclip"] = "Airwalk_MELEE",
+							},
+						},
+						[1] = {
+							["children"] = {
+							},
+							["self"] = {
+								["EditorExpand"] = true,
+								["UniqueID"] = "4167178939",
+								["Invert"] = true,
+								["Arguments"] = "melee;melee2;grenade;slam",
+								["Operator"] = "equal",
+								["Event"] = "holdtype",
+								["ClassName"] = "event",
+							},
+						},
+					},
+					["self"] = {
+						["Position"] = Vector(0, 6, -2),
+						["EditorExpand"] = true,
+						["UniqueID"] = "1454655852",
+						["ClassName"] = "entity",
+						["Angles"] = Angle(0, -90, -90),
+						["Bone"] = "weapon_bone_ 2",
+						["Name"] = "melee",
+						["Weapon"] = true,
+					},
+				},
+				[2] = {
+					["children"] = {
+						[2] = {
+							["children"] = {
+							},
+							["self"] = {
+								["EditorExpand"] = true,
+								["UniqueID"] = "44235598",
+								["Invert"] = true,
+								["Arguments"] = "normal",
+								["Operator"] = "equal",
+								["Event"] = "holdtype",
+								["ClassName"] = "event",
+							},
+						},
+						[1] = {
+							["children"] = {
+							},
+							["self"] = {
+								["UniqueID"] = "1142180148",
+								["ActLand"] = "jumpLand_LOSER",
+								["AttackStandPrimaryfire"] = "LOSER_swing",
+								["Run"] = "Run_LOSER",
+								["CrouchIdle"] = "Crouch_LOSER",
+								["StandIdle"] = "Stand_LOSER",
+								["Fallback"] = "Run_LOSER",
+								["ReloadStand"] = "ReloadStand_LOSER",
+								["Noclip"] = "Airwalk_LOSER",
+								["SwimIdle"] = "Swim_LOSER",
+								["AttackCrouchPrimaryfire"] = "LOSER_crouch_swing",
+								["EditorExpand"] = true,
+								["ReloadCrouch"] = "ReloadCrouch_LOSER",
+								["ClassName"] = "holdtype",
+								["CrouchWalk"] = "Crouch_Walk_LOSER",
+								["Air"] = "Jump_Float_LOSER",
+								["Swim"] = "Swim_LOSER",
+								["Jump"] = "Jump_Start_LOSER",
+							},
+						},
+					},
+					["self"] = {
+						["Position"] = Vector(1.79345703125, 2.2670288085938, -3.9368896484375),
+						["EditorExpand"] = true,
+						["UniqueID"] = "1299149497",
+						["ClassName"] = "entity",
+						["Angles"] = Angle(-90, 0, -90),
+						["Bone"] = "weapon_bone_ 2",
+						["Name"] = "loser",
+						["Weapon"] = true,
+					},
+				},
+				[3] = {
+					["children"] = {
+						[2] = {
+							["children"] = {
+							},
+							["self"] = {
+								["UniqueID"] = "4021620632",
+								["ActLand"] = "jumpLand_SECONDARY",
+								["AttackStandPrimaryfire"] = "AttackStand_SECONDARY",
+								["Run"] = "Run_SECONDARY",
+								["CrouchIdle"] = "Crouch_SECONDARY",
+								["StandIdle"] = "Stand_SECONDARY",
+								["Fallback"] = "Run_SECONDARY",
+								["ReloadStand"] = "ReloadStand_SECONDARY",
+								["Noclip"] = "Airwalk_SECONDARY",
+								["SwimIdle"] = "Swim_SECONDARY",
+								["AttackCrouchPrimaryfire"] = "SECONDARY_crouch_swing",
+								["EditorExpand"] = true,
+								["ReloadCrouch"] = "ReloadCrouch_SECONDARY",
+								["ClassName"] = "holdtype",
+								["CrouchWalk"] = "Crouch_Walk_SECONDARY",
+								["Air"] = "Jump_Float_SECONDARY",
+								["Swim"] = "Swim_SECONDARY",
+								["Jump"] = "Jump_Start_SECONDARY",
+							},
+						},
+						[1] = {
+							["children"] = {
+							},
+							["self"] = {
+								["EditorExpand"] = true,
+								["UniqueID"] = "478977194",
+								["Invert"] = true,
+								["Arguments"] = "pistol",
+								["Operator"] = "equal",
+								["Event"] = "holdtype",
+								["ClassName"] = "event",
+							},
+						},
+					},
+					["self"] = {
+						["Position"] = Vector(-0.40000000596046, 4, 0.5),
+						["EditorExpand"] = true,
+						["UniqueID"] = "4107862047",
+						["ClassName"] = "entity",
+						["Angles"] = Angle(90, 180, 90),
+						["Bone"] = "weapon_bone_ 2",
+						["Name"] = "secondary",
+						["Weapon"] = true,
+					},
+				},
+			},
+			["self"] = {
+				["ClassName"] = "group",
+				["EditorExpand"] = true,
+				["UniqueID"] = "2404083068",
+				["Name"] = "holdtypes",
+			},
+		},
+	},
+	["self"] = {
+		["ClassName"] = "group",
+		["EditorExpand"] = true,
+		["UniqueID"] = "1008348447",
+		["Name"] = "scout",
+	},
+},
