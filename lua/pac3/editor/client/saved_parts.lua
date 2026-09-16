@@ -207,14 +207,10 @@ function pace.LoadParts(name, clear, override_part)
 			if name == "autoload" and (not data or not next(data)) then
 				local err
 				data,err = pace.luadata.ReadFile("pac3/sessions/" .. name .. ".txt",nil,true)
-				if not data then
-					if err then
-						notification.AddLegacy(("Autoload failed: %s"):format(err), NOTIFY_ERROR, 5)
-					end
-					return
+			if not data then
+				if err then
+					pac.Message("Autoload failed: " .. err)
 				end
-			elseif not data then
-				notification.AddLegacy(("Decoding %s failed: %s"):format(name,err), NOTIFY_ERROR, 5)
 				return
 			end
 		elseif not data then
