@@ -394,12 +394,12 @@ pace.PCallNetReceive(net.Receive, "pac_submit", function(len, ply)
 	end
 
 	net.ReadStream(ply, function(data)
-		if not data then
-			pac.Message("message from ", ply, " timed out")
-			return
-		end
 		if not ply:IsValid() then
 			pac.Message("received message from ", ply, " but player is no longer valid!")
+			return
+		end
+		if not data then
+			pac.Message("message from ", ply, " timed out")
 			return
 		end
 		local buffer = pac.StringStream(data)
