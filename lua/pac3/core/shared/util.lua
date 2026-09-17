@@ -45,21 +45,26 @@ local function FormatMessage(tabIn)
 				table.insert(output, val)
 			end
 		elseif valType == 'Player' then
-			if team then
-				table.insert(output, team.GetColor(val:Team()) or ENTITY_COLOR)
+			if IsValid(val) then
+				if team then
+					table.insert(output, team.GetColor(val:Team()) or ENTITY_COLOR)
+				else
+					table.insert(output, ENTITY_COLOR)
+				end
+
+				table.insert(output, val:Nick())
+
+				if val.SteamName and val:SteamName() ~= val:Nick() then
+					table.insert(output, ' (' .. val:SteamName() .. ')')
+				end
+
+				table.insert(output, '<')
+				table.insert(output, val:SteamID())
+				table.insert(output, '>')
 			else
-				table.insert(output, ENTITY_COLOR)
+				table.insert(output, tostring(val))
 			end
 
-			table.insert(output, val:Nick())
-
-			if val.SteamName and val:SteamName() ~= val:Nick() then
-				table.insert(output, ' (' .. val:SteamName() .. ')')
-			end
-
-			table.insert(output, '<')
-			table.insert(output, val:SteamID())
-			table.insert(output, '>')
 			table.insert(output, prevColor)
 		elseif valType == 'Entity' or valType == 'NPC' or valType == 'Vehicle' then
 			table.insert(output, ENTITY_COLOR)
