@@ -565,7 +565,7 @@ function PART:OnDraw()
 		elseif diff == 2 then DisplayText = "Normal"
 		elseif diff == 3 then DisplayText = "Hard" end
 	elseif self.TextOverride == "Players" then
-		DisplayText = #player.GetAll()
+		DisplayText = player.GetCount()
 	elseif self.TextOverride == "MaxPlayers" then
 		DisplayText = game.MaxPlayers()
 	elseif self.TextOverride == "Weapon" then

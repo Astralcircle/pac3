@@ -1,0 +1,144 @@
+[1] = {
+	["children"] = {
+		[1] = {
+			["children"] = {
+				[1] = {
+					["children"] = {
+						[1] = {
+							["children"] = {
+							},
+							["self"] = {
+								["ParentName"] = "swing a",
+								["Invert"] = true,
+								["Name"] = "",
+								["ClassName"] = "event",
+								["Arguments"] = "miss;hit",
+								["UniqueID"] = "2065992220",
+								["Operator"] = "find",
+								["ParentUID"] = "4012617537",
+								["Event"] = "sequence_name",
+							},
+						},
+					},
+					["self"] = {
+						["ParentName"] = "v wrench engineer",
+						["UniqueID"] = "4012617537",
+						["SequenceName"] = "swing_a;swing_b;swing_c",
+						["Name"] = "",
+						["ClassName"] = "animation",
+						["OwnerCycle"] = true,
+						["Rate"] = 27.16,
+						["EditorExpand"] = true,
+						["ParentUID"] = "985706371",
+					},
+				},
+				[2] = {
+					["children"] = {
+						[1] = {
+							["children"] = {
+							},
+							["self"] = {
+								["ParentName"] = "draw",
+								["Invert"] = true,
+								["Name"] = "",
+								["ClassName"] = "event",
+								["Arguments"] = "draw",
+								["UniqueID"] = "329197997",
+								["Operator"] = "find",
+								["ParentUID"] = "3935937698",
+								["Event"] = "sequence_name",
+							},
+						},
+					},
+					["self"] = {
+						["ParentName"] = "v wrench engineer",
+						["UniqueID"] = "3935937698",
+						["SequenceName"] = "draw",
+						["Name"] = "",
+						["ClassName"] = "animation",
+						["OwnerCycle"] = true,
+						["Rate"] = 27.16,
+						["EditorExpand"] = true,
+						["ParentUID"] = "985706371",
+					},
+				},
+				[3] = {
+					["children"] = {
+						[1] = {
+							["children"] = {
+							},
+							["self"] = {
+								["ParentName"] = "idle tap",
+								["Invert"] = true,
+								["Name"] = "",
+								["ClassName"] = "event",
+								["Arguments"] = "idle",
+								["UniqueID"] = "329197997",
+								["Operator"] = "find",
+								["ParentUID"] = "3935937698",
+								["Event"] = "sequence_name",
+							},
+						},
+					},
+					["self"] = {
+						["ParentName"] = "v wrench engineer",
+						["UniqueID"] = "3935937698",
+						["SequenceName"] = "idle_tap",
+						["Name"] = "",
+						["ClassName"] = "animation",
+						["OwnerCycle"] = true,
+						["Rate"] = 27.16,
+						["EditorExpand"] = true,
+						["ParentUID"] = "985706371",
+					},
+				},
+			},
+			["self"] = {
+				["ParentName"] = "my outfit",
+				["Position"] = Vector(4, 0, 0),
+				["Name"] = "",
+				["ClassName"] = "model",
+				["UniqueID"] = "985706371",
+				["EditorExpand"] = true,
+				["Bone"] = "none",
+				["Model"] = "models/weapons/v_models/v_wrench_engineer.mdl",
+				["ParentUID"] = "3452433632",
+			},
+		},
+		[2] = {
+			["children"] = {
+			},
+			["self"] = {
+				["ParentName"] = "my outfit",
+				["ClassName"] = "entity",
+				["HideEntity"] = true,
+				["ParentUID"] = "3452433632",
+				["Name"] = "",
+				["UniqueID"] = "1488372497",
+			},
+		},
+		[3] = {
+			["children"] = {
+			},
+			["self"] = {
+				["ParentName"] = "my outfit",
+				["Invert"] = true,
+				["Name"] = "",
+				["ClassName"] = "event",
+				["Arguments"] = "weapon_crowbar@@0",
+				["UniqueID"] = "2066236890",
+				["Operator"] = "equal",
+				["ParentUID"] = "3452433632",
+				["Event"] = "weapon_class",
+			},
+		},
+	},
+	["self"] = {
+		["EditorExpand"] = true,
+		["OwnerName"] = "viewmodel",
+		["ClassName"] = "group",
+		["UniqueID"] = "3452433632",
+		["Name"] = "engineer wrench",
+		["Description"] = "add parts to me!",
+	},
+},

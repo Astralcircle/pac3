@@ -1,0 +1,105 @@
+[1] = {
+	["children"] = {
+		[1] = {
+			["children"] = {
+				[4] = {
+					["children"] = {
+						[1] = {
+							["children"] = {
+							},
+							["self"] = {
+								["UniqueID"] = "1761752820",
+								["ClassName"] = "event",
+								["Invert"] = true,
+								["Event"] = "is_flashlight_on",
+							},
+						},
+					},
+					["self"] = {
+						["EditorExpand"] = true,
+						["UniqueID"] = "2769038604",
+						["VariableName"] = "AngleOffset",
+						["ClassName"] = "proxy",
+						["Expression"] = "-clamp(timeex()*10,0,20),nil,nil",
+					},
+				},
+				[1] = {
+					["children"] = {
+						[1] = {
+							["children"] = {
+							},
+							["self"] = {
+								["ClassName"] = "event",
+								["UniqueID"] = "322686765",
+								["Event"] = "is_flashlight_on",
+							},
+						},
+					},
+					["self"] = {
+						["EditorExpand"] = true,
+						["UniqueID"] = "3911060605",
+						["VariableName"] = "PositionOffset",
+						["ClassName"] = "proxy",
+						["Expression"] = "1.5-clamp(timeex()*0.75,0,1.5),nil,nil",
+					},
+				},
+				[2] = {
+					["children"] = {
+						[1] = {
+							["children"] = {
+							},
+							["self"] = {
+								["UniqueID"] = "2946404636",
+								["ClassName"] = "event",
+								["Invert"] = true,
+								["Event"] = "is_flashlight_on",
+							},
+						},
+					},
+					["self"] = {
+						["EditorExpand"] = true,
+						["UniqueID"] = "1059528532",
+						["VariableName"] = "PositionOffset",
+						["ClassName"] = "proxy",
+						["Expression"] = "clamp(timeex()*0.75,0,1.5),nil,nil",
+					},
+				},
+				[3] = {
+					["children"] = {
+						[1] = {
+							["children"] = {
+							},
+							["self"] = {
+								["ClassName"] = "event",
+								["UniqueID"] = "989968329",
+								["Event"] = "is_flashlight_on",
+							},
+						},
+					},
+					["self"] = {
+						["EditorExpand"] = true,
+						["UniqueID"] = "11378563",
+						["VariableName"] = "AngleOffset",
+						["ClassName"] = "proxy",
+						["Expression"] = "-20+clamp(timeex()*10,0,20),nil,nil",
+					},
+				},
+			},
+			["self"] = {
+				["ClassName"] = "model",
+				["Position"] = Vector(0, 0.66455078125, 0.0146484375),
+				["Angles"] = Angle(0, -79.03125, -90),
+				["UniqueID"] = "3708941127",
+				["Model"] = "models/player/items/engineer/drg_brainiac_goggles.mdl",
+				["EditorExpand"] = true,
+			},
+		},
+	},
+	["self"] = {
+		["EditorExpand"] = true,
+		["UniqueID"] = "599543498",
+		["ClassName"] = "group",
+		["Name"] = "my outfit",
+		["Description"] = "add parts to me!",
+	},
+},

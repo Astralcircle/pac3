@@ -1,0 +1,88 @@
+["children"] = {
+	[2] = {
+		["children"] = {
+			[1] = {
+				["children"] = {
+				},
+				["self"] = {
+					["ClassName"] = "model",
+					["UniqueID"] = "263578771",
+					["Material"] = "testmat",
+					["Translucent"] = true,
+					["Position"] = Vector(-0.00048828125, 0.001953125, -30.1435546875),
+				},
+			},
+		},
+		["self"] = {
+			["ClassName"] = "model",
+			["UniqueID"] = "1778920631",
+			["Material"] = "testmat",
+			["Translucent"] = true,
+			["EditorExpand"] = true,
+		},
+	},
+	[1] = {
+		["children"] = {
+			[2] = {
+				["children"] = {
+					[1] = {
+						["children"] = {
+						},
+						["self"] = {
+							["Event"] = "button",
+							["Invert"] = true,
+							["ClassName"] = "event",
+							["EditorExpand"] = true,
+							["Operator"] = "equal",
+							["UniqueID"] = "3680420824",
+							["Arguments"] = "p",
+						},
+					},
+				},
+				["self"] = {
+					["EditorExpand"] = true,
+					["UniqueID"] = "3171310209",
+					["VariableName"] = "CloakFactor",
+					["ClassName"] = "proxy",
+					["Expression"] = "min((timeex()+0.1) ^ 5, 1)",
+				},
+			},
+			[1] = {
+				["children"] = {
+					[1] = {
+						["children"] = {
+						},
+						["self"] = {
+							["Arguments"] = "p",
+							["UniqueID"] = "3408215400",
+							["EditorExpand"] = true,
+							["Operator"] = "equal",
+							["ClassName"] = "event",
+							["Event"] = "button",
+						},
+					},
+				},
+				["self"] = {
+					["EditorExpand"] = true,
+					["UniqueID"] = "2836747662",
+					["VariableName"] = "CloakFactor",
+					["ClassName"] = "proxy",
+					["Expression"] = "max((-timeex()+1) ^ 5, 0)",
+				},
+			},
+		},
+		["self"] = {
+			["EditorExpand"] = true,
+			["UniqueID"] = "3721614203",
+			["CloakPassEnabled"] = true,
+			["Name"] = "testmat",
+			["ClassName"] = "material",
+		},
+	},
+},
+["self"] = {
+	["EditorExpand"] = true,
+	["ClassName"] = "group",
+	["Name"] = "press p",
+	["UniqueID"] = "512753821",
+},

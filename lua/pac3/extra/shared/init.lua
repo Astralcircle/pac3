@@ -1,7 +1,5 @@
 
 include("hands.lua")
-include("pac_weapon.lua")
-include("projectiles.lua")
 
 local cvar = CreateConVar("pac_restrictions", "0", FCVAR_REPLICATED)
 

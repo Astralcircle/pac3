@@ -1,0 +1,565 @@
+["children"] = {
+	[2] = {
+		["children"] = {
+			[1] = {
+				["children"] = {
+				},
+				["self"] = {
+					["ClassName"] = "holdtype",
+					["UniqueID"] = "3691453799",
+					["Fallback"] = "idle_dual",
+				},
+			},
+		},
+		["self"] = {
+			["Angles"] = Angle(89.53125, 90, 90),
+			["Size"] = 0.75,
+			["ClassName"] = "model",
+			["UniqueID"] = "2643199443",
+			["Bone"] = "left hand",
+			["Model"] = "models/props_junk/harpoon002a.mdl",
+			["Position"] = Vector(3.0205078125, -0.3251953125, -34.953125),
+		},
+	},
+	[5] = {
+		["children"] = {
+			[2] = {
+				["children"] = {
+					[1] = {
+						["children"] = {
+						},
+						["self"] = {
+							["ZeroEyePitch"] = true,
+							["UniqueID"] = "2100202144",
+							["VariableName"] = "Angles",
+							["EditorExpand"] = true,
+							["RootOwner"] = true,
+							["ClassName"] = "proxy",
+							["Expression"] = "0,0,owner_velocity_right()*-5",
+						},
+					},
+				},
+				["self"] = {
+					["UniqueID"] = "3989406105",
+					["Scale"] = Vector(4.5999999046326, -0.52999997138977, 1),
+					["ClassName"] = "model",
+					["EditorExpand"] = true,
+					["DoubleFace"] = true,
+					["Material"] = "models/props_medieval/fort_wall",
+					["Position"] = Vector(0, 8, 0),
+					["Bone"] = "",
+					["Model"] = "models/props_c17/playground_swingset_seat01a.mdl",
+					["Angles"] = Angle(0, 0, 9.8090892502737e-45),
+				},
+			},
+			[1] = {
+				["children"] = {
+					[1] = {
+						["children"] = {
+						},
+						["self"] = {
+							["RootOwner"] = true,
+							["UniqueID"] = "1787959610",
+							["VariableName"] = "Angles",
+							["ClassName"] = "proxy",
+							["ZeroEyePitch"] = true,
+							["Expression"] = "0,0,owner_velocity_right()*-5",
+						},
+					},
+				},
+				["self"] = {
+					["Position"] = Vector(0, -4, 0),
+					["Scale"] = Vector(4.5999999046326, 0.52999997138977, 1),
+					["Angles"] = Angle(0, 0, 9.8090892502737e-45),
+					["Material"] = "models/props_medieval/fort_wall",
+					["EditorExpand"] = true,
+					["ClassName"] = "model",
+					["Bone"] = "",
+					["Model"] = "models/props_c17/playground_swingset_seat01a.mdl",
+					["UniqueID"] = "4169370848",
+				},
+			},
+		},
+		["self"] = {
+			["ClassName"] = "model",
+			["UniqueID"] = "4083807794",
+			["AimPartUID"] = "4216593801",
+			["AimPartName"] = "ski ang",
+			["Bone"] = "none",
+			["Model"] = "models/pac/default.mdl",
+			["Size"] = 0,
+		},
+	},
+	[4] = {
+		["children"] = {
+			[1] = {
+				["children"] = {
+				},
+				["self"] = {
+					["VariableName"] = "SprintSpeed",
+					["ClassName"] = "proxy",
+					["UniqueID"] = "2683052730",
+					["Expression"] = "200 + abs(sin(time()*4)*200)",
+				},
+			},
+		},
+		["self"] = {
+			["ClassName"] = "entity",
+			["UniqueID"] = "833317075",
+			["SprintSpeed"] = 348.99995660026,
+			["WalkSpeed"] = 311.34908096117,
+			["MuteFootsteps"] = true,
+		},
+	},
+	[10] = {
+		["children"] = {
+			[2] = {
+				["children"] = {
+				},
+				["self"] = {
+					["ClassName"] = "bone",
+					["Bone"] = "left foot",
+					["UniqueID"] = "3476253006",
+					["Angles"] = Angle(-2.5186322091031e-05, -26.92621421814, -8.7938693468459e-05),
+				},
+			},
+			[1] = {
+				["children"] = {
+				},
+				["self"] = {
+					["ClassName"] = "bone",
+					["Bone"] = "right foot",
+					["UniqueID"] = "3273273727",
+					["Angles"] = Angle(-1.2806604900106e-05, -9.6446151733398, 6.8835506681353e-05),
+				},
+			},
+		},
+		["self"] = {
+			["ClassName"] = "bone",
+			["Bone"] = "left thigh",
+			["UniqueID"] = "3655999250",
+			["Angles"] = Angle(0, 16, 0),
+		},
+	},
+	[9] = {
+		["children"] = {
+		},
+		["self"] = {
+			["ClassName"] = "model",
+			["EditorExpand"] = true,
+			["UniqueID"] = "3626082813",
+			["Position"] = Vector(3.65478515625, -1.7568359375, 32.96875),
+			["Size"] = 0.75,
+			["Bone"] = "right hand",
+			["Model"] = "models/props_junk/harpoon002a.mdl",
+			["Angles"] = Angle(-87.46875, -90, -89.96875),
+		},
+	},
+	[8] = {
+		["children"] = {
+			[2] = {
+				["children"] = {
+				},
+				["self"] = {
+					["ClassName"] = "model",
+					["Position"] = Vector(-19.3798828125, 0.8603515625, 64.4970703125),
+					["Size"] = 0.108,
+					["Model"] = "models/props_foliage/shrub_01a.mdl",
+					["UniqueID"] = "569061154",
+				},
+			},
+			[5] = {
+				["children"] = {
+				},
+				["self"] = {
+					["Position"] = Vector(-20.885999679565, 0.58600002527237, 64.440002441406),
+					["Scale"] = Vector(2.0199999809265, 1, 1),
+					["Angles"] = Angle(0, -180, 0),
+					["Size"] = 0.064,
+					["ClassName"] = "model",
+					["Color"] = Vector(69, 69, 69),
+					["UniqueID"] = "1861275626",
+					["Model"] = "models/pac/default.mdl",
+					["Material"] = "models/debug/debugwhite",
+				},
+			},
+			[4] = {
+				["children"] = {
+				},
+				["self"] = {
+					["ClassName"] = "model",
+					["Size"] = 0.076,
+					["Position"] = Vector(-20.099000930786, -0.05799999833107, 64.651000976563),
+					["Brightness"] = -2,
+					["Model"] = "models/pac/default.mdl",
+					["UniqueID"] = "1340769713",
+				},
+			},
+			[10] = {
+				["children"] = {
+				},
+				["self"] = {
+					["Material"] = "models/debug/debugwhite",
+					["Angles"] = Angle(0, -180, 0),
+					["UniqueID"] = "995829773",
+					["Position"] = Vector(-18.736000061035, 0.58999997377396, 66.169998168945),
+					["Color"] = Vector(0, 0, 0),
+					["Size"] = 0.252,
+					["Model"] = "models/pac/default.mdl",
+					["ClassName"] = "model",
+				},
+			},
+			[9] = {
+				["children"] = {
+				},
+				["self"] = {
+					["ClassName"] = "model",
+					["Position"] = Vector(-19.142578125, 1.22119140625, 64.498046875),
+					["Angles"] = Angle(0, 56.65625, 0),
+					["UniqueID"] = "355640945",
+					["Size"] = 0.108,
+					["Model"] = "models/props_foliage/shrub_01a.mdl",
+					["Scale"] = Vector(1, 1, 0.76999998092651),
+				},
+			},
+			[8] = {
+				["children"] = {
+				},
+				["self"] = {
+					["ClassName"] = "model",
+					["Size"] = 0.076,
+					["Position"] = Vector(-20.099000930786, 1.4579999446869, 64.651000976563),
+					["Brightness"] = -2,
+					["Model"] = "models/pac/default.mdl",
+					["UniqueID"] = "390040388",
+				},
+			},
+			[3] = {
+				["children"] = {
+					[1] = {
+						["children"] = {
+						},
+						["self"] = {
+							["RimlightBoost"] = 0.8,
+							["UniqueID"] = "1566253071",
+							["PhongExponent"] = 1.5,
+							["PhongTint"] = Vector(0.30000001192093, 0.30000001192093, 0.30000001192093),
+							["RimlightExponent"] = 0.5,
+							["BaseTexture"] = "https://raw.githubusercontent.com/CapsAdmin/pac3_assets/master/objects/norwegian_flag.png",
+							["ClassName"] = "material",
+							["PhongBoost"] = 0.21,
+							["BumpMap"] = "models/player/items/soldier/dappertopper",
+							["Rimlight"] = true,
+							["PhongFresnelRanges"] = Vector(0, 0.5, 1),
+							["Phong"] = true,
+						},
+					},
+				},
+				["self"] = {
+					["UniqueID"] = "527092226",
+					["AlternativeScaling"] = true,
+					["EditorExpand"] = true,
+					["DoubleFace"] = true,
+					["PositionOffset"] = Vector(12, -9, -57),
+					["ClassName"] = "model",
+					["Bone"] = "spine 1",
+					["Model"] = "models/weapons/c_models/c_buffbanner/c_buffbanner.mdl",
+					["Position"] = Vector(-16.120849609375, -4.77880859375, 49.9658203125),
+				},
+			},
+			[7] = {
+				["children"] = {
+				},
+				["self"] = {
+					["BaseTexture"] = "https://raw.githubusercontent.com/CapsAdmin/pac3_assets/master/objects/backpack_norwegian.png",
+					["ClassName"] = "material",
+					["UniqueID"] = "2356710271",
+					["BumpMap"] = "models\\player\\items\\sniper\\xms_sniper_commandobackpack_phongmask",
+					["DetailScale"] = 1.1,
+					["Phong"] = true,
+				},
+			},
+			[1] = {
+				["children"] = {
+				},
+				["self"] = {
+					["Angles"] = Angle(-72.28125, -101.375, 0),
+					["Size"] = 0.076,
+					["Position"] = Vector(-19.3798828125, 0.8603515625, 64.4970703125),
+					["UniqueID"] = "4253746561",
+					["Model"] = "models/props_foliage/shrub_01a.mdl",
+					["ClassName"] = "model",
+				},
+			},
+			[6] = {
+				["children"] = {
+				},
+				["self"] = {
+					["Angles"] = Angle(0, -179.96875, -52.875),
+					["Size"] = 0.078,
+					["Position"] = Vector(-19.3798828125, 0.8603515625, 64.4970703125),
+					["UniqueID"] = "3949930207",
+					["Model"] = "models/props_foliage/shrub_01a.mdl",
+					["ClassName"] = "model",
+				},
+			},
+		},
+		["self"] = {
+			["ClassName"] = "model",
+			["UniqueID"] = "622162126",
+			["PositionOffset"] = Vector(0, 0, -55.5),
+			["Angles"] = Angle(0, 62.53125, 90),
+			["Bone"] = "spine 2",
+			["Model"] = "models/player/items/sniper/xms_sniper_commandobackpack.mdl",
+			["Position"] = Vector(-4, 12, 0),
+		},
+	},
+	[3] = {
+		["children"] = {
+			[1] = {
+				["children"] = {
+				},
+				["self"] = {
+					["ClassName"] = "model",
+					["Size"] = 0,
+					["EditorExpand"] = true,
+					["Name"] = "ski ang",
+					["Model"] = "models/pac/default.mdl",
+					["UniqueID"] = "4216593801",
+				},
+			},
+		},
+		["self"] = {
+			["StopRadius"] = 12.7,
+			["ClassName"] = "jiggle",
+			["UniqueID"] = "1412949239",
+			["Bone"] = "none",
+		},
+	},
+	[7] = {
+		["children"] = {
+			[8] = {
+				["children"] = {
+					[1] = {
+						["children"] = {
+						},
+						["self"] = {
+							["RootOwner"] = true,
+							["UniqueID"] = "1350385686",
+							["VariableName"] = "Angles",
+							["ClassName"] = "proxy",
+							["Expression"] = "0,abs(sin(owner_velocity_length_increase()/2)^5*100)",
+						},
+					},
+				},
+				["self"] = {
+					["ClassName"] = "bone",
+					["UniqueID"] = "3851295836",
+					["Bone"] = "left upperarm",
+					["EditorExpand"] = true,
+					["Angles"] = Angle(0, 7.8078889846802, 0),
+				},
+			},
+			[2] = {
+				["children"] = {
+					[2] = {
+						["children"] = {
+						},
+						["self"] = {
+							["ClassName"] = "proxy",
+							["UniqueID"] = "1628568469",
+							["VariableName"] = "Angles",
+							["VelocityRoughness"] = 20,
+							["Expression"] = "nil, owner_velocity_right()*3",
+						},
+					},
+					[1] = {
+						["children"] = {
+						},
+						["self"] = {
+							["VariableName"] = "Position",
+							["ClassName"] = "proxy",
+							["UniqueID"] = "2407280773",
+							["Expression"] = "nil,nil,abs(owner_velocity_right())*-0.25",
+						},
+					},
+				},
+				["self"] = {
+					["EditorExpand"] = true,
+					["Position"] = Vector(0, 0, -9.4978594233908e-07),
+					["ClassName"] = "bone",
+					["Bone"] = "pelvis",
+					["Angles"] = Angle(0.65625, -5.5293148761848e-06, 0),
+					["UniqueID"] = "2159076784",
+				},
+			},
+			[5] = {
+				["children"] = {
+					[1] = {
+						["children"] = {
+						},
+						["self"] = {
+							["RootOwner"] = true,
+							["UniqueID"] = "3536679756",
+							["VariableName"] = "Angles",
+							["ClassName"] = "proxy",
+							["Expression"] = "0,abs(sin(owner_velocity_length_increase()/2)^5*100)",
+						},
+					},
+				},
+				["self"] = {
+					["ClassName"] = "bone",
+					["UniqueID"] = "375750313",
+					["Bone"] = "right upperarm",
+					["EditorExpand"] = true,
+					["Angles"] = Angle(0, 13.703516960144, 0),
+				},
+			},
+			[3] = {
+				["children"] = {
+					[1] = {
+						["children"] = {
+						},
+						["self"] = {
+							["RootOwner"] = true,
+							["UniqueID"] = "913256970",
+							["VariableName"] = "Angles",
+							["ClassName"] = "proxy",
+							["ZeroEyePitch"] = true,
+							["Expression"] = "owner_velocity_right()*5",
+						},
+					},
+				},
+				["self"] = {
+					["ClassName"] = "bone",
+					["UniqueID"] = "3944894964",
+					["Bone"] = "pelvis",
+					["EditorExpand"] = true,
+					["Angles"] = Angle(1.8995719074155e-05, 0, 0),
+				},
+			},
+			[7] = {
+				["children"] = {
+				},
+				["self"] = {
+					["ClassName"] = "event",
+					["UniqueID"] = "1918845321",
+					["Invert"] = true,
+					["Operator"] = "above",
+					["EditorExpand"] = true,
+					["Event"] = "speed",
+				},
+			},
+			[1] = {
+				["children"] = {
+					[1] = {
+						["children"] = {
+						},
+						["self"] = {
+							["RootOwner"] = true,
+							["UniqueID"] = "2660013532",
+							["VariableName"] = "Angles",
+							["ClassName"] = "proxy",
+							["Expression"] = "0,abs(sin(owner_velocity_length_increase()/2)^5*10)",
+						},
+					},
+				},
+				["self"] = {
+					["ClassName"] = "bone",
+					["UniqueID"] = "1917341326",
+					["Bone"] = "spine",
+					["EditorExpand"] = true,
+					["Angles"] = Angle(0, 0.66187018156052, 0),
+				},
+			},
+			[4] = {
+				["children"] = {
+					[1] = {
+						["children"] = {
+						},
+						["self"] = {
+							["RootOwner"] = true,
+							["UniqueID"] = "1794378940",
+							["VariableName"] = "Angles",
+							["ClassName"] = "proxy",
+							["Expression"] = "0,abs(sin(owner_velocity_length_increase()/2)^5*10)",
+						},
+					},
+				},
+				["self"] = {
+					["ClassName"] = "bone",
+					["UniqueID"] = "2757067662",
+					["Bone"] = "spine 1",
+					["EditorExpand"] = true,
+					["Angles"] = Angle(0, 1.4108070135117, 0),
+				},
+			},
+			[6] = {
+				["children"] = {
+					[1] = {
+						["children"] = {
+						},
+						["self"] = {
+							["RootOwner"] = true,
+							["UniqueID"] = "665328600",
+							["VariableName"] = "Angles",
+							["EditorExpand"] = true,
+							["ClassName"] = "proxy",
+							["Expression"] = "0,abs(sin(owner_velocity_length_increase()/2)^5*10)",
+						},
+					},
+				},
+				["self"] = {
+					["ClassName"] = "bone",
+					["UniqueID"] = "3396535210",
+					["Bone"] = "spine 2",
+					["EditorExpand"] = true,
+					["Angles"] = Angle(0, 1.4360531568527, 0),
+				},
+			},
+		},
+		["self"] = {
+			["UniqueID"] = "448031741",
+			["ClassName"] = "group",
+		},
+	},
+	[1] = {
+		["children"] = {
+			[1] = {
+				["children"] = {
+				},
+				["self"] = {
+					["Event"] = "speed",
+					["UniqueID"] = "3385628781",
+					["Operator"] = "above",
+					["ClassName"] = "event",
+					["Invert"] = true,
+				},
+			},
+		},
+		["self"] = {
+			["ClassName"] = "sound",
+			["UniqueID"] = "757087059",
+			["Pitch"] = 0.988,
+			["Volume"] = 0.075,
+			["Sound"] = "physics/cardboard/cardboard_box_scrape_smooth_loop1.wav",
+		},
+	},
+	[6] = {
+		["children"] = {
+		},
+		["self"] = {
+			["EditorExpand"] = true,
+			["PoseParameter"] = "aim_pitch",
+			["ClassName"] = "poseparameter",
+			["UniqueID"] = "3215839163",
+			["Range"] = 0.02,
+		},
+	},
+},
+["self"] = {
+	["EditorExpand"] = true,
+	["ClassName"] = "group",
+	["Name"] = "ski",
+	["UniqueID"] = "415902456",
+},

@@ -59,8 +59,6 @@ function _G.pac_ReloadParts()
 end
 
 function _G.pac_Restart()
-	PAC_MDL_SALT = PAC_MDL_SALT + 1
-
 	local editor_was_open
 	local prev_parts = {}
 	local pacLocal = _G.pac
@@ -100,7 +98,7 @@ function _G.pac_Restart()
 			pace.Panic()
 		end
 
-		for _, ent in pairs(ents.GetAll()) do
+		for _, ent in ents.Iterator() do
 			for k in pairs(ent:GetTable()) do
 				if k:sub(0, 4) == "pac_" then
 					ent[k] = nil

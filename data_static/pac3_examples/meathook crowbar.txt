@@ -1,0 +1,40 @@
+[1] = {
+	["children"] = {
+		[1] = {
+			["children"] = {
+				[1] = {
+					["children"] = {
+					},
+					["self"] = {
+						["ParentName"] = "meathooka",
+						["Invert"] = true,
+						["Name"] = "",
+						["ClassName"] = "event",
+						["Arguments"] = "weapon_crowbar@@1",
+						["UniqueID"] = "2936785357",
+						["Operator"] = "equal",
+						["ParentUID"] = "1275424410",
+						["Event"] = "weapon_class",
+					},
+				},
+			},
+			["self"] = {
+				["ParentName"] = "group",
+				["Position"] = Vector(3.2984008789063, -3.8543701171875, -3.4800720214844),
+				["Name"] = "",
+				["ClassName"] = "model",
+				["UniqueID"] = "1275424410",
+				["EditorExpand"] = true,
+				["Bone"] = "right hand",
+				["Model"] = "models/props_junk/meathook001a.mdl",
+				["ParentUID"] = "1051241830",
+			},
+		},
+	},
+	["self"] = {
+		["EditorExpand"] = true,
+		["ClassName"] = "group",
+		["Name"] = "",
+		["UniqueID"] = "1051241830",
+	},
+},

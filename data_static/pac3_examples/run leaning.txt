@@ -1,0 +1,52 @@
+[1] = {
+	["children"] = {
+		[1] = {
+			["children"] = {
+				[2] = {
+					["children"] = {
+					},
+					["self"] = {
+						["ParentName"] = "bone 50",
+						["ClassName"] = "proxy",
+						["UniqueID"] = "1699907531",
+						["VariableName"] = "Position",
+						["ParentUID"] = "3891402856",
+						["Name"] = "",
+						["Expression"] = "nil,nil,abs(owner_velocity_right())*-0.25",
+					},
+				},
+				[1] = {
+					["children"] = {
+					},
+					["self"] = {
+						["ParentName"] = "bone 50",
+						["ClassName"] = "proxy",
+						["UniqueID"] = "209517437",
+						["VariableName"] = "Angles",
+						["VelocityRoughness"] = 20,
+						["ParentUID"] = "3891402856",
+						["Name"] = "",
+						["Expression"] = "nil, owner_velocity_right()*3, owner_velocity_forward()*-1",
+					},
+				},
+			},
+			["self"] = {
+				["ParentUID"] = "2288060575",
+				["UniqueID"] = "3891402856",
+				["Name"] = "",
+				["ClassName"] = "bone",
+				["Angles"] = Angle(0.65625, -3.0828566215146e-44, 4.2038953929745e-45),
+				["ParentName"] = "run lean",
+				["Bone"] = "pelvis",
+				["EditorExpand"] = true,
+				["Position"] = Vector(0, 0, -1.5248252971103e-26),
+			},
+		},
+	},
+	["self"] = {
+		["EditorExpand"] = true,
+		["ClassName"] = "group",
+		["Name"] = "run lean",
+		["UniqueID"] = "2288060575",
+	},
+},

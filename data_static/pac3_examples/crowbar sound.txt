@@ -1,0 +1,39 @@
+[1] = {
+	["children"] = {
+		[1] = {
+			["children"] = {
+				[1] = {
+					["children"] = {
+					},
+					["self"] = {
+						["ParentName"] = "attack stop2",
+						["ClassName"] = "event",
+						["UniqueID"] = "3759671898",
+						["ParentUID"] = "4118723227",
+						["Event"] = "animation_event",
+						["Operator"] = "equal",
+						["Name"] = "animation event equal \"attack primary\"",
+						["Arguments"] = "attack primary",
+					},
+				},
+			},
+			["self"] = {
+				["ParentName"] = "my outfit",
+				["ClassName"] = "sound",
+				["UniqueID"] = "4118723227",
+				["ParentUID"] = "195077844",
+				["EditorExpand"] = true,
+				["Overlapping"] = true,
+				["Name"] = "",
+				["Sound"] = "npc/combine_gunship/attack_start2.wav",
+			},
+		},
+	},
+	["self"] = {
+		["EditorExpand"] = true,
+		["UniqueID"] = "195077844",
+		["ClassName"] = "group",
+		["Name"] = "crowbar sound",
+		["Description"] = "add parts to me!",
+	},
+},

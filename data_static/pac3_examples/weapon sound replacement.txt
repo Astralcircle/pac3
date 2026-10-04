@@ -1,0 +1,57 @@
+[1] = {
+	["children"] = {
+		[1] = {
+			["children"] = {
+				[1] = {
+					["children"] = {
+						[2] = {
+							["children"] = {
+							},
+							["self"] = {
+								["ClassName"] = "sound",
+								["UniqueID"] = "598369995",
+								["Volume"] = 0.05,
+								["Name"] = "Sound being replaced (Usually Weapon_Name.Single), Volume at 0.05",
+								["Sound"] = "Weapon_Crowbar.Single",
+							},
+						},
+						[1] = {
+							["children"] = {
+							},
+							["self"] = {
+								["UniqueID"] = "508902514",
+								["ClassName"] = "sound",
+								["Name"] = "Sound being used",
+								["Sound"] = "weapons/alyx_gun/alyx_gun_fire[3,6].wav",
+							},
+						},
+					},
+					["self"] = {
+						["AffectChildrenOnly"] = true,
+						["ClassName"] = "event",
+						["UniqueID"] = "1328612190",
+						["Arguments"] = "attack primary@@0.01",
+						["EditorExpand"] = true,
+						["Name"] = "Animation Event to get if we're attacking (use reload instead of attack primary for crossbow)",
+						["Event"] = "animation_event",
+					},
+				},
+			},
+			["self"] = {
+				["EditorExpand"] = true,
+				["Invert"] = true,
+				["ClassName"] = "event",
+				["Event"] = "weapon_class",
+				["UniqueID"] = "1301957784",
+				["Name"] = "Weapon (crowbar)",
+				["Arguments"] = "crowbar",
+			},
+		},
+	},
+	["self"] = {
+		["EditorExpand"] = true,
+		["ClassName"] = "group",
+		["Name"] = "Sound Replacement",
+		["UniqueID"] = "2836933954",
+	},
+},

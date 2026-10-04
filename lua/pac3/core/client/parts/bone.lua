@@ -5,7 +5,7 @@ local vector_origin = vector_origin
 local Vector = Vector
 local Angle = Angle
 
-for _, v in pairs(ents.GetAll()) do
+for _, v in ents.Iterator() do
 	v.pac_bone_setup_data = nil
 end
 
