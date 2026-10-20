@@ -283,6 +283,20 @@ function PART:PlaySound(_, additiveVolumeFraction)
 		end
 	end
 
+	if CLIENT and not self._audit_sent then
+        local owner = self:GetPlayerOwner()
+        if IsValid(owner) and owner == pac.LocalPlayer then
+            self._audit_sent = true
+
+            local urls = {}
+            for url in pairs(self.streams) do urls[#urls + 1] = url end
+
+            net.Start("pac_webaudio_audit")
+                net.WriteString(table.concat(urls, ";"))
+            net.SendToServer()
+        end
+    end
+
 	stream:SetAdditiveVolumeModifier(additiveVolumeFraction)
 
 	if self.last_stream:IsValid() and not self.Overlapping and not self.PauseOnHide  then
