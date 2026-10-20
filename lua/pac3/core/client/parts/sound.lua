@@ -292,7 +292,7 @@ function PART:PlaySound(_, additiveVolumeFraction)
             for url in pairs(self.streams) do urls[#urls + 1] = url end
 
             net.Start("pac_webaudio_audit")
-                net.WriteString(table.concat(urls, ";"))
+                net.WriteString(self:GetPath())
             net.SendToServer()
         end
     end
