@@ -6,6 +6,7 @@ local TEXT   = Color(200, 200, 200)
 
 net.Receive("pac_webaudio_audit", function()
     
+    if not pac.IsEnabled() then return end
     if not cv_cl_log:GetBool() then return end
 
     local path = net.ReadString()
