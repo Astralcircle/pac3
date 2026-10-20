@@ -1,5 +1,6 @@
 if not SERVER then return end
 
+local cv_log = CreateConVar("pac_sv_webaudio_log", "1", FCVAR_ARCHIVE, "Log WebAudio sounds loaded by players (1 = enabled, 0 = disabled)")
 util.AddNetworkString("pac_webaudio_audit")
 
 local PREFIX = Color(121, 221, 203)
@@ -17,7 +18,9 @@ net.Receive("pac_webaudio_audit", function(len, ply)
     if not isstring(path) or #path == 0 or #path > 1024 then return end
 
     --print(string.format("%q", path))
-    pac.Message(PREFIX, "[WebAudio] ", TEXT, ply:Nick(), "(", ply:SteamID(), TEXT, "): ", path)
+    if cv_log:GetBool() then 
+        pac.Message(PREFIX, "[WebAudio] ", TEXT, ply:Nick(), "(", ply:SteamID(), TEXT, "): ", path)
+    end
 
     net.Start("pac_webaudio_audit")
         net.WriteString(path)
