@@ -3,8 +3,7 @@ if not SERVER then return end
 util.AddNetworkString("pac_webaudio_audit")
 
 local PREFIX = Color(121, 221, 203)
-local TEXT = Color(160, 190, 160)
-local STEAMIDCOLOR = Color(140,200,255)
+local TEXT = Color(200, 200, 200)
 
 local RATE_WINDOW = 10
 local RATE_MAX = 5
@@ -17,7 +16,8 @@ net.Receive("pac_webaudio_audit", function(len, ply)
     local path = net.ReadString()
     if not isstring(path) or #path == 0 or #path > 1024 then return end
 
-    pac.Message(PREFIX, "[WebAudio] ", TEXT, ply:Nick(), " (", STEAMIDCOLOR, ply:SteamID(), TEXT, ") has loaded web sound: ", path)
+    --print(string.format("%q", path))
+    pac.Message(PREFIX, "[WebAudio] ", TEXT, ply:Nick(), "(", ply:SteamID(), TEXT, "): ", path)
 
     net.Start("pac_webaudio_audit")
         net.WriteString(path)
