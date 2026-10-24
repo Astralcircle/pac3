@@ -298,7 +298,7 @@ function pac.AddEntityClassListener(class, session, check_func, draw_dist)
 		end
 	end
 
-	for _, ent in pairs(ents.GetAll()) do
+	for _, ent in ents.Iterator() do
 		created(ent)
 	end
 
@@ -313,7 +313,7 @@ function pac.RemoveEntityClassListener(class, session, check_func)
 
 	check_func = check_func or function(ent) return ent:GetClass() == class end
 
-	for _, ent in pairs(ents.GetAll()) do
+	for _, ent in ents.Iterator() do
 		if check_func(ent) and ent.pac_outfits then
 			ent:RemovePACSession(session)
 		end

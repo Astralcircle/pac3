@@ -5,7 +5,7 @@ local pairs = pairs
 pac.registered_parts = {}
 
 local function on_error(msg)
-	ErrorNoHalt(debug.traceback(msg))
+
 end
 
 local function initialize(part, owner)

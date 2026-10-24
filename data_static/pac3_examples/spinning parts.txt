@@ -1,0 +1,111 @@
+[1] = {
+	["children"] = {
+		[1] = {
+			["children"] = {
+				[4] = {
+					["children"] = {
+					},
+					["self"] = {
+						["ParentName"] = "hoverball",
+						["Invert"] = true,
+						["Name"] = "",
+						["ClassName"] = "model",
+						["Size"] = 15,
+						["EditorExpand"] = true,
+						["ParentUID"] = "4092294027",
+						["UniqueID"] = "1872614930",
+						["Brightness"] = 0,
+						["Material"] = "models/screenspace",
+					},
+				},
+				[1] = {
+					["children"] = {
+					},
+					["self"] = {
+						["ParentName"] = "hoverball",
+						["ClassName"] = "sunbeams",
+						["UniqueID"] = "3874516580",
+						["ParentUID"] = "4092294027",
+						["Multiplier"] = 0.05,
+						["Name"] = "",
+						["Size"] = -0.15,
+					},
+				},
+				[2] = {
+					["children"] = {
+					},
+					["self"] = {
+						["ParentName"] = "hoverball",
+						["ClassName"] = "proxy",
+						["UniqueID"] = "4150349410",
+						["VariableName"] = "Angles",
+						["ParentUID"] = "4092294027",
+						["Name"] = "",
+						["Expression"] = "nil, time()*50",
+					},
+				},
+				[3] = {
+					["children"] = {
+						[2] = {
+							["children"] = {
+							},
+							["self"] = {
+								["ParentName"] = "hoverball",
+								["ClassName"] = "proxy",
+								["UniqueID"] = "4006368583",
+								["VariableName"] = "Angles",
+								["ParentUID"] = "2145645982",
+								["Name"] = "",
+								["Expression"] = "time()*50, time()*50",
+							},
+						},
+						[1] = {
+							["children"] = {
+							},
+							["self"] = {
+								["ParentName"] = "hoverball",
+								["ClassName"] = "model",
+								["Position"] = Vector(11.699999809265, 0, 0),
+								["Material"] = "models/shadertest/envball_6",
+								["Size"] = 0.3,
+								["ParentUID"] = "2145645982",
+								["Name"] = "",
+								["UniqueID"] = "3278812056",
+							},
+						},
+					},
+					["self"] = {
+						["ParentName"] = "hoverball",
+						["Position"] = Vector(0, -51, 0),
+						["Name"] = "",
+						["ClassName"] = "model",
+						["EditorExpand"] = true,
+						["UniqueID"] = "2145645982",
+						["Material"] = "models/lilchewchew/embers",
+						["ParentUID"] = "4092294027",
+						["Angles"] = Angle(1642751, 1642751, 0),
+					},
+				},
+			},
+			["self"] = {
+				["ParentName"] = "group",
+				["UniqueID"] = "4092294027",
+				["Name"] = "",
+				["Angles"] = Angle(0, 1642751, 0),
+				["ClassName"] = "model",
+				["Size"] = 2,
+				["ParentUID"] = "883707760",
+				["Position"] = Vector(0, 0, 98),
+				["Bone"] = "none",
+				["EditorExpand"] = true,
+				["Material"] = "models/effects/goldenwrench",
+			},
+		},
+	},
+	["self"] = {
+		["EditorExpand"] = true,
+		["ClassName"] = "group",
+		["Name"] = "",
+		["UniqueID"] = "883707760",
+	},
+},

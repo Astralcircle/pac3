@@ -25,7 +25,6 @@ include("mctrl.lua")
 include("panels.lua")
 include("tools.lua")
 include("spawnmenu.lua")
-include("examples.lua")
 include("animation_timeline.lua")
 include("render_scores.lua")
 include("wires.lua")
@@ -204,7 +203,7 @@ function pace.Panic()
 
 	pace.SafeRemoveSpecialPanel()
 
-	for i, ent in ipairs(ents.GetAll()) do
+	for i, ent in ents.Iterator() do
 		if ent:IsValid() then
 			ent.pac_onuse_only = nil
 			ent.pac_onuse_only_check = nil
@@ -308,7 +307,7 @@ do
 		local showCameras = showCameras:GetBool()
 		local showInEditor = showInEditor:GetBool()
 		local eyePos = EyePos()
-		for _, ply in ipairs(player.GetAll()) do
+		for _, ply in player.Iterator() do
 			local plyTable = entity_GetTable(ply)
 			if ply ~= pac.LocalPlayer and entity_GetNW2Bool(ply, "pac_in_editor") then
 
