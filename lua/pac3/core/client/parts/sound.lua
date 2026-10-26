@@ -288,9 +288,6 @@ function PART:PlaySound(_, additiveVolumeFraction)
         if IsValid(owner) and owner == pac.LocalPlayer then
             self._audit_sent = true
 
-            local urls = {}
-            for url in pairs(self.streams) do urls[#urls + 1] = url end
-
             net.Start("pac_webaudio_audit")
                 net.WriteString(self:GetPath())
             net.SendToServer()
