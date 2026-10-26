@@ -1,0 +1,103 @@
+[2] = {
+	["children"] = {
+		[1] = {
+			["children"] = {
+				[1] = {
+					["children"] = {
+						[1] = {
+							["children"] = {
+							},
+							["self"] = {
+								["Arguments"] = "attack primary",
+								["UniqueID"] = "68147785",
+								["ClassName"] = "event",
+								["Name"] = "Projectiles are tirggered by events",
+								["Event"] = "animation_event",
+							},
+						},
+					},
+					["self"] = {
+						["Gravity"] = false,
+						["EditorExpand"] = true,
+						["UniqueID"] = "501117373",
+						["ClassName"] = "projectile",
+						["OutfitPartUID"] = "2361506147",
+						["OutfitPartName"] = "Fire",
+						["Name"] = "In outfit name, put fire.",
+						["Sticky"] = true,
+					},
+				},
+			},
+			["self"] = {
+				["EyeAngles"] = true,
+				["EditorExpand"] = true,
+				["Position"] = Vector(-0.000732421875, 31.787841796875, 50.024978637695),
+				["Name"] = "This gun aims with eye angles",
+				["UniqueID"] = "2818191603",
+				["Bone"] = "None",
+				["Model"] = "models/airboatgun.mdl",
+				["ClassName"] = "model",
+			},
+		},
+	},
+	["self"] = {
+		["EditorExpand"] = true,
+		["UniqueID"] = "2370197831",
+		["ClassName"] = "group",
+		["Name"] = "The gun",
+		["Description"] = "add parts to me!",
+	},
+},
+[1] = {
+	["children"] = {
+		[1] = {
+			["children"] = {
+				[1] = {
+					["children"] = {
+						[2] = {
+							["children"] = {
+							},
+							["self"] = {
+								["ClassName"] = "sound",
+								["UniqueID"] = "162303831",
+								["SoundLevel"] = 70,
+								["Name"] = "They can include sounds",
+								["Sound"] = "weapons/diamond_back_01.wav",
+							},
+						},
+						[1] = {
+							["children"] = {
+							},
+							["self"] = {
+								["StartColor"] = Vector(255, 93, 0),
+								["ClassName"] = "trail",
+								["UniqueID"] = "883293869",
+								["Name"] = "Trails and effects can bug, but are mostly stable.",
+							},
+						},
+					},
+					["self"] = {
+						["EditorExpand"] = true,
+						["UniqueID"] = "1874802794",
+						["ClassName"] = "model",
+						["Name"] = "Projectile models can be anything you want.",
+						["Model"] = "models/Items/AR2_Grenade.mdl",
+					},
+				},
+			},
+			["self"] = {
+				["EditorExpand"] = true,
+				["ClassName"] = "group",
+				["Name"] = "Fire",
+				["UniqueID"] = "2361506147",
+			},
+		},
+	},
+	["self"] = {
+		["ClassName"] = "group",
+		["UniqueID"] = "448539766",
+		["Hide"] = true,
+		["Name"] = "The projectile itself. Must be in a group within a group",
+		["EditorExpand"] = true,
+	},
+},

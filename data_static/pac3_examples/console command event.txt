@@ -1,0 +1,53 @@
+[1] = {
+	["children"] = {
+		[1] = {
+			["children"] = {
+				[2] = {
+					["children"] = {
+					},
+					["self"] = {
+						["ParentName"] = "zone",
+						["ClassName"] = "proxy",
+						["UniqueID"] = "2871073228",
+						["VariableName"] = "Pitch",
+						["EditorExpand"] = true,
+						["ParentUID"] = "2227000698",
+						["Name"] = "",
+						["Expression"] = "randx(0.2, 0.3)",
+					},
+				},
+				[1] = {
+					["children"] = {
+					},
+					["self"] = {
+						["ParentName"] = "zone",
+						["Invert"] = true,
+						["Name"] = "",
+						["ClassName"] = "event",
+						["EditorExpand"] = true,
+						["UniqueID"] = "899328776",
+						["ParentUID"] = "2227000698",
+						["Arguments"] = "speak@@0.5",
+						["Event"] = "command",
+					},
+				},
+			},
+			["self"] = {
+				["ParentName"] = "sounds",
+				["ClassName"] = "sound",
+				["UniqueID"] = "2227000698",
+				["ParentUID"] = "572820835",
+				["Pitch"] = 0.28428220437401,
+				["EditorExpand"] = true,
+				["Name"] = "",
+				["Sound"] = "npc/overwatch/radiovoice/404zone.wav;npc/overwatch/radiovoice/_comma.wav;npc/overwatch/radiovoice/accomplicesoperating.wav;npc/overwatch/radiovoice/administer.wav;npc/overwatch/radiovoice/airwatchcopiesnoactivity.wav;npc/overwatch/radiovoice/airwatchreportspossiblemiscount.wav;npc/overwatch/radiovoice/alarms62.wav;npc/overwatch/radiovoice/allteamsrespondcode3.wav;npc/overwatch/radiovoice/allunitsapplyforwardpressure.wav;npc/overwatch/radiovoice/allunitsat.wav;npc/overwatch/radiovoice/allunitsbeginwhitnesssterilization.wav;npc/overwatch/radiovoice/allunitsbolfor243suspect.wav;npc/overwatch/radiovoice/allunitsdeliverterminalverdict.wav;npc/overwatch/radiovoice/allunitsreturntocode12.wav;npc/overwatch/radiovoice/allunitsverdictcodeis.wav;npc/overwatch/radiovoice/allunitsverdictcodeonsuspect.wav;npc/overwatch/radiovoice/amputate.wav;npc/overwatch/radiovoice/anticitizen.wav;npc/overwatch/radiovoice/antifatigueration3mg.wav;npc/overwatch/radiovoice/apply.wav;npc/overwatch/radiovoice/assault243.wav;npc/overwatch/radiovoice/attemptedcrime27.wav;npc/overwatch/radiovoice/attention.wav;npc/overwatch/radiovoice/attentionyouhavebeenchargedwith.wav;npc/overwatch/radiovoice/beginscanning10-0.wav;npc/overwatch/radiovoice/block.wav;npc/overwatch/radiovoice/canalblock.wav;npc/overwatch/radiovoice/capitalmalcompliance.wav;npc/overwatch/radiovoice/cauterize.wav;npc/overwatch/radiovoice/citizen.wav;npc/overwatch/radiovoice/completesentencingatwill.wav;npc/overwatch/radiovoice/condemnedzone.wav;npc/overwatch/radiovoice/confirmupialert.wav;npc/overwatch/radiovoice/controlsection.wav;npc/overwatch/radiovoice/criminaltrespass63.wav;npc/overwatch/radiovoice/defender.wav;npc/overwatch/radiovoice/deservicedarea.wav;npc/overwatch/radiovoice/destrutionofcpt.wav;npc/overwatch/radiovoice/devisivesociocidal.wav;npc/overwatch/radiovoice/die1.wav;npc/overwatch/radiovoice/die2.wav;npc/overwatch/radiovoice/die3.wav;npc/overwatch/radiovoice/disassociationfromcivic.wav;npc/overwatch/radiovoice/disengaged647e.wav;npc/overwatch/radiovoice/distributionblock.wav;npc/overwatch/radiovoice/disturbancemental10-103m.wav;npc/overwatch/radiovoice/disturbingunity415.wav;npc/overwatch/radiovoice/document.wav;npc/overwatch/radiovoice/eight.wav;npc/overwatch/radiovoice/engagingteamisnoncohesive.wav;npc/overwatch/radiovoice/examine.wav;npc/overwatch/radiovoice/externaljurisdiction.wav;npc/overwatch/radiovoice/failuretocomply.wav;npc/overwatch/radiovoice/failuretotreatoutbreak.wav;npc/overwatch/radiovoice/finalverdictadministered.wav;npc/overwatch/radiovoice/five.wav;npc/overwatch/radiovoice/fmil_Region 073.wav;npc/overwatch/radiovoice/four.wav;npc/overwatch/radiovoice/freeman.wav;npc/overwatch/radiovoice/fugitive17f.wav;npc/overwatch/radiovoice/halfrankpoints.wav;npc/overwatch/radiovoice/halfreproductioncredits.wav;npc/overwatch/radiovoice/hero.wav;npc/overwatch/radiovoice/highpriorityregion.wav;npc/overwatch/radiovoice/illegalcarrying95.wav;npc/overwatch/radiovoice/illegalinoperation63s.wav;npc/overwatch/radiovoice/immediateamputation.wav;npc/overwatch/radiovoice/incitingpopucide.wav;npc/overwatch/radiovoice/industrialzone.wav;npc/overwatch/radiovoice/infection.wav;npc/overwatch/radiovoice/infestedzone.wav;npc/overwatch/radiovoice/inject.wav;npc/overwatch/radiovoice/innoculate.wav;npc/overwatch/radiovoice/inprogress.wav;npc/overwatch/radiovoice/intercede.wav;npc/overwatch/radiovoice/interlock.wav;npc/overwatch/radiovoice/investigate.wav;npc/overwatch/radiovoice/investigateandreport.wav;npc/overwatch/radiovoice/isnow.wav;npc/overwatch/radiovoice/isolate.wav;npc/overwatch/radiovoice/jury.wav;npc/overwatch/radiovoice/king.wav;npc/overwatch/radiovoice/leadersreportratios.wav;npc/overwatch/radiovoice/level5anticivilactivity.wav;npc/overwatch/radiovoice/line.wav;npc/overwatch/radiovoice/lock.wav;npc/overwatch/radiovoice/lockdownlocationsacrificecode.wav;npc/overwatch/radiovoice/lostbiosignalforunit.wav;npc/overwatch/radiovoice/nine.wav;npc/overwatch/radiovoice/noncitizen.wav;npc/overwatch/radiovoice/nonpatrolregion.wav;npc/overwatch/radiovoice/nonsanctionedarson51.wav;npc/overwatch/radiovoice/off2.wav;npc/overwatch/radiovoice/off4.wav;npc/overwatch/radiovoice/officerat.wav;npc/overwatch/radiovoice/officerclosingonsuspect.wav;npc/overwatch/radiovoice/on1.wav;npc/overwatch/radiovoice/on3.wav;npc/overwatch/radiovoice/one.wav;npc/overwatch/radiovoice/outlandzone.wav;npc/overwatch/radiovoice/patrol.wav;npc/overwatch/radiovoice/permanentoffworld.wav;npc/overwatch/radiovoice/politistablizationmarginal.wav;npc/overwatch/radiovoice/posession69.wav;npc/overwatch/radiovoice/prematuremissiontermination.wav;npc/overwatch/radiovoice/prepareforfinalsentencing.wav;npc/overwatch/radiovoice/preparetoinnoculate.wav;npc/overwatch/radiovoice/preparetoreceiveverdict.wav;npc/overwatch/radiovoice/preparevisualdownload.wav;npc/overwatch/radiovoice/preserve.wav;npc/overwatch/radiovoice/pressure.wav;npc/overwatch/radiovoice/productionblock.wav;npc/overwatch/radiovoice/promotingcommunalunrest.wav;npc/overwatch/radiovoice/prosecute.wav;npc/overwatch/radiovoice/publicnoncompliance507.wav;npc/overwatch/radiovoice/quick.wav;npc/overwatch/radiovoice/recalibratesocioscan.wav;npc/overwatch/radiovoice/recievingconflictingdata.wav;npc/overwatch/radiovoice/recklessoperation99.wav;npc/overwatch/radiovoice/reinforcementteamscode3.wav;npc/overwatch/radiovoice/remainingunitscontain.wav;npc/overwatch/radiovoice/reminder100credits.wav;npc/overwatch/radiovoice/remindermemoryreplacement.wav;npc/overwatch/radiovoice/reporton.wav;npc/overwatch/radiovoice/reportplease.wav;npc/overwatch/radiovoice/repurposedarea.wav;npc/overwatch/radiovoice/residentialblock.wav;npc/overwatch/radiovoice/resistingpacification148.wav;npc/overwatch/radiovoice/respond.wav;npc/overwatch/radiovoice/restrict.wav;npc/overwatch/radiovoice/restrictedblock.wav;npc/overwatch/radiovoice/restrictedincursioninprogress.wav;npc/overwatch/radiovoice/rewardnotice.wav;npc/overwatch/radiovoice/riot404.wav;npc/overwatch/radiovoice/roller.wav;npc/overwatch/radiovoice/search.wav;npc/overwatch/radiovoice/sector.wav;npc/overwatch/radiovoice/serve.wav;npc/overwatch/radiovoice/seven.wav;npc/overwatch/radiovoice/six.wav;npc/overwatch/radiovoice/socialfractureinprogress.wav;npc/overwatch/radiovoice/sociocide.wav;npc/overwatch/radiovoice/sociostabilizationrestored.wav;npc/overwatch/radiovoice/stabilizationjurisdiction.wav;npc/overwatch/radiovoice/stationblock.wav;npc/overwatch/radiovoice/statuson243suspect.wav;npc/overwatch/radiovoice/sterilize.wav;npc/overwatch/radiovoice/stick.wav;npc/overwatch/radiovoice/stormsystem.wav;npc/overwatch/radiovoice/subject.wav;npc/overwatch/radiovoice/suspectisnow187.wav;npc/overwatch/radiovoice/suspectmalignantverdictcodeis.wav;npc/overwatch/radiovoice/suspend.wav;npc/overwatch/radiovoice/suspendnegotiations.wav;npc/overwatch/radiovoice/switchcomtotac3.wav;npc/overwatch/radiovoice/switchtotac5reporttocp.wav;npc/overwatch/radiovoice/tap.wav;npc/overwatch/radiovoice/teamsreportstatus.wav;npc/overwatch/radiovoice/terminalprosecution.wav;npc/overwatch/radiovoice/terminalrestrictionzone.wav;npc/overwatch/radiovoice/threattoproperty51b.wav;npc/overwatch/radiovoice/three.wav;npc/overwatch/radiovoice/transitblock.wav;npc/overwatch/radiovoice/two.wav;npc/overwatch/radiovoice/union.wav;npc/overwatch/radiovoice/unitdeserviced.wav;npc/overwatch/radiovoice/unitdownat.wav;npc/overwatch/radiovoice/unlawfulentry603.wav;npc/overwatch/radiovoice/upi.wav;npc/overwatch/radiovoice/vice.wav;npc/overwatch/radiovoice/victor.wav;npc/overwatch/radiovoice/violationofcivictrust.wav;npc/overwatch/radiovoice/wasteriver.wav;npc/overwatch/radiovoice/weapon94.wav;npc/overwatch/radiovoice/workforceintake.wav;npc/overwatch/radiovoice/xray.wav;npc/overwatch/radiovoice/yellow.wav;npc/overwatch/radiovoice/youarechargedwithterminal.wav;npc/overwatch/radiovoice/youarejudgedguilty.wav;npc/overwatch/radiovoice/zero.wav;npc/overwatch/radiovoice/zone.wav",
+			},
+		},
+	},
+	["self"] = {
+		["EditorExpand"] = true,
+		["ClassName"] = "group",
+		["Name"] = "run \"pac_event speak\" in console!",
+		["UniqueID"] = "2684545507",
+	},
+},

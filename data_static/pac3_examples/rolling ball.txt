@@ -1,0 +1,76 @@
+[1] = {
+	["children"] = {
+		[1] = {
+			["children"] = {
+				[2] = {
+					["children"] = {
+					},
+					["self"] = {
+						["ParentName"] = "base",
+						["UniqueID"] = "459998550",
+						["Name"] = "",
+						["VariableName"] = "Angles",
+						["ClassName"] = "proxy",
+						["Description"] = "this is for side lean",
+						["RootOwner"] = true,
+						["ParentUID"] = "2375944239",
+						["Expression"] = "nil, nil, owner_velocity_right() * 5",
+					},
+				},
+				[1] = {
+					["children"] = {
+						[1] = {
+							["children"] = {
+							},
+							["self"] = {
+								["ParentName"] = "trackball ",
+								["UniqueID"] = "3346301612",
+								["Name"] = "",
+								["VariableName"] = "Angles",
+								["ClassName"] = "proxy",
+								["Additive"] = true,
+								["ParentUID"] = "3440646591",
+								["RootOwner"] = true,
+								["Expression"] = "-owner_velocity_forward() * 2",
+							},
+						},
+					},
+					["self"] = {
+						["ParentName"] = "hoverball",
+						["Position"] = Vector(0, 0, -0.10000000149012),
+						["Name"] = "",
+						["EditorExpand"] = true,
+						["UniqueID"] = "3440646591",
+						["ClassName"] = "model",
+						["Size"] = 1.65,
+						["ParentUID"] = "2375944239",
+						["Angles"] = Angle(8582.53125, 0, 90),
+						["Bone"] = "none",
+						["Model"] = "models/XQM/Rails/trackball_1.mdl",
+						["Description"] = "the actual forward roll ball",
+					},
+				},
+			},
+			["self"] = {
+				["ParentName"] = "my outfit",
+				["Position"] = Vector(0, 0, 24),
+				["Name"] = "base",
+				["EditorExpand"] = true,
+				["Angles"] = Angle(0, 0, 7.0064923216241e-45),
+				["Size"] = 1.075,
+				["UniqueID"] = "2375944239",
+				["ClassName"] = "model",
+				["Bone"] = "none",
+				["Model"] = "models/XQM/Rails/trackball_1.mdl",
+				["ParentUID"] = "2375944239",
+			},
+		},
+	},
+	["self"] = {
+		["EditorExpand"] = true,
+		["UniqueID"] = "2683560774",
+		["ClassName"] = "group",
+		["Name"] = "rolling ball",
+		["Description"] = "add parts to me!",
+	},
+},
