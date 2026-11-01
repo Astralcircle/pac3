@@ -293,7 +293,7 @@ end
 do
 	function pace.SetInPAC3Editor(b)
 		net.Start("pac_in_editor")
-		net.WriteBit(b)
+		net.WriteBool(b)
 		net.SendToServer()
 	end
 
@@ -301,15 +301,16 @@ do
 	local upOffset = Vector(0,0,5)
 
 	local entMeta = FindMetaTable("Entity")
+	local entity_GetNW2Bool = FindMetaTable("Player").GetCBBool or entMeta.GetNW2Bool
 	local entity_GetTable = entMeta.GetTable
-	local entity_GetNW2Bool = entMeta.GetNW2Bool
 	hook.Add("HUDPaint", "pac_in_editor", function()
 		local showCameras = showCameras:GetBool()
 		local showInEditor = showInEditor:GetBool()
 		local eyePos = EyePos()
+
 		for _, ply in player.Iterator() do
-			local plyTable = entity_GetTable(ply)
-			if ply ~= pac.LocalPlayer and entity_GetNW2Bool(ply, "pac_in_editor") then
+			if entity_GetNW2Bool(ply, "pac_in_editor") and ply ~= pac.LocalPlayer then
+				local plyTable = entity_GetTable(ply)
 
 				if showCameras then
 					if plyTable.pac_editor_cam_pos then

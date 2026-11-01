@@ -64,7 +64,11 @@ do
 	util.AddNetworkString("pac_in_editor")
 
 	net.Receive("pac_in_editor", function(_, ply)
-		ply:SetNW2Bool("pac_in_editor", net.ReadBit() == 1)
+		if ply.SetCBBool then
+			ply:SetCBBool("pac_in_editor", net.ReadBool())
+		else
+			ply:SetNW2Bool("pac_in_editor", net.ReadBool())
+		end
 	end)
 
 	util.AddNetworkString("pac_in_editor_posang")
