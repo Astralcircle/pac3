@@ -309,9 +309,9 @@ do
 		local eyePos = EyePos()
 
 		for _, ply in player.Iterator() do
-			if entity_GetNW2Bool(ply, "pac_in_editor") and ply ~= pac.LocalPlayer then
-				local plyTable = entity_GetTable(ply)
+			local plyTable = entity_GetTable(ply)
 
+			if entity_GetNW2Bool(ply, "pac_in_editor") and ply ~= pac.LocalPlayer then
 				if showCameras then
 					if plyTable.pac_editor_cam_pos then
 						if not IsValid(plyTable.pac_editor_camera) then
