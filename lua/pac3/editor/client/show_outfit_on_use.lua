@@ -11,7 +11,7 @@ function pac.IsPacOnUseOnly()
 		return pac_onuse_only:GetBool()
 	end
 
-	return pac_onuse_only_force:GetBool() or pac_onuse_only:GetBool()
+	return jit.arch == "x86" or pac_onuse_only_force:GetBool() or pac_onuse_only:GetBool()
 end
 
 local pac_IsPacOnUseOnly = pac.IsPacOnUseOnly
