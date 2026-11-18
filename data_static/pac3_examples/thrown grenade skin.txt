@@ -1,0 +1,61 @@
+[2] = {
+	["children"] = {
+		[1] = {
+			["children"] = {
+			},
+			["self"] = {
+				["ParentName"] = "group",
+				["ClassName"] = "model",
+				["UniqueID"] = "124624470",
+				["Name"] = "",
+				["ParentUID"] = "3816187223",
+			},
+		},
+	},
+	["self"] = {
+		["EditorExpand"] = true,
+		["UniqueID"] = "3816187223",
+		["OwnerName"] = "frag",
+		["Duplicate"] = true,
+		["Name"] = "thrown grenade skin",
+		["ClassName"] = "group",
+	},
+},
+[1] = {
+	["children"] = {
+		[2] = {
+			["children"] = {
+			},
+			["self"] = {
+				["ParentName"] = "grenade hand",
+				["Invert"] = true,
+				["Name"] = "",
+				["ClassName"] = "event",
+				["Arguments"] = "weapon_frag@@1",
+				["UniqueID"] = "4040202386",
+				["Operator"] = "equal",
+				["ParentUID"] = "1583647680",
+				["Event"] = "weapon_class",
+			},
+		},
+		[1] = {
+			["children"] = {
+			},
+			["self"] = {
+				["ParentName"] = "grenade hand",
+				["ClassName"] = "model",
+				["Position"] = Vector(3, 0, 0),
+				["ParentUID"] = "1583647680",
+				["Bone"] = "right hand",
+				["Name"] = "",
+				["UniqueID"] = "774008521",
+			},
+		},
+	},
+	["self"] = {
+		["EditorExpand"] = true,
+		["ClassName"] = "group",
+		["Name"] = "grenade hand",
+		["UniqueID"] = "1583647680",
+	},
+},

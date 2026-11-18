@@ -1,0 +1,73 @@
+[1] = {
+	["children"] = {
+		[2] = {
+			["children"] = {
+			},
+			["self"] = {
+				["EndPointName"] = "beam end",
+				["WidthBend"] = 11.8,
+				["Bend"] = 69,
+				["Name"] = "",
+				["ClassName"] = "beam",
+				["Width"] = 0.1,
+				["EndPointUID"] = "115212208",
+				["ParentUID"] = "4035355741",
+				["UniqueID"] = "4060552917",
+				["ParentName"] = "hoverball pet",
+			},
+		},
+		[1] = {
+			["children"] = {
+				[2] = {
+					["children"] = {
+					},
+					["self"] = {
+						["SecondsToArrive"] = 0,
+						["Follow"] = true,
+						["UniqueID"] = "2106190365",
+						["MaxSpeed"] = 4,
+						["MaxSpeedDamp"] = 0,
+						["Gravity"] = false,
+						["Box"] = false,
+						["Name"] = "",
+						["SelfCollision"] = true,
+						["ClassName"] = "physics",
+						["EditorExpand"] = true,
+						["MaxAngular"] = 0,
+						["Radius"] = 25,
+						["ParentUID"] = "295021755",
+						["MaxAngularDamp"] = 0,
+						["DampFactor"] = 0,
+						["ParentName"] = "hoverball",
+					},
+				},
+				[1] = {
+					["children"] = {
+					},
+					["self"] = {
+						["ParentName"] = "hoverball",
+						["ClassName"] = "model",
+						["UniqueID"] = "115212208",
+						["Name"] = "beam end",
+						["ParentUID"] = "295021755",
+					},
+				},
+			},
+			["self"] = {
+				["ParentName"] = "hoverball pet",
+				["ClassName"] = "model",
+				["Size"] = 4,
+				["ParentUID"] = "4035355741",
+				["EditorExpand"] = true,
+				["Name"] = "",
+				["UniqueID"] = "295021755",
+			},
+		},
+	},
+	["self"] = {
+		["EditorExpand"] = true,
+		["ClassName"] = "group",
+		["Name"] = "hoverball pet",
+		["UniqueID"] = "4035355741",
+	},
+},

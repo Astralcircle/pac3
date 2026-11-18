@@ -11,7 +11,7 @@ function pac.IsPacOnUseOnly()
 		return pac_onuse_only:GetBool()
 	end
 
-	return pac_onuse_only_force:GetBool() or pac_onuse_only:GetBool()
+	return jit.arch == "x86" or pac_onuse_only_force:GetBool() or pac_onuse_only:GetBool()
 end
 
 local pac_IsPacOnUseOnly = pac.IsPacOnUseOnly
@@ -77,7 +77,7 @@ end
 cvars.AddChangeCallback("pac_onuse_only", pace.OnUseOnlyUpdates, "PAC3")
 
 concommand.Add("pac_onuse_reset", function()
-	for i, ent in ipairs(ents.GetAll()) do
+	for i, ent in ents.Iterator() do
 		if ent.pac_onuse_only then
 			ent.pac_onuse_only_check = true
 

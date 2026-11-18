@@ -11,8 +11,8 @@ local PANEL = {};
 PANEL.ClassName = "luapad"
 PANEL.Base = "Panel"
 
-surface.CreateFont("LuapadEditor", {font = "roboto mono", size = 16, weight = 400 } );
-surface.CreateFont("LuapadEditor_Bold", {font = "roboto mono", size = 16, weight = 800});
+surface.CreateFont("LuapadEditor", {font = system.IsLinux() and "DejaVu Sans" or "Tahoma", size = 16, weight = 400 } );
+surface.CreateFont("LuapadEditor_Bold", {font = system.IsLinux() and "DejaVu Sans" or "Tahoma", size = 16, weight = 800});
 
 function PANEL:Init()
 	self:SetCursor("beam");

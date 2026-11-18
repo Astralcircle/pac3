@@ -127,7 +127,7 @@ do
 
 			if not newStatus and ent.pac_ignored_callbacks then
 				for i, data in ipairs(ent.pac_ignored_callbacks) do
-					ProtectedCall(function()
+					pcall(function()
 						data.callback(ent)
 					end)
 				end

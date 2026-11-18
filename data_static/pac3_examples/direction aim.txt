@@ -1,0 +1,49 @@
+[1] = {
+	["children"] = {
+		[2] = {
+			["children"] = {
+				[1] = {
+					["children"] = {
+					},
+					["self"] = {
+						["ParentName"] = "jiggle",
+						["ClassName"] = "model",
+						["UniqueID"] = "411152218",
+						["Name"] = "",
+						["ParentUID"] = "1707667187",
+					},
+				},
+			},
+			["self"] = {
+				["ParentName"] = "group",
+				["ClassName"] = "jiggle",
+				["UniqueID"] = "1707667187",
+				["StopRadius"] = 20,
+				["ParentUID"] = "298616389",
+				["Name"] = "",
+				["EditorExpand"] = true,
+			},
+		},
+		[1] = {
+			["children"] = {
+			},
+			["self"] = {
+				["ParentName"] = "group",
+				["UniqueID"] = "3828184438",
+				["AimPartUID"] = "411152218",
+				["Name"] = "",
+				["ClassName"] = "model",
+				["AimPartName"] = "hoverball",
+				["Angles"] = Angle(0, 180, 0),
+				["Model"] = "models/Combine_Scanner.mdl",
+				["ParentUID"] = "298616389",
+			},
+		},
+	},
+	["self"] = {
+		["EditorExpand"] = true,
+		["ClassName"] = "group",
+		["Name"] = "aiming",
+		["UniqueID"] = "298616389",
+	},
+},

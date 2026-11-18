@@ -309,7 +309,7 @@ do -- owner
 
 		local entities = menu:AddSubMenu("entities", function() end)
 		entities.GetDeleteSelf = function() return false end
-		for _, ent in pairs(ents.GetAll()) do
+		for _, ent in ents.Iterator() do
 			if ent:EntIndex() > 0 then
 				entities:AddOption(get_friendly_name(ent), function()
 					pace.current_part:SetOwnerName(ent:EntIndex())
